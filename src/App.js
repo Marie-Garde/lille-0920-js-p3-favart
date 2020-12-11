@@ -1,7 +1,9 @@
+import Mainpage from "./components/Main"
+
 export default function App() {
   return (
     <div>
-      Hello World
+      <Mainpage />
     </div>
   );
 }
