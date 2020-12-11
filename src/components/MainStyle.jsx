@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Body = styled.div`
     color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
 `
 
 export const TitleR = styled.h1`
@@ -27,6 +28,7 @@ export const Text1 = styled.p`
 export const Img1 = styled.img`
     width: 50vh;
     height: 20vw;
+    border-radius: 15px;
 `
 
 export const SubTitle = styled.h2`
@@ -64,6 +66,7 @@ export const Container2 = styled.div`
 export const Img2 = styled.img`
     width: 60vh;
     height:20vw;
+    border-radius: 15px;
 `
 
 export const Text2 = styled.p`
