@@ -22,6 +22,10 @@ import {
   ContainerTitle1,
   Title1,
   Span1,
+  ContainerCitation,
+  Citation,
+  ContainerInformation,
+  Information,
 } from "../Styled-components/HeaderStyled";
 
 export default function Header() {
@@ -69,6 +73,15 @@ export default function Header() {
           pourquoi nous <Span1>existons</Span1>?
         </Title1>
       </ContainerTitle1>
+      <ContainerCitation>
+        <Citation>"Atteindre le plus grand nombre en </Citation>
+        <Citation>mettant la barre très haut" Agnès Varda</Citation>
+      </ContainerCitation>
+      <>
+        <ContainerInformation>
+          <Information>Plus d'informations</Information>
+        </ContainerInformation>
+      </>
     </>
   );
 }

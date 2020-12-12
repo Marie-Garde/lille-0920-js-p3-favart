@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import diago from "../Assets/nav2/diago.jpg";
 
 //Nav1
 
@@ -82,7 +81,6 @@ export const ContainerNav2 = styled.div`
   align-items: center;
   justify-content: flex-start;
   margin-right: 4vw;
-  z-index: -1;
 `;
 
 export const Nav2Img = styled.img`
@@ -113,11 +111,43 @@ export const Title1 = styled.h1`
   font-size: 10vh;
   color: black;
   text-transform: uppercase;
-  margin-left: 12%;
+  margin-left: 18%;
 `;
 
 export const Span1 = styled.span`
   font-size: 10vh;
   color: #1f89d1;
   text-transform: uppercase;
+`;
+
+//Citation
+
+export const ContainerCitation = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-left: 30%;
+`;
+export const Citation = styled.p`
+  font-size: 4vh;
+  font-style: italic;
+  color: black;
+  margin: 0;
+`;
+
+//More informations
+
+export const ContainerInformation = styled.div`
+  margin: 10% 0 0 35%;
+  border: 2px solid #1f89d1;
+  height: 10vh;
+  width: 20vw;
+  border-radius: 200px 200px 0 0;
+  background-color: #1f89d1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Information = styled.p`
+  font-size: 2vh;
 `;
