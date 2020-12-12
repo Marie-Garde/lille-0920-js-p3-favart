@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import diago from "../Assets/nav2/diago.jpg";
 
 //Nav1
 
@@ -70,4 +71,53 @@ export const ContainerConnexion = styled.div`
 export const Hoot = styled.img`
   height: 3vh;
   width: 1.8vw;
+`;
+
+//Nav2
+
+export const ContainerNav2 = styled.div`
+  display: flex;
+  height: 10vh;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 4vw;
+  z-index: -1;
+`;
+
+export const Nav2Img = styled.img`
+  height: 10vh;
+  width: 100%;
+  position: relative;
+  border: 2px solid black;
+`;
+
+export const ContainerNav2Link = styled.div`
+  margin-left: 4vw;
+  position: absolute;
+`;
+
+export const NavLink = styled.a`
+  font-size: 2rem;
+  color: #0e273d;
+  text-decoration: none;
+`;
+
+//Title1
+
+export const ContainerTitle1 = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+export const Title1 = styled.h1`
+  font-size: 10vh;
+  color: black;
+  text-transform: uppercase;
+  margin-left: 12%;
+`;
+
+export const Span1 = styled.span`
+  font-size: 10vh;
+  color: #1f89d1;
+  text-transform: uppercase;
 `;
