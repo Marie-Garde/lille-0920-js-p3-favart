@@ -53,6 +53,10 @@ export const IconLi = styled.li`
   padding: 1vw;
   color: #2796cf;
 `;
+export const Hoot = styled.img`
+  height: 3vh;
+  width: 1.8vw;
+`;
 export const IconLiMail = styled.li`
   display: inline;
   text-decoration: none;
@@ -66,10 +70,7 @@ export const ContainerConnexion = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 2rem;
-`;
-export const Hoot = styled.img`
-  height: 3vh;
-  width: 1.8vw;
+  font-family: "Roboto", sans-serif;
 `;
 
 //Nav2
@@ -96,6 +97,7 @@ export const ContainerNav2Link = styled.div`
 `;
 
 export const NavLink = styled.a`
+  font-family: "Roboto", sans-serif;
   font-size: 2rem;
   color: #0e273d;
   text-decoration: none;
@@ -108,7 +110,8 @@ export const ContainerTitle1 = styled.div`
   justify-content: center;
 `;
 export const Title1 = styled.h1`
-  font-size: 10vh;
+  font-family: "Roboto", sans-serif;
+  font-size: 11vh;
   color: black;
   text-transform: uppercase;
   margin-left: 18%;
@@ -128,6 +131,7 @@ export const ContainerCitation = styled.div`
   margin-left: 30%;
 `;
 export const Citation = styled.p`
+  font-family: "Roboto", sans-serif;
   font-size: 4vh;
   font-style: italic;
   color: black;
@@ -137,7 +141,7 @@ export const Citation = styled.p`
 //More informations
 
 export const ContainerInformation = styled.div`
-  margin: 10% 0 0 35%;
+  margin: 6% 0 0 35%;
   border: 2px solid #1f89d1;
   height: 10vh;
   width: 20vw;
@@ -149,5 +153,6 @@ export const ContainerInformation = styled.div`
 `;
 
 export const Information = styled.p`
+  font-family: "Roboto", sans-serif;
   font-size: 2vh;
 `;
