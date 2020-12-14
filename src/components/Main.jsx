@@ -1,5 +1,5 @@
 import React from "react";
-import {TitleR, Container1, Img1, Text1, SubTitle, TextTitle, TitleL, Container2, Img2, Text2, Body, TextMap, Map} from "./MainStyle"
+import {TitleR, Container1, Img1, Text1, SubTitle, TextTitle, TitleL, Container2, Img2, Text2, Body, TextMap, Map} from "../Styled-components/MainStyle"
 
 export default function MainPage() {
     return (
