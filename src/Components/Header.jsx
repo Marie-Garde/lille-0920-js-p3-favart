@@ -10,9 +10,8 @@ import {
   ContainerLogo,
   ContainerUlLi,
   IconLiFb,
-  IconLiTwit,
-  IconLiLin,
-  IconLi,
+  IconLiTwitter,
+  IconLiLinkedin,
   IconLiMail,
   ContainerConnexion,
   ContainerNav2,
@@ -40,17 +39,16 @@ export default function Header() {
             <i class="fab fa-facebook"></i>
           </IconLiFb>
 
-          <IconLiTwit className="twitter">
+          <IconLiTwitter className="twitter">
             <i class="fab fa-twitter"></i>
-          </IconLiTwit>
+          </IconLiTwitter>
 
-          <IconLiLin className="linkedin">
+          <IconLiLinkedin className="linkedin">
             <i class="fab fa-linkedin-in"></i>
-          </IconLiLin>
+          </IconLiLinkedin>
 
-          <IconLi className="hootSuite">
-            <Hoot src={hoot} alt="logo hootsuite" />
-          </IconLi>
+          <Hoot src={hoot} alt="logo hootsuite" />
+
           <IconLiMail className="mail">
             <i class="far fa-envelope"></i>
           </IconLiMail>
@@ -74,8 +72,8 @@ export default function Header() {
         </Title1>
       </ContainerTitle1>
       <ContainerCitation>
-        <Citation>"Atteindre le plus grand nombre en </Citation>
-        <Citation>mettant la barre très haut" Agnès Varda</Citation>
+        <Citation>"Atteindre le plus grand nombre en mettant la</Citation>
+        <Citation> barre très haut" Agnès Varda</Citation>
       </ContainerCitation>
       <>
         <ContainerInformation>
