@@ -1,11 +1,11 @@
-import Header from "./Components/Header";
+import Connexion from "./Components/Connexion";
 import { Reset } from "styled-reset";
 
 export default function App() {
   return (
     <div>
       <Reset />
-      <Header />
+      <Connexion />
     </div>
   );
 }
