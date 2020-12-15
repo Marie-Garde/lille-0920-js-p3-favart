@@ -6,7 +6,7 @@ export const Body = styled.div`
   font-family: "Roboto", sans-serif;
 `;
 
-export const TitleR = styled.h1`
+export const TitleLeft = styled.h1`
   color: #122239;
   margin: 5vh 0 1vh 7vw;
 
@@ -18,7 +18,7 @@ export const TitleR = styled.h1`
   }
 `;
 
-export const Container1 = styled.div`
+export const ContainerWho = styled.div`
   display: flex;
   flex-direction: row;
   margin: 0 7vw 0 7vw;
@@ -32,7 +32,7 @@ export const Container1 = styled.div`
   }
 `;
 
-export const Text1 = styled.p`
+export const TextWho = styled.p`
   padding-left: 3vw;
   font-size: 1.2rem;
   color: black;
@@ -43,7 +43,7 @@ export const Text1 = styled.p`
   }
 `;
 
-export const Img1 = styled.img`
+export const ImgWho = styled.img`
   width: 50vh;
   height: 20vw;
   border-radius: 15px;
@@ -68,7 +68,7 @@ export const TextTitle = styled.p`
   color: black;
 `;
 
-export const TitleL = styled.h1`
+export const TitleRight = styled.h1`
   color: #122239;
   display: flex;
   justify-content: flex-end;
@@ -85,7 +85,7 @@ export const TitleL = styled.h1`
   }
 `;
 
-export const Container2 = styled.div`
+export const ContainerWhom = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -99,7 +99,7 @@ export const Container2 = styled.div`
   }
 `;
 
-export const Img2 = styled.img`
+export const ImgWhom = styled.img`
   width: 60vh;
   height: 20vw;
   border-radius: 15px;
@@ -110,7 +110,7 @@ export const Img2 = styled.img`
   }
 `;
 
-export const Text2 = styled.p`
+export const TextWhom = styled.p`
   padding-right: 50px;
   font-size: 1.2rem;
   color: black;

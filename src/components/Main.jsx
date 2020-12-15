@@ -1,15 +1,15 @@
 import React from "react";
 import {
-  TitleR,
-  Container1,
-  Img1,
-  Text1,
+  TitleLeft,
+  ContainerWho,
+  ImgWho,
+  TextWho,
   SubTitle,
   TextTitle,
-  TitleL,
-  Container2,
-  Img2,
-  Text2,
+  TitleRight,
+  ContainerWhom,
+  ImgWhom,
+  TextWhom,
   Body,
   TextMap,
   Map,
@@ -18,13 +18,13 @@ import {
 export default function MainPage() {
   return (
     <Body>
-      <TitleR>Pourquoi FAVART ?</TitleR>
-      <Container1>
-        <Img1
+      <TitleLeft>Pourquoi FAVART ?</TitleLeft>
+      <ContainerWho>
+        <ImgWho
           src="https://pbs.twimg.com/media/D7G9CRpWwAAUVCV.jpg"
           alt="Représentants de l'entreprise FAVART"
-        ></Img1>
-        <Text1>
+        ></ImgWho>
+        <TextWho>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis
           eveniet sit unde magnam magni consequuntur omnis blanditiis
           exercitationem aliquam officiis reprehenderit numquam quasi dolorum,
@@ -42,8 +42,8 @@ export default function MainPage() {
           atque rem. Nihil harum fugit illum aliquid perferendis non, corrupti
           alias at laudantium magnam laborum dolorum, hic nam dolor mollitia
           amet. Quod ex atque facilis cupiditate dolorem?
-        </Text1>
-      </Container1>
+        </TextWho>
+      </ContainerWho>
 
       <SubTitle>Lorem ipsum dolet set</SubTitle>
 
@@ -54,10 +54,10 @@ export default function MainPage() {
         necessitatibus nesciunt aperiam.
       </TextTitle>
 
-      <TitleL>Auprès de qui ?</TitleL>
+      <TitleRight>Auprès de qui ?</TitleRight>
 
-      <Container2>
-        <Text2>
+      <ContainerWhom>
+        <TextWhom>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
           voluptatum corrupti asperiores dolore ullam quo sunt ratione, aperiam
           at adipisci tenetur iure reprehenderit minus voluptatem iusto! Iusto
@@ -76,13 +76,13 @@ export default function MainPage() {
           dolorem deleniti eos quae eligendi libero consequatur delectus minus
           quod numquam mollitia? Consectetur, nulla recusandae asperiores
           adipisci pariatur odit tenetur eveniet quos.
-        </Text2>
+        </TextWhom>
 
-        <Img2
+        <ImgWhom
           src="https://www.sobizhub.org/images/lab%C3%A9lisation_FI_roubaix.jpg"
           alt="Présentation projet french impact"
         />
-      </Container2>
+      </ContainerWhom>
 
       <SubTitle>Lorem ipsum dolor set</SubTitle>
 
@@ -96,7 +96,7 @@ export default function MainPage() {
         assumenda velit eaque!
       </TextTitle>
 
-      <TitleR>Notre territorialité</TitleR>
+      <TitleLeft>Notre territorialité</TitleLeft>
 
       <TextMap>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
