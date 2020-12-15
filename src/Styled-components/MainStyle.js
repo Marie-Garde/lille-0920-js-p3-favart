@@ -7,20 +7,20 @@ export const Body = styled.div`
 
 export const TitleR = styled.h1`
     color: #122239;
-    margin: 0 0 1vh 3vw;
+    margin: 5vh 0 1vh 7vw;
 `
 
 export const Container1 = styled.div`
     display: flex;
     flex-direction: row;
-    margin: 0 5vw 0 3vw;
+    margin: 0 7vw 0 7vw;
     justify-content: center;
     text-align: justify;
     align-items: center;
 `
 
 export const Text1 = styled.p`
-    padding-left: 50px;
+    padding-left: 3vw;
     font-size: 1.2rem;
     color: black;
 `
@@ -41,7 +41,7 @@ export const SubTitle = styled.h2`
 export const TextTitle = styled.p`
     text-align: center;
     font-size: 1.2rem;
-    margin: 2vh 6vw 8vh 6vw;
+    margin: 2vh 7vw 8vh 7vw;
     color: black;
 `
 
@@ -50,7 +50,7 @@ export const TitleL = styled.h1`
     color: #122239;
     display: flex;
     justify-content: flex-end;
-    margin: 0 3vw 1vh 0;
+    margin: 0 7vw 1vh 0;
     font-size: 2rem;
 `
 
@@ -60,7 +60,7 @@ export const Container2 = styled.div`
     justify-content: center;
     text-align: justify;
     align-items: center;
-    margin: 0 3vw 0 5vw;
+    margin: 0 7vw 0 7vw;
 `
 
 export const Img2 = styled.img`
@@ -77,7 +77,7 @@ export const Text2 = styled.p`
 
 export const TextMap = styled.p`
     color: black;
-    margin: 2vh 0 1vh 3vw;
+    margin: 2vh 7vw 1vh 7vw;
     font-size: 1.2rem;
     text-align: justify;
 `
