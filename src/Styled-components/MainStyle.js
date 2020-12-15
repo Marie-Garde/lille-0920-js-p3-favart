@@ -49,8 +49,8 @@ export const Img1 = styled.img`
   border-radius: 15px;
 
   @media ${device.smallDevices} {
-    width: 60vw;
-    height: 30vh;
+    width: 90vw;
+    height: 40vh;
   }
 `;
 
@@ -95,7 +95,7 @@ export const Container2 = styled.div`
 
   @media ${device.smallDevices} {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 `;
 
@@ -105,7 +105,8 @@ export const Img2 = styled.img`
   border-radius: 15px;
 
   @media ${device.smallDevices} {
-    display: none;
+      width: 90vw;
+      height: 40vh;
   }
 `;
 
@@ -126,6 +127,9 @@ export const TextMap = styled.p`
   margin: 2vh 7vw 1vh 7vw;
   font-size: 1.2rem;
   text-align: justify;
+
+  @media ${device.smallDevices}{
+  }
 `;
 
 export const Map = styled.a`
