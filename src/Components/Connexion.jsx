@@ -8,6 +8,8 @@ import {
   ContainerLogo,
   Slogan,
   Span,
+  TitleForm,
+  H2,
 } from "../Styled-components/ConnexionStyle";
 
 export default function connexion() {
@@ -20,7 +22,10 @@ export default function connexion() {
             The best way to shape the Futur is to <Span>co create</Span> it.
           </Slogan>
         </ContainerLogo>
-        <ContainerForm></ContainerForm>
+        <ContainerForm>
+          <TitleForm>Inscription</TitleForm>
+          <H2>Déjà un compte ? Connexion</H2>
+        </ContainerForm>
       </ContainerInscription>
     </Background>
   );
