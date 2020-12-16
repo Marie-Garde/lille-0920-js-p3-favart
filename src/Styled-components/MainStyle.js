@@ -106,8 +106,8 @@ export const ImgWhom = styled.img`
   border-radius: 15px;
 
   @media ${device.smallDevices} {
-      width: 90vw;
-      height: 40vh;
+    width: 90vw;
+    height: 40vh;
   }
 `;
 
@@ -129,7 +129,7 @@ export const PMap = styled.p`
   font-size: 1.2rem;
   text-align: justify;
 
-  @media ${device.smallDevices}{
+  @media ${device.smallDevices} {
   }
 `;
 
