@@ -9,7 +9,7 @@ export const FooterMain = styled.footer`
   padding: 0.5%;
 `;
 // Contact us div
-export const ContactUs = styled.div`
+export const DivContactUs = styled.div`
   display: flex;
   flex-direction: column;
   width: 35%;
@@ -26,7 +26,7 @@ export const FirstUl = styled.ul`
         display : none;
     }
 `;
-export const Space = styled.hr`
+export const Hr = styled.hr`
   background-color: #008bd0;
   color: #008bd0;
   height: 0.5vh;
@@ -57,7 +57,7 @@ export const UlIcons = styled.ul`
     }
 `;
 
-export const EndFooter = styled.div`
+export const DivEndFooter = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -78,7 +78,7 @@ export const MapContainer = styled.div`
     };
 `;
 
-export const MyFrame = styled.iframe`
+export const IFrame = styled.iframe`
   width: 75%;
   height: 90%;
   padding-right: 3%;
