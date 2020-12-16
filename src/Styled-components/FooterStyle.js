@@ -1,8 +1,7 @@
 import styled from "styled-components";
-import {device} from "../Components/Device";
+import { device } from "../Components/Device";
 
 export const FooterMain = styled.footer`
-
   display: flex;
   background-color: #0d253f;
   color: white;
@@ -15,16 +14,16 @@ export const DivContactUs = styled.div`
   width: 35%;
   padding-left: 5%;
   @media ${device.mobile} {
-        width: 100%;
-        padding: 0%;
-    }
+    width: 100%;
+    padding: 0%;
+  }
 `;
 export const FirstUl = styled.ul`
   list-style: none;
   padding: 0;
   @media ${device.mobile} {
-        display : none;
-    }
+    display: none;
+  }
 `;
 export const Hr = styled.hr`
   background-color: #008bd0;
@@ -33,14 +32,14 @@ export const Hr = styled.hr`
   margin: 0;
   width: 35%;
   @media ${device.mobile} {
-        display : none;
-    }
+    display: none;
+  }
 `;
 
-export const H1 = styled.h1 `    
-    @media ${device.mobile} {
-    display : none;
-    }
+export const H1 = styled.h1`
+  @media ${device.mobile} {
+    display: none;
+  }
 `;
 
 export const Img = styled.img`
@@ -51,10 +50,10 @@ export const UlIcons = styled.ul`
   display: flex;
   list-style: none;
   padding: 0;
-    @media ${device.mobile} {
-        width: 100%;
-        justify-content: space-around;
-    }
+  @media ${device.mobile} {
+    width: 100%;
+    justify-content: space-around;
+  }
 `;
 
 export const DivEndFooter = styled.div`
@@ -62,9 +61,9 @@ export const DivEndFooter = styled.div`
   justify-content: space-between;
   width: 100%;
   @media ${device.mobile} {
-        width: 100%;
-        justify-content: space-around;
-    }
+    width: 100%;
+    justify-content: space-around;
+  }
 `;
 
 // map container div
@@ -74,8 +73,8 @@ export const MapContainer = styled.div`
   align-items: center;
   width: 65%;
   @media ${device.mobile} {
-        display : none;
-    };
+    display: none;
+  } ;
 `;
 
 export const IFrame = styled.iframe`

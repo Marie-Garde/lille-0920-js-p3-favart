@@ -8,7 +8,7 @@ import {
   Img,
   DivEndFooter,
   IFrame,
-  H1
+  H1,
 } from "../Styled-components/FooterStyle";
 
 import { ulMap } from "../Assets/others/test";
