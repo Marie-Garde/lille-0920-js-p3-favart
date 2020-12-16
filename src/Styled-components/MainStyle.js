@@ -6,9 +6,10 @@ export const Body = styled.div`
   font-family: "Roboto", sans-serif;
 `;
 
-export const TitleLeft = styled.h1`
+export const H1Left = styled.h1`
   color: #122239;
   margin: 5vh 0 1vh 7vw;
+  font-size: 3rem;
 
   @media ${device.smallDevices} {
     text-align: center;
@@ -18,7 +19,7 @@ export const TitleLeft = styled.h1`
   }
 `;
 
-export const ContainerWho = styled.div`
+export const ContainerWhy = styled.div`
   display: flex;
   flex-direction: row;
   margin: 0 7vw 0 7vw;
@@ -32,7 +33,7 @@ export const ContainerWho = styled.div`
   }
 `;
 
-export const TextWho = styled.p`
+export const PWhy = styled.p`
   padding-left: 3vw;
   font-size: 1.2rem;
   color: black;
@@ -43,7 +44,7 @@ export const TextWho = styled.p`
   }
 `;
 
-export const ImgWho = styled.img`
+export const ImgWhy = styled.img`
   width: 50vh;
   height: 20vw;
   border-radius: 15px;
@@ -54,26 +55,26 @@ export const ImgWho = styled.img`
   }
 `;
 
-export const SubTitle = styled.h2`
+export const H2Title = styled.h2`
   color: #122239;
   text-align: center;
-  font-size: 2em;
+  font-size: 2.5rem;
   margin-top: 8vh;
 `;
 
-export const TextTitle = styled.p`
+export const PTitle = styled.p`
   text-align: center;
   font-size: 1.2rem;
   margin: 2vh 7vw 8vh 7vw;
   color: black;
 `;
 
-export const TitleRight = styled.h1`
+export const H1Right = styled.h1`
   color: #122239;
   display: flex;
   justify-content: flex-end;
   margin: 0 7vw 1vh 0;
-  font-size: 2rem;
+  font-size: 3rem;
 
   @media ${device.smallDevices} {
     text-align: center;
@@ -110,7 +111,7 @@ export const ImgWhom = styled.img`
   }
 `;
 
-export const TextWhom = styled.p`
+export const PWhom = styled.p`
   padding-right: 50px;
   font-size: 1.2rem;
   color: black;
@@ -122,7 +123,7 @@ export const TextWhom = styled.p`
   }
 `;
 
-export const TextMap = styled.p`
+export const PMap = styled.p`
   color: black;
   margin: 2vh 7vw 1vh 7vw;
   font-size: 1.2rem;

@@ -1,30 +1,30 @@
 import React from "react";
 import {
-  TitleLeft,
-  ContainerWho,
-  ImgWho,
-  TextWho,
-  SubTitle,
-  TextTitle,
-  TitleRight,
+  H1Left,
+  ContainerWhy,
+  ImgWhy,
+  PWhy,
+  H2Title,
+  PTitle,
+  H1Right,
   ContainerWhom,
   ImgWhom,
-  TextWhom,
+  PWhom,
   Body,
-  TextMap,
+  PMap,
   Map,
 } from "../Styled-components/MainStyle";
 
 export default function MainPage() {
   return (
     <Body>
-      <TitleLeft>Pourquoi FAVART ?</TitleLeft>
-      <ContainerWho>
-        <ImgWho
+      <H1Left>Pourquoi FAVART ?</H1Left>
+      <ContainerWhy>
+        <ImgWhy
           src="https://pbs.twimg.com/media/D7G9CRpWwAAUVCV.jpg"
           alt="Représentants de l'entreprise FAVART"
-        ></ImgWho>
-        <TextWho>
+        ></ImgWhy>
+        <PWhy>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis
           eveniet sit unde magnam magni consequuntur omnis blanditiis
           exercitationem aliquam officiis reprehenderit numquam quasi dolorum,
@@ -42,22 +42,22 @@ export default function MainPage() {
           atque rem. Nihil harum fugit illum aliquid perferendis non, corrupti
           alias at laudantium magnam laborum dolorum, hic nam dolor mollitia
           amet. Quod ex atque facilis cupiditate dolorem?
-        </TextWho>
-      </ContainerWho>
+        </PWhy>
+      </ContainerWhy>
 
-      <SubTitle>Lorem ipsum dolet set</SubTitle>
+      <H2Title>Lorem ipsum dolet set</H2Title>
 
-      <TextTitle>
+      <PTitle>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non doloremque
         obcaecati, nam facilis odio officia deserunt voluptate quam earum
         exercitationem. Ipsam itaque non doloremque quis placeat illo
         necessitatibus nesciunt aperiam.
-      </TextTitle>
+      </PTitle>
 
-      <TitleRight>Auprès de qui ?</TitleRight>
+      <H1Right>Auprès de qui ?</H1Right>
 
       <ContainerWhom>
-        <TextWhom>
+        <PWhom>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
           voluptatum corrupti asperiores dolore ullam quo sunt ratione, aperiam
           at adipisci tenetur iure reprehenderit minus voluptatem iusto! Iusto
@@ -76,7 +76,7 @@ export default function MainPage() {
           dolorem deleniti eos quae eligendi libero consequatur delectus minus
           quod numquam mollitia? Consectetur, nulla recusandae asperiores
           adipisci pariatur odit tenetur eveniet quos.
-        </TextWhom>
+        </PWhom>
 
         <ImgWhom
           src="https://www.sobizhub.org/images/lab%C3%A9lisation_FI_roubaix.jpg"
@@ -84,9 +84,9 @@ export default function MainPage() {
         />
       </ContainerWhom>
 
-      <SubTitle>Lorem ipsum dolor set</SubTitle>
+      <H2Title>Lorem ipsum dolor set</H2Title>
 
-      <TextTitle>
+      <PTitle>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
         est! Soluta, magni odio facilis provident quae ducimus perspiciatis
         tenetur ab! Consectetur praesentium maiores ut corporis ratione quae?
@@ -94,11 +94,11 @@ export default function MainPage() {
         quas illo, placeat, nam qui, id exercitationem. A sint ab asperiores
         voluptatibus? Quo repellat nulla natus nobis nostrum facilis earum
         assumenda velit eaque!
-      </TextTitle>
+      </PTitle>
 
-      <TitleLeft>Notre territorialité</TitleLeft>
+      <H1Left>Notre territorialité</H1Left>
 
-      <TextMap>
+      <PMap>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
         architecto labore cupiditate perspiciatis quibusdam repellat distinctio
         deserunt voluptatibus harum, sed provident, quas quam neque facilis vel
@@ -110,7 +110,7 @@ export default function MainPage() {
         at quaerat distinctio aliquid aspernatur suscipit sed fugit, perferendis
         libero. Provident, quibusdam minus, sapiente fuga at rerum modi saepe
         neque enim sunt corporis eius.
-      </TextMap>
+      </PMap>
 
       <Map href="https://placeholder.com">
         <img src="https://via.placeholder.com/816" alt="" />
