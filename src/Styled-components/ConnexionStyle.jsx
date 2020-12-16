@@ -77,7 +77,7 @@ export const Span = styled.span`
 export const TitleForm = styled.h1`
   font-size: 2.5rem;
   @media ${device.mobile} {
-    font-size: 1.5em;
+    font-size: 1.6em;
   }
 `;
 
