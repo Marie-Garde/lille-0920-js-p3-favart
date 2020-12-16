@@ -8,6 +8,7 @@ import {
   Img,
   EndFooter,
   MyFrame,
+  H1
 } from "../Styled-components/FooterStyle";
 
 import { ulMap } from "../Assets/others/test";
@@ -16,7 +17,7 @@ export default function Footer() {
   return (
     <FooterMain>
       <ContactUs>
-        <h1>Nous contacter</h1>
+        <H1>Nous contacter</H1>
         <Space />
         <FirstUl>
           <li>Favart</li>
@@ -26,12 +27,12 @@ export default function Footer() {
           <li>Tél. :+33(0) 155 333 333</li>
           <li>Mail : contact@favart.com</li>
         </FirstUl>
-        <h1>Nous suivre</h1>
+        <H1>Nous suivre</H1>
         <Space />
         <UlIcons>
           {ulMap.map((social) => {
             return (
-              <li>
+              <li key={social.name}>
                 <Img src={social.url} alt={social.alt} />
               </li>
             );
