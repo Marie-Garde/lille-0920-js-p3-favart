@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { device } from "../Assets/Device";
+import { device } from "../Assets/Device/Device";
 
 export const Body = styled.div`
   color: #e5e5e5;
