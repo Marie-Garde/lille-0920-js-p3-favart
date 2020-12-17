@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Device } from "../Components/Device";
+import { Device } from "../components/Device";
 
 export const Background = styled.div`
   background-color: #a2abb2;
