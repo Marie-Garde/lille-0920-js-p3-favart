@@ -112,9 +112,12 @@ export default function MainPage() {
         neque enim sunt corporis eius.
       </PMap>
 
-      <Map href="https://placeholder.com">
+      <Map>
+      <a href="https://placeholder.com">
         <img src="https://via.placeholder.com/816" alt="" />
+      </a>
       </Map>
+
     </Body>
   );
 }
