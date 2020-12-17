@@ -134,8 +134,8 @@ export const PMap = styled.p`
 `;
 
 export const Map = styled.div`
-text-align: center;
-margin: 5vh 0 5vh 0;
+  text-align: center;
+  margin: 5vh 0 5vh 0;
 
   @media ${device.smallDevices} {
     display: none;

@@ -113,11 +113,10 @@ export default function MainPage() {
       </PMap>
 
       <Map>
-      <a href="https://placeholder.com">
-        <img src="https://via.placeholder.com/816" alt="" />
-      </a>
+        <a href="https://placeholder.com">
+          <img src="https://via.placeholder.com/816" alt="" />
+        </a>
       </Map>
-
     </Body>
   );
 }
