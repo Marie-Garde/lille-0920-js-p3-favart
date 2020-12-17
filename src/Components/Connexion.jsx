@@ -10,7 +10,7 @@ import {
   Span,
   TitleForm,
   H2,
-} from "../Styled-components/ConnexionStyle";
+} from "../Styled-components/Connection";
 
 export default function connexion() {
   return (

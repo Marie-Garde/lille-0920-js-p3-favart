@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { device } from "../Components/Device";
+import { Device } from "../Components/Device";
 
 export const Background = styled.div`
   background-color: #a2abb2;
@@ -11,12 +11,8 @@ export const Background = styled.div`
 `;
 
 export const ContainerInscription = styled.div`
-  background: rgb(255, 245, 230);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 245, 230, 1) 0%,
-    rgba(35, 134, 201, 1) 100%
-  );
+  background: #85a7bd;
+
   box-shadow: 4px 10px 16px 0px rgba(97, 97, 97, 1);
   height: 80vh;
   width: 80vw;
@@ -26,7 +22,7 @@ export const ContainerInscription = styled.div`
   align-items: center;
   padding-left: 2vw;
   padding-right: 2vw;
-  @media ${device.mobile} {
+  @media ${Device.mobile} {
     flex-direction: column;
   }
 `;
@@ -40,7 +36,7 @@ export const ContainerForm = styled.div`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  @media ${device.mobile} {
+  @media ${Device.mobile} {
     width: 80vw;
   }
 `;
@@ -55,7 +51,7 @@ export const ContainerLogo = styled.div`
 
 export const Logo = styled.img`
   width: 12vw;
-  @media ${device.mobile} {
+  @media ${Device.mobile} {
     width: 30vw;
   }
 `;
@@ -66,7 +62,7 @@ export const Slogan = styled.h1`
   padding-right: 5vw;
   padding-left: 5vw;
   font-weight: bold;
-  @media ${device.mobile} {
+  @media ${Device.mobile} {
     display: none;
   }
 `;
@@ -76,7 +72,7 @@ export const Span = styled.span`
 `;
 export const TitleForm = styled.h1`
   font-size: 2.5rem;
-  @media ${device.mobile} {
+  @media ${Device.mobile} {
     font-size: 1.6rem;
   }
 `;
