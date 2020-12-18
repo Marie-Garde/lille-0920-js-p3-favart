@@ -1,18 +1,17 @@
 import React from "react";
-import logo from "../Assets/nav/FAVART.jpg";
-import hoot from "../Assets/nav/hoot.png";
+import logo from "../Assets/logo-icon-header/FAVART.jpg";
 import placeholder from "../Assets/nav2/diago.jpg";
+import twitter from "../Assets/logo-icon-header/twitter.svg";
+import linkedin from "../Assets/logo-icon-header/linkedin.svg";
+import mail from "../Assets/logo-icon-header/mail.svg";
 
 import {
-  ContainerNav,
+  DivHeaderTop,
   Logo,
-  Hoot,
   ContainerLogo,
-  ContainerUlLi,
-  IconLiFb,
-  IconLiTwitter,
-  IconLiLinkedin,
-  IconLiMail,
+  IconTwitter,
+  IconLinkedin,
+  IconMail,
   ContainerConnexion,
   ContainerNav2,
   ContainerNav2Link,
@@ -25,36 +24,24 @@ import {
   Citation,
   ContainerInformation,
   Information,
-} from "../Styled-components/HeaderStyled";
+} from "../Styled-components/HeaderStyled.jsx";
 
 export default function Header() {
   return (
     <>
-      <ContainerNav>
+      <DivHeaderTop>
         <ContainerLogo>
           <Logo src={logo} alt="logo favart" />
         </ContainerLogo>
-        <ContainerUlLi>
-          <IconLiFb className="faceBook">
-            <i class="fab fa-facebook"></i>
-          </IconLiFb>
+        <div>
+          <IconTwitter src={twitter} alt="logo twitter" />
 
-          <IconLiTwitter className="twitter">
-            <i class="fab fa-twitter"></i>
-          </IconLiTwitter>
+          <IconLinkedin src={linkedin} alt="logo linkedin" />
 
-          <IconLiLinkedin className="linkedin">
-            <i class="fab fa-linkedin-in"></i>
-          </IconLiLinkedin>
-
-          <Hoot src={hoot} alt="logo hootsuite" />
-
-          <IconLiMail className="mail">
-            <i class="far fa-envelope"></i>
-          </IconLiMail>
-        </ContainerUlLi>
+          <IconMail src={mail} alt="logo mail" />
+        </div>
         <ContainerConnexion>Connexion / Inscription</ContainerConnexion>
-      </ContainerNav>
+      </DivHeaderTop>
       <>
         <ContainerNav2>
           <Nav2Img src={placeholder} alt="reunion" />
