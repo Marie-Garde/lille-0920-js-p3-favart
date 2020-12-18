@@ -1,18 +1,8 @@
 import React from "react";
 import logo from "../Assets/logo-icon-header/FAVART.jpg";
 import placeholder from "../Assets/nav2/diago.jpg";
-import twitter from "../Assets/logo-icon-header/twitter.svg";
-import linkedin from "../Assets/logo-icon-header/linkedin.svg";
-import mail from "../Assets/logo-icon-header/mail.svg";
 
 import {
-  DivHeaderTop,
-  Logo,
-  ContainerLogo,
-  IconTwitter,
-  IconLinkedin,
-  IconMail,
-  ContainerConnexion,
   ContainerNav2,
   ContainerNav2Link,
   Nav2Img,
@@ -29,19 +19,6 @@ import {
 export default function Header() {
   return (
     <>
-      <DivHeaderTop>
-        <ContainerLogo>
-          <Logo src={logo} alt="logo favart" />
-        </ContainerLogo>
-        <div>
-          <IconTwitter src={twitter} alt="logo twitter" />
-
-          <IconLinkedin src={linkedin} alt="logo linkedin" />
-
-          <IconMail src={mail} alt="logo mail" />
-        </div>
-        <ContainerConnexion>Connexion / Inscription</ContainerConnexion>
-      </DivHeaderTop>
       <>
         <ContainerNav2>
           <Nav2Img src={placeholder} alt="reunion" />
