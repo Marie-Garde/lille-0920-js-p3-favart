@@ -1,42 +1,12 @@
 import styled from "styled-components";
 
-//Nav2
+//Title
 
-export const ContainerNav2 = styled.div`
-  display: flex;
-  height: 15vh;
-  width: 100%;
-  align-items: center;
-  justify-content: flex-start;
-  margin-bottom: 5%;
-`;
-
-export const Nav2Img = styled.img`
-  height: 15vh;
-  width: 100%;
-  position: relative;
-  border: 2px solid black;
-`;
-
-export const ContainerNav2Link = styled.div`
-  margin-left: 5vw;
-  position: absolute;
-`;
-
-export const NavLink = styled.a`
-  font-family: "Roboto", sans-serif;
-  font-size: 3rem;
-  color: #0e273d;
-  text-decoration: none;
-`;
-
-//Title1
-
-export const ContainerTitle1 = styled.div`
+export const ContainerTitle = styled.div`
   display: flex;
   justify-content: center;
 `;
-export const Title1 = styled.h1`
+export const Title = styled.h1`
   font-family: "Roboto", sans-serif;
   font-size: 11vh;
   width: 50%;
@@ -45,20 +15,20 @@ export const Title1 = styled.h1`
   margin-bottom: 4%;
 `;
 
-export const Span1 = styled.span`
+export const TitleSpan = styled.span`
   font-size: 10vh;
   color: #1f89d1;
   text-transform: uppercase;
 `;
 
-//Citation
+//Author citation
 
-export const ContainerCitation = styled.div`
+export const ContainerAuthorSentence = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 50%;
 `;
-export const Citation = styled.p`
+export const AuthorSentence = styled.p`
   font-family: "Roboto", sans-serif;
   font-size: 4vh;
   font-style: italic;
@@ -67,7 +37,7 @@ export const Citation = styled.p`
 
 //More informations
 
-export const ContainerInformation = styled.div`
+export const ContainerMoreInformation = styled.div`
   margin-right: auto;
   margin-left: auto;
   margin-top: 13vh;
@@ -81,7 +51,7 @@ export const ContainerInformation = styled.div`
   align-items: center;
 `;
 
-export const Information = styled.p`
+export const MoreInformationSentence = styled.p`
   font-family: "Roboto", sans-serif;
   font-size: 2vh;
 `;
