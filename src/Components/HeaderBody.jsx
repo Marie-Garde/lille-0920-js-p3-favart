@@ -3,26 +3,26 @@ import React from "react";
 import {
   ContainerTitle,
   Title,
-  Span,
+  TitleSpan,
   ContainerAuthorSentence,
   AuthorSentence,
   ContainerMoreInformation,
   MoreInformationSentence,
-} from "../Styled-components/HeaderStyled.jsx";
+} from "../Styled-components/HeaderBodyStyled.jsx";
 
-export default function Header() {
+export default function HeaderBody() {
   return (
     <>
       <ContainerTitle>
         <Title>
-          pourquoi nous <Span>existons</Span> ?
+          pourquoi nous <TitleSpan>existons</TitleSpan> ?
         </Title>
       </ContainerTitle>
       <ContainerAuthorSentence>
         <AuthorSentence>
           "Atteindre le plus grand nombre en mettant la
         </AuthorSentence>
-        <Citation> barre très haut" Agnès Varda</Citation>
+        <AuthorSentence> barre très haut" Agnès Varda</AuthorSentence>
       </ContainerAuthorSentence>
       <>
         <ContainerMoreInformation>

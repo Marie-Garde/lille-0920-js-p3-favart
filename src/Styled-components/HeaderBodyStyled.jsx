@@ -21,7 +21,7 @@ export const TitleSpan = styled.span`
   text-transform: uppercase;
 `;
 
-//Author citation
+//Author quote
 
 export const ContainerAuthorSentence = styled.div`
   display: flex;
