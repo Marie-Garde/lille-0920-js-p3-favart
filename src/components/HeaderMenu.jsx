@@ -12,7 +12,7 @@ export default function HeaderMenu() {
       <>
         <ContainerHeaderMenu>
           <ContainerHeaderMenuLink>
-            <MenuLink href="">01 </MenuLink>
+            <MenuLink href="">01 - Favart </MenuLink>
             <MenuLink href="">/ 02 /</MenuLink>
             <MenuLink href=""> 03 </MenuLink>
             <MenuLink href="">/ 04</MenuLink>
