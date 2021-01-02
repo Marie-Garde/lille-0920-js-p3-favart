@@ -1,10 +1,14 @@
 import styled from "styled-components";
+import { device } from "../Assets/Device/Device.jsx";
 
 //Title
 
 export const ContainerTitle = styled.div`
   display: flex;
   justify-content: center;
+  @media ${device.smallDevices} {
+    display: none;
+  }
 `;
 export const Title = styled.h1`
   font-size: 10vh;
@@ -26,11 +30,21 @@ export const ContainerAuthorSentence = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 50vw;
+  @media ${device.smallDevices} {
+    flex-direction: raw;
+    align-items: center;
+    justify-content: center;
+    margin: 4vh 0vw 0vh 0vw;
+  }
 `;
 export const AuthorSentence = styled.p`
   font-size: 4vh;
   font-style: italic;
   color: black;
+  @media ${device.smallDevices} {
+    font-size: 2.5vh;
+    padding: 0.5vh;
+  }
 `;
 
 //More informations
@@ -47,6 +61,9 @@ export const ContainerMoreInformation = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media ${device.smallDevices} {
+    display: none;
+  }
 `;
 
 export const MoreInformationSentence = styled.p`
