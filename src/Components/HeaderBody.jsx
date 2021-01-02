@@ -15,7 +15,7 @@ export default function HeaderBody() {
     <>
       <ContainerTitle>
         <Title>
-          pourquoi nous <TitleSpan>existons</TitleSpan> ?
+          pourquoi nous <TitleSpan>existons</TitleSpan>?
         </Title>
       </ContainerTitle>
       <ContainerAuthorSentence>

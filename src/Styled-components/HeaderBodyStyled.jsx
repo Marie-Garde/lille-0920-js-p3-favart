@@ -7,12 +7,11 @@ export const ContainerTitle = styled.div`
   justify-content: center;
 `;
 export const Title = styled.h1`
-  font-family: "Roboto", sans-serif;
-  font-size: 11vh;
-  width: 50%;
+  font-size: 10vh;
+  width: 50vw;
   color: black;
   text-transform: uppercase;
-  margin-bottom: 4%;
+  margin-bottom: 5vh;
 `;
 
 export const TitleSpan = styled.span`
@@ -26,10 +25,9 @@ export const TitleSpan = styled.span`
 export const ContainerAuthorSentence = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 50%;
+  margin-left: 50vw;
 `;
 export const AuthorSentence = styled.p`
-  font-family: "Roboto", sans-serif;
   font-size: 4vh;
   font-style: italic;
   color: black;
@@ -52,6 +50,5 @@ export const ContainerMoreInformation = styled.div`
 `;
 
 export const MoreInformationSentence = styled.p`
-  font-family: "Roboto", sans-serif;
   font-size: 2vh;
 `;
