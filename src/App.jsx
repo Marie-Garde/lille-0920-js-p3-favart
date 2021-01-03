@@ -1,4 +1,4 @@
-import Connexion from "./Components/Connexion";
+import Connexion from "./components/Connexion";
 import { Reset } from "styled-reset";
 
 export default function App() {
