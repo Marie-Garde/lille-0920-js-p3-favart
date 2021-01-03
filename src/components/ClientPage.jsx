@@ -1,0 +1,61 @@
+import ImgRessources from "../assets/ImgRessources.jpg";
+
+import {
+  FlexBox,
+  FlexBox1,
+  FlexBox2,
+  Name,
+  Function,
+  Company,
+  Text,
+  Ressources,
+  RessourcesFlex,
+  TextRessources,
+  RessourcesImg,
+  Agir,
+  AgirFlex,
+  TextAgir,
+  AgirImg,
+  Flash,
+  TextFlash,
+} from "../styled-components/ClientPage";
+
+export default function connexion() {
+  return (
+    <FlexBox>
+      <FlexBox1>
+        <Text>
+          <Name>Name Surname</Name>
+          <Function>Function</Function>
+          <Company>Company</Company>
+        </Text>
+      </FlexBox1>
+      <FlexBox2>
+        <Ressources>Accéder au centre de ressources Favart</Ressources>
+        <RessourcesFlex>
+          <TextRessources>
+            Lorem ipsum color si damet Lorem ipsum color si dametLorem ipsum
+            color si dametLorem ipsum color si dametLorem ipsum color si
+            dametLorem ipsum color si
+          </TextRessources>
+          <RessourcesImg src={ImgRessources}></RessourcesImg>
+        </RessourcesFlex>
+        <Agir>Agissons ensemble</Agir>
+        <AgirFlex>
+          <AgirImg src={ImgRessources}></AgirImg>
+          <TextAgir>
+            Lorem ipsum color si damet Lorem ipsum color si dametLorem ipsum
+            color si dametLorem ipsum color si dametLorem ipsum color si
+            dametLorem ipsum color si
+          </TextAgir>
+        </AgirFlex>
+        <Flash>Echange flash avec nous</Flash>
+        <TextFlash>
+          Lorem ipsum color si damet Lorem ipsum color si dametLorem ipsum color
+          si dametLorem ipsum color si dametLorem ipsum color si dametLorem
+          ipsum color si
+        </TextFlash>
+      </FlexBox2>
+    </FlexBox>
+  );
+}
