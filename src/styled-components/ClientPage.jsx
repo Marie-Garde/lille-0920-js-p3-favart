@@ -3,6 +3,9 @@ import { Device } from "../components/Device";
 
 export const FlexBox = styled.div`
   display: flex;
+  @media ${Device.mobile} {
+    flex-direction: column;
+  }
 `;
 
 export const FlexBox1 = styled.div`
@@ -14,10 +17,18 @@ export const FlexBox1 = styled.div`
     rgba(18, 34, 57, 1) 100%
   );
   height: 100vh;
+  @media ${Device.mobile} {
+    flex-direction: column;
+    height: 5vh;
+  }
 `;
 
 export const Text = styled.div`
   margin-top: 40vh;
+  @media ${Device.mobile} {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
 `;
 
 export const Name = styled.h1`
@@ -71,6 +82,9 @@ export const TextRessources = styled.h1`
 export const RessourcesImg = styled.img`
   flex: 1;
   height: 20vh;
+  @media ${Device.mobile} {
+    display: none;
+  }
 `;
 
 export const Agir = styled.h1`
@@ -92,11 +106,17 @@ export const TextAgir = styled.h1`
   flex: 2;
   padding-left: 3vw;
   color: #122239;
+  @media ${Device.mobile} {
+    padding-left: 0;
+  }
 `;
 
 export const AgirImg = styled.img`
   flex: 1;
   height: 20vh;
+  @media ${Device.mobile} {
+    display: none;
+  }
 `;
 
 export const Flash = styled.h1`
@@ -112,4 +132,7 @@ export const TextFlash = styled.h1`
   flex: 2;
   padding-right: 3vw;
   color: #122239;
+  @media ${Device.mobile} {
+    margin-bottom: 5vh;
+  }
 `;
