@@ -33,6 +33,7 @@ export default function HeaderTop() {
 
           <IconMail src={mail} alt="logo mail" />
         </ContainerIcon>
+
         <ContainerConnexionSentence>
           <ConnexionSentence>Connexion / Inscription</ConnexionSentence>
         </ContainerConnexionSentence>
