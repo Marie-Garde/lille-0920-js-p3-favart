@@ -9,7 +9,7 @@ import {
   DivAdress,
   H1Underline,
   UlIconsMobile,
-  Li
+  Li,
 } from "../styled-components/Footer";
 
 import { ulMap } from "../assets/others/IconsList";
@@ -66,18 +66,18 @@ export default function Footer() {
         </div>
       </DivContactUs>
       <UlIconsMobile>
-            {ulMap.map((social) => {
-              return (
-                <Li key={social.name}>
-                  <A href={social.link}>
-                    <img src={social.url} alt={social.alt} />
-                  </A>
-                </Li>
-              );
-            })}
-          </UlIconsMobile>
+        {ulMap.map((social) => {
+          return (
+            <Li key={social.name}>
+              <A href={social.link}>
+                <img src={social.url} alt={social.alt} />
+              </A>
+            </Li>
+          );
+        })}
+      </UlIconsMobile>
       <DivEndFooter>
-        <a href ="#">Informations légales</a>
+        <a href="#">Informations légales</a>
         <p>FAVART - 2021</p>
       </DivEndFooter>
     </FooterMain>

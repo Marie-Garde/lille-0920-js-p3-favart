@@ -1,9 +1,9 @@
 import Footer from "./components/Footer";
-import {Reset} from "styled-reset";
+import { Reset } from "styled-reset";
 export default function App() {
   return (
     <>
-      <Reset/>    
+      <Reset />
       <Footer />
     </>
   );

@@ -9,8 +9,8 @@ export const FooterMain = styled.footer`
 `;
 
 export const DivContactUs = styled.div`
-padding-top : 5vh;  
-display: flex;
+  padding-top: 5vh;
+  display: flex;
   justify-content: space-around;
   @media ${device.mobile} {
     display: none;
@@ -28,7 +28,7 @@ export const Hr = styled.hr`
 `;
 
 export const H1 = styled.h1`
-font-size : 3vh;
+  font-size: 3vh;
   text-align: center;
   @media ${device.mobile} {
     display: none;
@@ -49,8 +49,8 @@ export const A = styled.a`
 `;
 
 export const DivEndFooter = styled.div`
-padding-top : 4vh;  
-text-align: center;
+  padding-top: 4vh;
+  text-align: center;
   @media ${device.mobile} {
     width: 100%;
     justify-content: space-around;
@@ -58,8 +58,8 @@ text-align: center;
 `;
 
 export const DivAdress = styled.div`
-padding-top : 2vh;  
-display: flex;
+  padding-top: 2vh;
+  display: flex;
   justify-content: space-around;
   @media ${device.mobile} {
     display: none;
@@ -67,20 +67,22 @@ display: flex;
 `;
 
 export const H1Underline = styled.h1`
-padding-top : 2vh;
-font-size : 3vh;  
-text-decoration: underline;
+  padding-top: 2vh;
+  font-size: 3vh;
+  text-decoration: underline;
   text-decoration-color: #008bd0;
   text-decoration-thickness: 0.1em;
 `;
 
-export const UlIconsMobile = styled.ul `
-display : flex;
-justify-content : space-around;
-@media ${device.desktop} {
-display : none}
+export const UlIconsMobile = styled.ul`
+  display: flex;
+  justify-content: space-around;
+  @media ${device.desktop} {
+    display: none;
+  }
 `;
 
 export const Li = styled.li`
-font-size : 2vh;
-padding-top : 1vh`;
+  font-size: 2vh;
+  padding-top: 1vh;
+`;
