@@ -18,6 +18,7 @@ export default function HeaderBody() {
           pourquoi nous <TitleSpan>existons</TitleSpan>?
         </Title>
       </ContainerTitle>
+
       <ContainerAuthorSentence>
         <AuthorSentence>
           "Atteindre le plus grand nombre en mettant la
