@@ -6,6 +6,7 @@ export const ContainerHeaderMenu = styled.div`
   align-items: center;
   height: 15vh;
   width: 100%;
+
   background-color: #1f89d1;
   @media ${device.smallDevices} {
     height: 10vh;
