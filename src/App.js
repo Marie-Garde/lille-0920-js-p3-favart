@@ -1,5 +1,7 @@
 import ClientPage from "./components/ClientPage";
 import { Reset } from "styled-reset";
+import Connexion from "./components/Connexion";
+import HeaderBody from "./components/HeaderBody";
 import HeaderMenu from "./components/HeaderMenu";
 import Mainpage from "./components/Main";
 
@@ -7,10 +9,12 @@ import Mainpage from "./components/Main";
 export default function App() {
   return (
     <div>
-
       <Reset />
       <ClientPage />
+      <Reset />
+      <Connexion />
       <HeaderMenu />
+      <HeaderBody />
       <Mainpage />
     </div>
   );
