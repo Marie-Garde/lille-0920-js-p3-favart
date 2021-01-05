@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import { device } from "../Assets/Device/Device.jsx";
 
-//Title
-
 export const ContainerTitle = styled.div`
   display: flex;
   justify-content: center;
@@ -23,8 +21,6 @@ export const TitleSpan = styled.span`
   color: #1f89d1;
   text-transform: uppercase;
 `;
-
-//Author quote
 
 export const ContainerAuthorSentence = styled.div`
   display: flex;
@@ -47,8 +43,6 @@ export const AuthorSentence = styled.p`
   }
 `;
 
-//More informations
-
 export const ContainerMoreInformation = styled.div`
   margin-right: auto;
   margin-left: auto;
@@ -67,5 +61,5 @@ export const ContainerMoreInformation = styled.div`
 `;
 
 export const MoreInformationSentence = styled.p`
-  font-size: 2vh;
+  font-size: 1.5rem;
 `;
