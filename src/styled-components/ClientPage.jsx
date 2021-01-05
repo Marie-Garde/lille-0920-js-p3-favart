@@ -38,7 +38,7 @@ export const Name = styled.h1`
   padding-bottom: 2vh;
 `;
 
-export const Function = styled.h2`
+export const Job = styled.h2`
   color: white;
   font-size: 1.6rem;
   text-align: center;

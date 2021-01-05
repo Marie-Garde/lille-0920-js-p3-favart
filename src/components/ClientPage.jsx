@@ -5,7 +5,7 @@ import {
   FlexBox1,
   FlexBox2,
   Name,
-  Function,
+  Job,
   Company,
   Text,
   Ressources,
@@ -26,7 +26,7 @@ export default function connexion() {
       <FlexBox1>
         <Text>
           <Name>Name Surname</Name>
-          <Function>Function</Function>
+          <Job>Function</Job>
           <Company>Company</Company>
         </Text>
       </FlexBox1>
