@@ -10,7 +10,6 @@ export default function App() {
       <HeaderTop />
       <Reset />
       <Connexion />
-      <HeaderTop />
       <HeaderMenu />
       <Mainpage />
     </div>
