@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { device } from "../Assets/Device/Device";
+import { Device } from "../assets/Device/Device";
 
 export const ContainerHeaderMenu = styled.div`
   display: flex;
@@ -8,14 +8,14 @@ export const ContainerHeaderMenu = styled.div`
   width: 100%;
 
   background-color: #1f89d1;
-  @media ${device.smallDevices} {
+  @media ${Device.mobile} {
     height: 10vh;
   }
 `;
 
 export const ContainerHeaderMenuLink = styled.div`
   margin-left: 15vw;
-  @media ${device.smallDevices} {
+  @media ${Device.mobile} {
     margin-left: 7vw;
   }
 `;
@@ -24,7 +24,7 @@ export const MenuLink = styled.a`
   font-size: 3rem;
   color: #0e273d;
   text-decoration: none;
-  @media ${device.smallDevices} {
+  @media ${Device.mobile} {
     font-size: 1.5rem;
   }
 `;

@@ -13,7 +13,7 @@ import {
   Body,
   PMap,
   Map,
-} from "../Styled-components/MainStyle";
+} from "../styled-components/MainStyle";
 
 export default function MainPage() {
   return (
