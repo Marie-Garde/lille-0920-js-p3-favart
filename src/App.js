@@ -5,6 +5,7 @@ import HeaderBody from "./components/HeaderBody";
 import HeaderMenu from "./components/HeaderMenu";
 import HeaderTop from "./components/HeaderTop";
 import Mainpage from "./components/Main";
+import Footer from "./components/Footer";
 
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
       <HeaderMenu />
       <HeaderBody />
       <Mainpage />
+      <Footer />
     </div>
   );
 }
