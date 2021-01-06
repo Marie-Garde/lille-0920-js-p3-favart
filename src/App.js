@@ -3,12 +3,14 @@ import { Reset } from "styled-reset";
 import Connexion from "./components/Connexion";
 import HeaderBody from "./components/HeaderBody";
 import HeaderMenu from "./components/HeaderMenu";
+import HeaderTop from "./components/HeaderTop";
 import Mainpage from "./components/Main";
 
 
 export default function App() {
   return (
     <div>
+      <HeaderTop />
       <Reset />
       <ClientPage />
       <Reset />
