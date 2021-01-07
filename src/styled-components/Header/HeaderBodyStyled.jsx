@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Device } from "../assets/Device/Device.jsx";
+import { Device } from "../../assets/Device/Device.jsx";
 
 export const ContainerTitle = styled.div`
   display: flex;

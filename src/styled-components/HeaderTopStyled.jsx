@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Device } from "../assets/Device/Device";
+import { Link } from "react-router-dom";
 
 export const DivHeaderTop = styled.div`
   display: flex;
@@ -11,7 +12,7 @@ export const DivHeaderTop = styled.div`
   }
 `;
 
-export const ContainerLogo = styled.div`
+export const ContainerLogo = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,7 +48,7 @@ export const IconMail = styled.img`
   width: 2.5vw;
 `;
 
-export const ContainerIconConnexion = styled.div`
+export const ContainerIconConnexion = styled(Link)`
   display: none;
   @media ${Device.mobile} {
     display: flex;
@@ -69,6 +70,6 @@ export const ContainerConnexionSentence = styled.div`
   }
 `;
 
-export const ConnexionSentence = styled.p`
+export const ConnexionSentence = styled(Link)`
   font-size: 2.5rem;
 `;

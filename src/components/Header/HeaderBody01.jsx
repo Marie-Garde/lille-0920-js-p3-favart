@@ -8,7 +8,7 @@ import {
   AuthorSentence,
   ContainerMoreInformation,
   MoreInformationSentence,
-} from "../styled-components/HeaderBodyStyled.jsx";
+} from "../../styled-components/Header/HeaderBodyStyled.jsx";
 
 export default function HeaderBody() {
   return (
