@@ -56,7 +56,7 @@ export const ContainerMoreInformation = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  ${({ hidden }) => hidden && `display: none;`}
+  ${({ visible }) => visible && `display: none;`}
 
   @media ${Device.mobile} {
     display: none;

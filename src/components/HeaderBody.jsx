@@ -13,9 +13,9 @@ import {
 } from "../styled-components/HeaderBodyStyled.jsx";
 
 export default function HeaderBody() {
-  const [hidden, setHidden] = useState(false);
+  const [visible, setVisible] = useState(false);
   const onClick = () => {
-    setHidden(true);
+    setVisible(true);
   };
   return (
     <>
@@ -32,11 +32,11 @@ export default function HeaderBody() {
         <AuthorSentence> la barre très haut" Agnès Varda</AuthorSentence>
       </ContainerAuthorSentence>
       <>
-        <ContainerMoreInformation hidden={hidden} onClick={onClick}>
+        <ContainerMoreInformation visible={visible} onClick={onClick}>
           <MoreInformationSentence>En savoir plus</MoreInformationSentence>
         </ContainerMoreInformation>
-        {hidden ? <Main /> : null}
-        {hidden ? <Footer /> : null}
+        {visible ? <Main /> : null}
+        {visible ? <Footer /> : null}
       </>
     </>
   );
