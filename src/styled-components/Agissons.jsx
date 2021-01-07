@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Device } from "../assets/Device/Device";
 
 export const P = styled.p`
-  font-size: 2.5em;
+  font-size: 2.4em;
   text-align: center;
   margin-top: 3vh;
   margin-bottom: 6vh;
