@@ -44,7 +44,7 @@ export const AuthorSentence = styled.p`
 `;
 
 export const ContainerMoreInformation = styled.button`
-cursor: pointer;
+  cursor: pointer;
   margin-right: auto;
   margin-left: auto;
   margin-top: 19vh;
@@ -56,7 +56,7 @@ cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-    ${({ hidden }) => hidden && `display: none;`}
+  ${({ hidden }) => hidden && `display: none;`}
 
   @media ${Device.mobile} {
     display: none;
@@ -64,6 +64,6 @@ cursor: pointer;
 `;
 
 export const MoreInformationSentence = styled.p`
-color:white;
+  color: white;
   font-size: 1.5rem;
 `;

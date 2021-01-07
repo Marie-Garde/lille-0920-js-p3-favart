@@ -1,6 +1,6 @@
-import React, {useState} from "react";
-import Main from "./Main"
-import Footer from "./Footer"
+import React, { useState } from "react";
+import Main from "./Main";
+import Footer from "./Footer";
 
 import {
   ContainerTitle,
@@ -12,12 +12,11 @@ import {
   MoreInformationSentence,
 } from "../styled-components/HeaderBodyStyled.jsx";
 
-
-
 export default function HeaderBody() {
   const [hidden, setHidden] = useState(false);
   const onClick = () => {
-    setHidden(true)};
+    setHidden(true);
+  };
   return (
     <>
       <ContainerTitle>
@@ -30,15 +29,14 @@ export default function HeaderBody() {
         <AuthorSentence>
           "Atteindre le plus grand nombre en mettant
         </AuthorSentence>
-        <AuthorSentence > la barre très haut" Agnès Varda</AuthorSentence>
+        <AuthorSentence> la barre très haut" Agnès Varda</AuthorSentence>
       </ContainerAuthorSentence>
       <>
         <ContainerMoreInformation hidden={hidden} onClick={onClick}>
           <MoreInformationSentence>En savoir plus</MoreInformationSentence>
         </ContainerMoreInformation>
-        {hidden ? <Main />  : null}
-        {hidden ? <Footer />  : null}
-
+        {hidden ? <Main /> : null}
+        {hidden ? <Footer /> : null}
       </>
     </>
   );

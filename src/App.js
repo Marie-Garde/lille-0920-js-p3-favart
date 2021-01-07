@@ -14,6 +14,6 @@ export default function App() {
       <HeaderTop />
       <HeaderMenu />
       <HeaderBody />
-          </div>
+    </div>
   );
 }
