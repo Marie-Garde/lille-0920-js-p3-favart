@@ -2,14 +2,14 @@ import styled from "styled-components";
 import { Device } from "../assets/Device/Device";
 
 export const P = styled.p`
-  font-size: 2.5em;
+  font-size: 2.5rem;
   text-align: center;
   margin-top: 3vh;
   margin-bottom: 6vh;
   font-family: "Josefin Sans";
   font-weight: bold;
   @media ${Device.mobile} {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     margin-right: 4vw;
     margin-left: 4vw;
   }
@@ -47,18 +47,18 @@ export const CardText = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 2em;
+  font-size: 2rem;
   font-family: "Josefin Sans";
   padding-bottom: 2vh;
   padding-left: 1vw;
   @media ${Device.mobile} {
     text-align: center;
-    font-size: 1.7em;
+    font-size: 1.7rem;
   }
 `;
 
 export const IdeeForte = styled.h1`
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: bold;
   font-family: "Noto Sans CJK JP";
   text-align: center;
@@ -66,30 +66,30 @@ export const IdeeForte = styled.h1`
   padding-bottom: 2vh;
   line-height: 1.2em;
   @media ${Device.mobile} {
-    font-size: 1em;
+    font-size: 1rem;
   }
 `;
 
 export const Text = styled.h2`
-  font-size: 1.1em;
+  font-size: 1.1rem;
   padding-left: 1vw;
   font-family: "Noto Sans CJK JP";
   padding-bottom: 1vh;
-  line-height: 1.2em;
+  line-height: 1.2rem;
   @media ${Device.mobile} {
-    font-size: 0.85em;
+    font-size: 0.85rem;
     text-align: center;
   }
 `;
 
 export const Liste = styled.ul`
-  font-size: 1em;
+  font-size: 1rem;
   list-style: square;
   padding-left: 2vw;
   font-family: "Noto Sans CJK JP";
-  line-height: 1.2em;
+  line-height: 1.2rem;
   @media ${Device.mobile} {
-    font-size: 0.85em;
+    font-size: 0.85rem;
     text-align: center;
     list-style: none;
   }
@@ -143,52 +143,52 @@ export const CardText2 = styled.div`
 `;
 
 export const Title2 = styled.h1`
-  font-size: 2em;
+  font-size: 2rem;
   font-family: "Josefin Sans";
   padding-bottom: 2vh;
   padding-left: 1vw;
   @media ${Device.mobile} {
     text-align: center;
-    font-size: 1.7em;
+    font-size: 1.7rem;
     padding-left: 0;
   }
 `;
 
 export const IdeeForte2 = styled.h1`
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: bold;
   font-family: "Noto Sans CJK JP";
   text-align: center;
   padding-left: 1vw;
   padding-bottom: 2vh;
-  line-height: 1.2em;
+  line-height: 1.2rem;
   @media ${Device.mobile} {
-    font-size: 1em;
+    font-size: 1rem;
     padding-left: 0;
   }
 `;
 
 export const Text2 = styled.h2`
-  font-size: 1.1em;
+  font-size: 1.1rem;
   padding-left: 1vw;
   font-family: "Noto Sans CJK JP";
   padding-bottom: 1vh;
-  line-height: 1.2em;
+  line-height: 1.2rem;
   @media ${Device.mobile} {
-    font-size: 0.85em;
+    font-size: 0.85rem;
     text-align: center;
     padding-left: 0;
   }
 `;
 
 export const Liste2 = styled.ul`
-  font-size: 1em;
+  font-size: 1rem;
   list-style: square;
   padding-left: 2vw;
   font-family: "Noto Sans CJK JP";
-  line-height: 1.2em;
+  line-height: 1.2rem;
   @media ${Device.mobile} {
-    font-size: 0.85em;
+    font-size: 0.85rem;
     text-align: center;
     list-style: none;
     padding-left: 0vw;
@@ -243,50 +243,50 @@ export const CardText3 = styled.div`
 `;
 
 export const Title3 = styled.h1`
-  font-size: 2em;
+  font-size: 2rem;
   font-family: "Josefin Sans";
   padding-bottom: 2vh;
   padding-left: 1vw;
   @media ${Device.mobile} {
     text-align: center;
-    font-size: 1.7em;
+    font-size: 1.7rem;
     padding-left: 0vw;
   }
 `;
 
 export const IdeeForte3 = styled.h1`
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: bold;
   font-family: "Noto Sans CJK JP";
   text-align: center;
   padding-left: 1vw;
   padding-bottom: 2vh;
-  line-height: 1.2em;
+  line-height: 1.2rem;
   @media ${Device.mobile} {
-    font-size: 1em;
+    font-size: 1rem;
   }
 `;
 
 export const Text3 = styled.h2`
-  font-size: 1.1em;
+  font-size: 1.1rem;
   padding-left: 1vw;
   font-family: "Noto Sans CJK JP";
   padding-bottom: 1vh;
-  line-height: 1.2em;
+  line-height: 1.2rem;
   @media ${Device.mobile} {
-    font-size: 0.85em;
+    font-size: 0.85rem;
     text-align: center;
   }
 `;
 
 export const Liste3 = styled.ul`
-  font-size: 1em;
+  font-size: 1rem;
   list-style: square;
   padding-left: 2vw;
   font-family: "Noto Sans CJK JP";
-  line-height: 1.2em;
+  line-height: 1.2rem;
   @media ${Device.mobile} {
-    font-size: 0.85em;
+    font-size: 0.85rem;
     text-align: center;
     list-style: none;
   }
@@ -342,52 +342,52 @@ export const CardText4 = styled.div`
 `;
 
 export const Title4 = styled.h1`
-  font-size: 2em;
+  font-size: 2rem;
   font-family: "Josefin Sans";
   padding-bottom: 2vh;
   padding-left: 1vw;
   @media ${Device.mobile} {
     text-align: center;
-    font-size: 1.7em;
+    font-size: 1.7rem;
     padding-left: 0;
   }
 `;
 
 export const IdeeForte4 = styled.h1`
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: bold;
   font-family: "Noto Sans CJK JP";
   text-align: center;
   padding-left: 1vw;
   padding-bottom: 2vh;
-  line-height: 1.2em;
+  line-height: 1.2rem;
   @media ${Device.mobile} {
-    font-size: 1em;
+    font-size: 1rem;
     padding-left: 0;
   }
 `;
 
 export const Text4 = styled.h2`
-  font-size: 1.1em;
+  font-size: 1.1rem;
   padding-left: 1vw;
   font-family: "Noto Sans CJK JP";
   padding-bottom: 1vh;
-  line-height: 1.2em;
+  line-height: 1.2rem;
   @media ${Device.mobile} {
-    font-size: 0.85em;
+    font-size: 0.85rem;
     text-align: center;
     padding-left: 0;
   }
 `;
 
 export const Liste4 = styled.ul`
-  font-size: 1em;
+  font-size: 1rem;
   list-style: square;
   padding-left: 2vw;
   font-family: "Noto Sans CJK JP";
   line-height: 1.2em;
   @media ${Device.mobile} {
-    font-size: 0.85em;
+    font-size: 0.85rem;
     text-align: center;
     list-style: none;
     padding-left: 0vw;
