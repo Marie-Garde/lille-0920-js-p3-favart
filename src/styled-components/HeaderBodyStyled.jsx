@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { device } from "../Assets/Device/Device.jsx";
+import { Device } from "../assets/Device/Device.jsx";
 
 export const ContainerTitle = styled.div`
   display: flex;
   justify-content: center;
-  @media ${device.smallDevices} {
+  @media ${Device.mobile} {
     display: none;
   }
 `;
@@ -26,7 +26,7 @@ export const ContainerAuthorSentence = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 50vw;
-  @media ${device.smallDevices} {
+  @media ${Device.mobile} {
     flex-direction: raw;
     align-items: center;
     justify-content: center;
@@ -37,7 +37,7 @@ export const AuthorSentence = styled.p`
   font-size: 4vh;
   font-style: italic;
   color: black;
-  @media ${device.smallDevices} {
+  @media ${Device.mobile} {
     font-size: 2.5vh;
     padding: 0.5vh;
   }
@@ -55,7 +55,7 @@ export const ContainerMoreInformation = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media ${device.smallDevices} {
+  @media ${Device.mobile} {
     display: none;
   }
 `;

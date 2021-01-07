@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { device } from "../Assets/Device/Device";
+import { Device } from "../assets/Device/Device";
 
 export const Body = styled.div`
   color: #e5e5e5;
@@ -11,7 +11,7 @@ export const H1Left = styled.h1`
   margin: 5vh 0 1vh 7vw;
   font-size: 3rem;
 
-  @media ${device.smallDevices} {
+  @media ${Device.mobile} {
     text-align: center;
     font-size: 2.3rem;
     margin: 5vh 0 3vh 0;
@@ -27,7 +27,7 @@ export const ContainerWhy = styled.div`
   text-align: justify;
   align-items: center;
 
-  @media ${device.smallDevices} {
+  @media ${Device.mobile} {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -38,7 +38,7 @@ export const PWhy = styled.p`
   font-size: 1.2rem;
   color: black;
 
-  @media ${device.smallDevices} {
+  @media ${Device.mobile} {
     text-align: justify;
     padding-left: 0;
   }
@@ -49,7 +49,7 @@ export const ImgWhy = styled.img`
   height: 20vw;
   border-radius: 15px;
 
-  @media ${device.smallDevices} {
+  @media ${Device.mobile} {
     width: 90vw;
     height: 40vh;
   }
@@ -76,7 +76,7 @@ export const H1Right = styled.h1`
   margin: 0 7vw 1vh 0;
   font-size: 3rem;
 
-  @media ${device.smallDevices} {
+  @media ${Device.mobile} {
     text-align: center;
     font-size: 2.3rem;
     margin: 0 0 1vh 0;
@@ -94,7 +94,7 @@ export const ContainerWhom = styled.div`
   align-items: center;
   margin: 0 7vw 0 7vw;
 
-  @media ${device.smallDevices} {
+  @media ${Device.mobile} {
     display: flex;
     flex-direction: column;
   }
@@ -105,7 +105,7 @@ export const ImgWhom = styled.img`
   height: 20vw;
   border-radius: 15px;
 
-  @media ${device.smallDevices} {
+  @media ${Device.mobile} {
     width: 90vw;
     height: 40vh;
   }
@@ -116,7 +116,7 @@ export const PWhom = styled.p`
   font-size: 1.2rem;
   color: black;
 
-  @media ${device.smallDevices} {
+  @media ${Device.mobile} {
     display: flex;
     justify-content: center;
     padding: 0;
@@ -129,7 +129,7 @@ export const PMap = styled.p`
   font-size: 1.2rem;
   text-align: justify;
 
-  @media ${device.smallDevices} {
+  @media ${Device.mobile} {
   }
 `;
 
@@ -137,7 +137,7 @@ export const Map = styled.div`
   text-align: center;
   margin: 5vh 0 5vh 0;
 
-  @media ${device.smallDevices} {
+  @media ${Device.mobile} {
     display: none;
   }
 `;

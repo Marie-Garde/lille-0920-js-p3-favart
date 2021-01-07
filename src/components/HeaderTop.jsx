@@ -1,9 +1,9 @@
 import React from "react";
-import logo from "../Assets/logo-icon-header/FAVART.jpg";
-import twitter from "../Assets/logo-icon-header/twitter.svg";
-import linkedin from "../Assets/logo-icon-header/linkedin.svg";
-import mail from "../Assets/logo-icon-header/mail.svg";
-import connect from "../Assets/logo-icon-header/connect.svg";
+import logo from "../assets/logo-icon-header/FAVART.jpg";
+import twitter from "../assets/logo-icon-header/twitter.svg";
+import linkedin from "../assets/logo-icon-header/linkedin.svg";
+import mail from "../assets/logo-icon-header/mail.svg";
+import connect from "../assets/logo-icon-header/connect.svg";
 
 import {
   DivHeaderTop,
@@ -17,7 +17,7 @@ import {
   IconConnexion,
   ContainerConnexionSentence,
   ConnexionSentence,
-} from "../Styled-components/HeaderTopStyled.jsx";
+} from "../styled-components/HeaderTopStyled.jsx";
 
 export default function HeaderTop() {
   return (

@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import { device } from "../Assets/Device/Device";
+import { Device } from "../assets/Device/Device";
 
 export const DivHeaderTop = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  @media ${device.smallDevices} {
+  @media ${Device.mobile} {
     justify-content: center;
   }
 `;
@@ -15,7 +15,7 @@ export const ContainerLogo = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  @media ${device.smallDevices} {
+  @media ${Device.mobile} {
     margin-right: 15vw;
     margin-left: 20vw;
   }
@@ -24,13 +24,13 @@ export const ContainerLogo = styled.div`
 export const Logo = styled.img`
   height: 15vh;
   width: 25vw;
-  @media ${device.smallDevices} {
+  @media ${Device.mobile} {
     height: 15vh;
     width: 45vw;
   }
 `;
 export const ContainerIcon = styled.div`
-  @media ${device.smallDevices} {
+  @media ${Device.mobile} {
     display: none;
   }
 `;
@@ -49,13 +49,13 @@ export const IconMail = styled.img`
 
 export const ContainerIconConnexion = styled.div`
   display: none;
-  @media ${device.smallDevices} {
+  @media ${Device.mobile} {
     display: flex;
   }
 `;
 
 export const IconConnexion = styled.img`
-  @media ${device.smallDevices} {
+  @media ${Device.mobile} {
     width: 8vw;
   }
 `;
@@ -64,7 +64,7 @@ export const ContainerConnexionSentence = styled.div`
   display: inline;
   align-items: center;
   justify-content: center;
-  @media ${device.smallDevices} {
+  @media ${Device.mobile} {
     display: none;
   }
 `;

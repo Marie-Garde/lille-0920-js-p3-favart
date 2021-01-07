@@ -7,7 +7,6 @@ import HeaderTop from "./components/HeaderTop";
 import Mainpage from "./components/Main";
 import Footer from "./components/Footer";
 
-
 export default function App() {
   return (
     <div>

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { device } from "../components/Device";
+import { Device } from "../assets/Device/Device";
 
 export const FooterMain = styled.footer`
   list-style: none;
@@ -12,7 +12,7 @@ export const DivContactUs = styled.div`
   padding-top: 5vh;
   display: flex;
   justify-content: space-around;
-  @media ${device.mobile} {
+  @media ${Device.mobile} {
     display: none;
   }
 `;
@@ -22,7 +22,7 @@ export const Hr = styled.hr`
   background-color: #008bd0;
   color: #008bd0;
   height: 0.5vh;
-  @media ${device.mobile} {
+  @media ${Device.mobile} {
     display: none;
   }
 `;
@@ -30,7 +30,7 @@ export const Hr = styled.hr`
 export const H1 = styled.h1`
   font-size: 3vh;
   text-align: center;
-  @media ${device.mobile} {
+  @media ${Device.mobile} {
     display: none;
   }
 `;
@@ -38,8 +38,8 @@ export const H1 = styled.h1`
 export const UlIcons = styled.ul`
   padding-right: 1vw;
   display: flex;
-  align-item: center;
-  @media ${device.mobile} {
+  align-items: center;
+  @media ${Device.mobile} {
     justify-content: space-around;
   }
 `;
@@ -51,7 +51,7 @@ export const A = styled.a`
 export const DivEndFooter = styled.div`
   padding-top: 4vh;
   text-align: center;
-  @media ${device.mobile} {
+  @media ${Device.mobile} {
     width: 100%;
     justify-content: space-around;
   }
@@ -61,7 +61,7 @@ export const DivAdress = styled.div`
   padding-top: 2vh;
   display: flex;
   justify-content: space-around;
-  @media ${device.mobile} {
+  @media ${Device.mobile} {
     display: none;
   }
 `;
@@ -77,7 +77,7 @@ export const H1Underline = styled.h1`
 export const UlIconsMobile = styled.ul`
   display: flex;
   justify-content: space-around;
-  @media ${device.desktop} {
+  @media ${Device.desktop} {
     display: none;
   }
 `;
