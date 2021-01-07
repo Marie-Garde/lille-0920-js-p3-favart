@@ -14,10 +14,10 @@ export default function App() {
       <Reset />
       <HeaderTop />
       <Switch>
-        <Route exact path="/" component={Mainpage} />{" "}
-        <Route path="/agissons" component={Agissons} />{" "}
-        <Route path="/connexion" component={Connexion} />{" "}
-      </Switch>{" "}
+        <Route exact path="/" component={Mainpage} />
+        <Route path="/agissons" component={Agissons} />
+        <Route path="/connexion" component={Connexion} />
+      </Switch>
       <Footer />
     </div>
   );
