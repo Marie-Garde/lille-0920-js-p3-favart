@@ -10,15 +10,10 @@ import Footer from "./components/Footer";
 export default function App() {
   return (
     <div>
+      <Reset />
       <HeaderTop />
-      <Reset />
-      <ClientPage />
-      <Reset />
-      <Connexion />
       <HeaderMenu />
       <HeaderBody />
-      <Mainpage />
-      <Footer />
     </div>
   );
 }

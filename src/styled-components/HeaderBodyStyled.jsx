@@ -43,10 +43,11 @@ export const AuthorSentence = styled.p`
   }
 `;
 
-export const ContainerMoreInformation = styled.div`
+export const ContainerMoreInformation = styled.button`
+  cursor: pointer;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 13vh;
+  margin-top: 19vh;
   border: 2px solid #1f89d1;
   height: 8vh;
   width: 20vw;
@@ -55,11 +56,14 @@ export const ContainerMoreInformation = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  ${({ visible }) => visible && `display: none;`}
+
   @media ${Device.mobile} {
     display: none;
   }
 `;
 
 export const MoreInformationSentence = styled.p`
+  color: white;
   font-size: 1.5rem;
 `;
