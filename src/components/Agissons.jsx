@@ -33,7 +33,7 @@ import {
   IdeeForte4,
   Text4,
   Liste4,
-} from "../styled-components/Agissons.jsx";
+} from "../Styled-components/Agissons.jsx";
 
 export default function Agissons() {
   return (

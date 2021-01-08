@@ -15,7 +15,7 @@ import {
   Body,
   PMap,
   Map,
-} from "../styled-components/MainStyle";
+} from "../Styled-components/MainStyle";
 
 export default function MainPage() {
   return (
