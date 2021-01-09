@@ -1,36 +1,48 @@
 import styled from "styled-components";
 import { Device } from "../assets/Device/Device.jsx";
 
-export const ContainerTitle = styled.div`
+export const BlockTitle = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+`;
+
+export const ContainerTitle = styled.div`
+  max-width: 85vw;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
   @media ${Device.mobile} {
     display: none;
   }
 `;
 export const Title = styled.h1`
-  font-size: 10vh;
-  width: 50vw;
+  font-size: 15vh;
   color: black;
   text-transform: uppercase;
-  margin-bottom: 5vh;
+  font-family: "JosefinSans";
 `;
 
 export const TitleSpan = styled.span`
-  font-size: 10vh;
+  font-size: 15vh;
   color: #1f89d1;
   text-transform: uppercase;
 `;
 
-export const ContainerAuthorSentence = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-left: 50vw;
+export const BlockSentence = styled.div`
+  margin-left: 8vw;
   @media ${Device.mobile} {
-    flex-direction: raw;
-    align-items: center;
-    justify-content: center;
-    margin: 4vh 0vw 0vh 0vw;
+    margin-top: 1.5vh;
+  }
+`;
+
+export const ContainerAuthorSentence = styled.div`
+  max-width: 85vw;
+  font-family: "Noto Sans CJK JP";
+  line-height: 3em;
+  @media ${Device.mobile} {
+    display: inline;
+    text-align: center;
+    line-height: 1.2em;
   }
 `;
 export const AuthorSentence = styled.p`
@@ -38,8 +50,7 @@ export const AuthorSentence = styled.p`
   font-style: italic;
   color: black;
   @media ${Device.mobile} {
-    font-size: 2.5vh;
-    padding: 0.5vh;
+    font-size: 2vh;
   }
 `;
 
@@ -47,7 +58,7 @@ export const ContainerMoreInformation = styled.button`
   cursor: pointer;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 19vh;
+  margin-top: 17.9vh;
   border: 2px solid #1f89d1;
   height: 8vh;
   width: 20vw;
@@ -66,4 +77,5 @@ export const ContainerMoreInformation = styled.button`
 export const MoreInformationSentence = styled.p`
   color: white;
   font-size: 1.5rem;
+  font-family: "Noto Sans CJK JP";
 `;
