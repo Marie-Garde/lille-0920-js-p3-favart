@@ -8,7 +8,6 @@ import connect from "../assets/logo-icon-header/connect.svg";
 import {
   DivHeaderTop,
   Logo,
-  ContainerLogo,
   ContainerIcon,
   IconTwitter,
   IconLinkedin,
@@ -23,9 +22,7 @@ export default function HeaderTop() {
   return (
     <>
       <DivHeaderTop>
-        <ContainerLogo>
-          <Logo src={logo} alt="logo favart" />
-        </ContainerLogo>
+        <Logo src={logo} alt="logo favart" />
         <ContainerIcon>
           <IconTwitter src={twitter} alt="logo twitter" />
 

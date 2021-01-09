@@ -4,47 +4,42 @@ import { Device } from "../assets/Device/Device";
 export const DivHeaderTop = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
   @media ${Device.mobile} {
-    justify-content: center;
-  }
-`;
-
-export const ContainerLogo = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  @media ${Device.mobile} {
-    margin-right: 15vw;
-    margin-left: 20vw;
+    justify-content: space-evenly;
+    height: 10vh;
   }
 `;
 
 export const Logo = styled.img`
-  height: 15vh;
-  width: 25vw;
+  height: 8vh;
+  width: 15vw;
   @media ${Device.mobile} {
-    height: 15vh;
-    width: 45vw;
+    height: 10vh;
+    width: 40vw;
+    margin-right: 20vw;
+    margin-left: 25vw;
   }
 `;
 export const ContainerIcon = styled.div`
+  margin-left: 20vw;
+  margin-right: 20vw;
   @media ${Device.mobile} {
     display: none;
   }
 `;
 export const IconTwitter = styled.img`
-  width: 2.5vw;
+  width: 2vw;
 `;
 export const IconLinkedin = styled.img`
-  width: 2.5vw;
-  padding-left: 1vw;
-  padding-right: 1vw;
+  width: 2vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
 `;
 
 export const IconMail = styled.img`
-  width: 2.5vw;
+  width: 2vw;
 `;
 
 export const ContainerIconConnexion = styled.div`
@@ -56,19 +51,19 @@ export const ContainerIconConnexion = styled.div`
 
 export const IconConnexion = styled.img`
   @media ${Device.mobile} {
-    width: 8vw;
+    width: 3vh;
   }
 `;
 
 export const ContainerConnexionSentence = styled.div`
-  display: inline;
-  align-items: center;
-  justify-content: center;
   @media ${Device.mobile} {
     display: none;
   }
 `;
 
 export const ConnexionSentence = styled.p`
-  font-size: 2.5rem;
+  font-size: 1.5rem;
+  @media ${Device.mobile} {
+    font-size: 1rem;
+  }
 `;
