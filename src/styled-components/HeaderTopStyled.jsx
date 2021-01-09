@@ -5,7 +5,9 @@ export const DivHeaderTop = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   @media ${Device.mobile} {
     justify-content: space-evenly;
     height: 10vh;
