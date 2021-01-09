@@ -38,7 +38,7 @@ export const BlockSentence = styled.div`
 
 export const ContainerAuthorSentence = styled.div`
   max-width: 85vw;
-    font-family: "Noto Sans CJK JP";
+  font-family: "Noto Sans CJK JP";
   line-height: 3em;
   @media ${Device.mobile} {
     display: inline;

@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 import {
   BlockTitle,
-      ContainerTitle,
+  ContainerTitle,
   Title,
   TitleSpan,
   BlockSentence,
