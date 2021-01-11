@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const DivMain = styled.div`
+    padding-top : 10vh
+`;
+
 export const DivInfos = styled.div`
   display: flex;
   justify-content: space-around;
@@ -12,7 +16,7 @@ export const DivCards = styled.div`
   justify-content: center;
   background-color: #2386c9;
   border-radius: 15px;
-  color: white; ;
+  color: white;
 `;
 
 export const DivCardMiddle = styled.div`
@@ -22,19 +26,17 @@ export const DivCardMiddle = styled.div`
   color: white;
   display: flex;
   flex-direction: column;
+
 `;
 
 export const Button = styled.button`
   background-color: #122239;
   color: white;
   border: none;
-  height: 10vh;
-  width: 16vw;
   border-radius: 5px;
   font-weight: bold;
   font-size: 2rem;
-  margin-left: 44vw;
-  margin-top: 7vh;
+  padding : 2vh;
   cursor: pointer;
   &:hover {
     color: grey;
@@ -53,22 +55,36 @@ export const H1 = styled.h1`
 export const H2 = styled.h2`
   text-align: center;
   font-size: 2rem;
+}
+
 `;
+
+export const H2MiddleCard = styled.h2`
+  padding-top : 2vh;
+  font-size: 2rem;
+  text-align : center;
+  `
 
 export const P = styled.p`
   font-size: 1.4rem;
-  text-align: left;
   line-height: 4vh;
+  padding-top : 4vh;
+  font-family : "Noto Sans CJK JP";
+  text-align : center;
 `;
 
 export const Ul = styled.ul`
+padding-top : 2vh;
+padding-bottom : 3vh;
   list-style: none;
   font-size: 1.4rem;
-  padding-right: 4vw;
   line-height: 4vh;
 `;
 export const Li = styled.li`
   line-height: 4vh;
+  text-align : center;
+  font-family : "Noto Sans CJK JP";
+
 `;
 
 export const Card = styled.div`
@@ -90,4 +106,41 @@ export const ImgContainer = styled.img`
 export const CardFlex = styled.div`
   display: flex;
   justify-content: space-around;
-`;
+  padding-top : 9vh;
+  `;
+
+
+  export const DivCenter = styled.div`
+  padding-top: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  `;
+
+  export const PContact = styled.p`  margin-left: 4vw;
+  font-size: 1.4rem;
+  line-height: 4vh;
+  padding-top : 4vh;
+  font-family : "Noto Sans CJK JP";
+  `;
+
+  export const H4 = styled.h4`
+  font-size: 2rem;
+  padding-top : 3vh;
+  text-align : center;
+  `
+
+  export const ImgLogo = styled.img`
+  background-color : #122239;
+  padding : 1.5vh;
+  text-align : center;
+  margin-bottom : 3vh;
+
+  `;
+
+  export const DivLogo = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top : 3vh;
+  `

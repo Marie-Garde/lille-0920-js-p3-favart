@@ -5,6 +5,7 @@ import {
   Button,
   H1,
   H2,
+  H4,
   P,
   Ul,
   Li,
@@ -12,13 +13,20 @@ import {
   Container,
   ImgContainer,
   CardFlex,
+  DivMain,
+  H2MiddleCard,
+  DivCenter,
+  PContact,
+  ImgLogo,
+  DivLogo,
 } from "../styled-components/ActionPage";
 import geffroy from "../assets/ActionImg/Geffroy.jpeg";
 import marsac from "../assets/ActionImg/Marsac.jpeg";
+import linkedin from "../assets/icons/linkedin.png";
 
 export default function ActionPage() {
   return (
-    <div>
+    <DivMain>
       <DivInfos>
         <DivCards>
           <H2>En savoir plus sur nos interventions</H2>
@@ -29,10 +37,8 @@ export default function ActionPage() {
           </P>
         </DivCards>
         <DivCardMiddle>
-          <H2>Agissons ensemble</H2>
-          <P></P>
+          <H2MiddleCard>Agissons ensemble</H2MiddleCard>
           <Ul>
-            Vous souhaitez :
             <Li>
               - Contribuer à nos missions aux Appels à Contributions ouverts sur
               nos engagements actuels et aux Appels à Manifestation d’Intérêt
@@ -54,17 +60,19 @@ export default function ActionPage() {
           </P>
         </DivCards>
       </DivInfos>
-      <Button>Nous rejoindre</Button>
 
+      <DivCenter>
+        <Button>Nous rejoindre</Button>
+      </DivCenter>
       <H1>Notre équipe</H1>
 
       <CardFlex>
         <Card>
           <ImgContainer src={geffroy} alt="#" />
           <Container>
-            <h4>Yoann Geffroy</h4>
-            <p>Directeur-Fondateur</p>
-            <p>
+            <H4>Yoann Geffroy</H4>
+            <P>Directeur-Fondateur</P>
+            <P>
               Yoann est fondateur et directeur de Favart depuis 2009. <br />{" "}
               Expert de l’innovation sociale et du développement de projets à
               fort impact sociétal, Yoann intervient dans la mobilisation du
@@ -73,16 +81,21 @@ export default function ActionPage() {
               outils juridiques hybrides en faveur de projets à fort impact
               (Apprentis d’Auteuil, Foncière Chênelet, Malakoff Humanis,
               Fondation Rexel …).
-            </p>
+            </P>
+            <DivLogo>
+                <a href="https://www.linkedin.com/in/favart/ ">
+                <ImgLogo src={linkedin} alt="logo linkedin" />
+                </a>
+            </DivLogo>
           </Container>
         </Card>
 
         <Card>
           <ImgContainer src={marsac} alt="#" />
           <Container>
-            <h4>Marssac Barthélémy</h4>
-            <p>Profession</p>
-            <p>
+            <H4>Marssac Barthélémy</H4>
+            <P>Responsable Hauts-de-France</P>
+            <P>
               Barthélémy a rejoint Favart en 2017 en tant que responsable des
               activités dans les Hauts-de-France pour y développer des solutions
               à impact. Diplômé du Master in Management de l’ESCEM
@@ -97,14 +110,19 @@ export default function ActionPage() {
               d’entrepreneuriat social, et est personnellement impliqué en tant
               que bénévole auprès de plusieurs associations et initiatives
               citoyennes.
-            </p>
+            </P>
+            <DivLogo>
+                <a href="https://www.linkedin.com/in/barthelemymarsac/ ">
+                <ImgLogo src={linkedin} alt="logo linkedin" />
+                </a>
+            </DivLogo>
           </Container>
         </Card>
       </CardFlex>
 
       <H1>Nous contacter</H1>
       <div>
-        <p>
+        <PContact>
           Lorem ipssum Leo fusce lectus, consectetur augue etiam conubia sapien
           nisi turpis. Natoque maecenas nibh enim facilisi odio sapien risus
           fringilla natoque. Congue porta volutpat non hac parturient rutrum
@@ -114,9 +132,12 @@ export default function ActionPage() {
           iaculis porttitor semper mollis. Posuere lobortis fermentum lorem ut
           quam primis curae; lectus suscipit. Accumsan pellentesque cursus velit
           mi venenatis ante risus felis ante.
-        </p>
-        <Button>Rendez-vous flash</Button>
+        </PContact>
+
+        <DivCenter>
+          <Button>Rendez-vous flash</Button>
+        </DivCenter>
       </div>
-    </div>
+    </DivMain>
   );
 }
