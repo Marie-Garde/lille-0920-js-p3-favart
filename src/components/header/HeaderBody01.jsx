@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import Main from "./Main";
-import Footer from "./Footer";
+import Main from "../Main";
+import Footer from "../Footer";
+import HeaderMenu01 from "./HeaderMenu01";
 
 import {
   ContainerTitle,
@@ -19,6 +20,7 @@ export default function HeaderBody() {
   };
   return (
     <>
+      <HeaderMenu01 />
       <ContainerTitle>
         <Title>
           pourquoi nous <TitleSpan>existons</TitleSpan>?

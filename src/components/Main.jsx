@@ -20,8 +20,6 @@ import {
 export default function MainPage() {
   return (
     <>
-      <HeaderMenu01 />
-      <HeaderBody01 />
       <Body>
         <H1Left>Pourquoi FAVART ?</H1Left>
         <ContainerWhy>
