@@ -10,7 +10,7 @@ import {
   AuthorSentence,
   ContainerMoreInformation,
   MoreInformationSentence,
-} from "../styled-components/HeaderBodyStyled.jsx";
+} from "../../styled-components/header/HeaderBodyStyled.jsx";
 
 export default function HeaderBody() {
   const [visible, setVisible] = useState(false);
