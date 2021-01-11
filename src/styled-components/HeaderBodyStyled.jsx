@@ -14,6 +14,7 @@ export const Title = styled.h1`
   color: black;
   text-transform: uppercase;
   margin-bottom: 5vh;
+  margin-top: 10vh;
 `;
 
 export const TitleSpan = styled.span`

@@ -6,14 +6,12 @@ import HeaderMenu from "./components/HeaderMenu";
 import HeaderTop from "./components/HeaderTop";
 import Mainpage from "./components/Main";
 import Footer from "./components/Footer";
+import AutoplayExemple from "./components/Carousel";
 
 export default function App() {
   return (
     <div>
-      <Reset />
-      <HeaderTop />
-      <HeaderMenu />
-      <HeaderBody />
+      <AutoplayExemple />
     </div>
   );
 }
