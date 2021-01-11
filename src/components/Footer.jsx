@@ -10,7 +10,7 @@ import {
   H1Underline,
   UlIconsMobile,
   Li,
-} from "../Styled-components/Footer";
+} from "../styled-components/Footer";
 
 import { ulMap } from "../assets/others/IconsList";
 

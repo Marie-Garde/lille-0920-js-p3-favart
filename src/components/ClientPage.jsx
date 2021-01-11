@@ -18,7 +18,7 @@ import {
   AgirImg,
   Flash,
   TextFlash,
-} from "../Styled-components/ClientPage";
+} from "../styled-components/ClientPage";
 
 export default function connexion() {
   return (
