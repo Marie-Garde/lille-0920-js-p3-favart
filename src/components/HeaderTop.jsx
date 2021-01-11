@@ -18,7 +18,7 @@ import {
   IconConnexion,
   ContainerConnexionSentence,
   ConnexionSentence,
-} from "../styled-components/HeaderTopStyled.jsx";
+} from "../Styled-components/HeaderTopStyled.jsx";
 
 export default function HeaderTop() {
   return (

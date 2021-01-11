@@ -4,6 +4,7 @@ import { Device } from "../assets/Device/Device";
 export const Body = styled.div`
   color: #e5e5e5;
   font-family: "Roboto", sans-serif;
+  margin-top: 21vh;
 `;
 
 export const H1Left = styled.h1`
