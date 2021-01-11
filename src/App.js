@@ -13,12 +13,8 @@ export default function App() {
     <div>
       <Reset />
       <HeaderTop />
-      <Switch>
-        <Route exact path="/" component={Mainpage} />{" "}
-        <Route path="/agissons" component={Agissons} />{" "}
-        <Route path="/connexion" component={Connexion} />{" "}
-      </Switch>{" "}
-      <Footer />
+      <HeaderMenu />
+      <HeaderBody />
     </div>
   );
 }
