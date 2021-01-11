@@ -64,7 +64,7 @@ export const IdeeForte = styled.h1`
   text-align: center;
   padding-left: 1vw;
   padding-bottom: 2vh;
-  line-height: 1.2em;
+  line-height: 1.2rem;
   @media ${Device.mobile} {
     font-size: 1rem;
   }
