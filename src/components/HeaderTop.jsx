@@ -4,6 +4,7 @@ import twitter from "../assets/logo-icon-header/twitter.svg";
 import linkedin from "../assets/logo-icon-header/linkedin.svg";
 import mail from "../assets/logo-icon-header/mail.svg";
 import connect from "../assets/logo-icon-header/connect.svg";
+import { Link } from "react-router-dom";
 
 import {
   DivHeaderTop,
@@ -32,9 +33,11 @@ export default function HeaderTop() {
         </ContainerIcon>
 
         <ContainerConnexionSentence>
-          <ConnexionSentence>Connexion / Inscription</ConnexionSentence>
+          <ConnexionSentence to="/connexion">
+            Connexion / Inscription
+          </ConnexionSentence>
         </ContainerConnexionSentence>
-        <ContainerIconConnexion>
+        <ContainerIconConnexion to="/connexion">
           <IconConnexion src={connect} alt="logo connexion" />
         </ContainerIconConnexion>
       </DivHeaderTop>
