@@ -14,6 +14,7 @@ import {
   PMap,
   Map,
   List,
+  Testing
 } from "../Styled-components/MainStyle";
 
 export default function MainPage() {
@@ -51,13 +52,13 @@ export default function MainPage() {
       <br></br>
       Notre ambition est d’expérimenter et de développer des solutions de rupture favorisant le passage : <ul>
         <br></br>
-        <li>de l’abondance à la frugalité</li>
+        <li>De l’abondance à la frugalité</li>
         <br/>
-        <li>de l’économie de la rareté et exclusive à l’économie du bien commun et inclusive</li>
+        <li>De l’économie de la rareté et exclusive à l’économie du bien commun et inclusive</li>
         <br/>
-        <li>du pyramidal à l’horizontal et au collaboratif</li>
+        <li>Du pyramidal à l’horizontal et au collaboratif</li>
         <br/>
-        <li>du progrès au bien-être de chacune</li>
+        <li>Du progrès au bien-être de chacune</li>
         </ul>
 
       </PTitle>
@@ -66,58 +67,41 @@ export default function MainPage() {
 
       <ContainerWhom>
         <PWhom>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
-          voluptatum corrupti asperiores dolore ullam quo sunt ratione, aperiam
-          at adipisci tenetur iure reprehenderit minus voluptatem iusto! Iusto
-          laudantium ipsa architecto. Quaerat minus iure ullam quia dignissimos
-          et aspernatur illum velit mollitia rerum consequatur, ipsa ipsum,
-          culpa voluptatem. Accusamus unde repudiandae pariatur explicabo, modi
-          at eos veritatis nulla dolore. Necessitatibus, possimus! Nesciunt
-          totam repudiandae sit quia possimus iste ut quo fugit assumenda soluta
-          corrupti tempora error fuga, vel molestiae perspiciatis blanditiis in
-          suscipit id animi eveniet officiis beatae? Asperiores, quae
-          praesentium. Quasi, laborum optio obcaecati illum laboriosam
-          exercitationem, laudantium molestiae sequi adipisci fugit nulla
-          repellendus pariatur minima. Modi, nihil corporis nobis cumque
-          veritatis facilis ipsa fugit delectus cupiditate dolores eligendi
-          dolore. Esse ea cupiditate ut, reiciendis accusamus rem temporibus
-          dolorem deleniti eos quae eligendi libero consequatur delectus minus
-          quod numquam mollitia? Consectetur, nulla recusandae asperiores
-          adipisci pariatur odit tenetur eveniet quos.
+        Favart accompagne depuis 2009, l’amorçage et le développement de solutions concrètes et radicales capables de transformer la vie des habitants sur les territoires en répondant aux situations de fragilité des :
+        <ul>
+          <li>Personnes : précarité, exclusion</li>
+          <br/>
+          <li>Territoires : pauvreté, chômage, mal-logement</li>
+          <br/>
+          <li>Politiques publiques : éducation, action sociale, santé, sport</li>
+        </ul>
+        Les solutions que nous développons répondent à quatre principes :
+        <ul>
+          <li>Être non extractives en ne consommant aucune ressource rare</li>
+          <br/>
+          <li>Non propriétaires en permettant de rendre les produits-services créés accessibles au plus grand nombre</li>
+          <br/>
+          <li>Inclusives en rendant l'excellence accessible à ceux qui en ont le plus besoin</li>
+          <br/>
+          <li>Être pérenne à travers la recherche d’un profit qui maximise la valeur des capitaux naturels, humains et financiers</li>
+        </ul>
+
         </PWhom>
 
         <ImgWhom
-          src="https://www.sobizhub.org/images/lab%C3%A9lisation_FI_roubaix.jpg"
-          alt="Présentation projet french impact"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS57CPtbyMeYcowMud7zNR9YfejzAy0VKrx_Q&usqp=CAU"
+          alt="Jonas Salk, inventeur du vaccin contre la polio (1ère cause de mortalité chez l’enfant au milieu du XXe siècle) a fait de ce vaccin un bien commun en refusant de le breveter : ”Il n’y a pas de brevet. Pourriez-vous breveter le soleil ?”"
         />
       </ContainerWhom>
 
-      <H2Title>Lorem ipsum dolor set</H2Title>
+      <Testing>"Changer la vie des personnes les plus fragiles.
+Annihiler les situations de précarité sur les territoires."
+</Testing>
 
-      <PTitle>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
-        est! Soluta, magni odio facilis provident quae ducimus perspiciatis
-        tenetur ab! Consectetur praesentium maiores ut corporis ratione quae?
-        Laudantium, amet commodi.Cum hic sit debitis eius dignissimos dolores
-        quas illo, placeat, nam qui, id exercitationem. A sint ab asperiores
-        voluptatibus? Quo repellat nulla natus nobis nostrum facilis earum
-        assumenda velit eaque!
-      </PTitle>
-
-      <H1Left>Notre territorialité</H1Left>
+      <H1Left>Avec qui ?</H1Left>
 
       <PMap>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-        architecto labore cupiditate perspiciatis quibusdam repellat distinctio
-        deserunt voluptatibus harum, sed provident, quas quam neque facilis vel
-        tempora hic. Necessitatibus, ullam? Impedit repellat commodi dolorem
-        doloribus saepe asperiores quis praesentium expedita esse! Qui officia
-        nemo placeat recusandae voluptatem! Mollitia omnis consectetur debitis
-        voluptatibus! Tenetur, laudantium consequuntur hic eveniet eaque
-        distinctio? Similique. Placeat sunt architecto expedita tempora officiis
-        at quaerat distinctio aliquid aspernatur suscipit sed fugit, perferendis
-        libero. Provident, quibusdam minus, sapiente fuga at rerum modi saepe
-        neque enim sunt corporis eius.
+      Mobiliser toutes les compétences disponibles au service des habitants des territoires. Les solutions que nous développons s’adresse aux :
       </PMap>
 
       <Map>

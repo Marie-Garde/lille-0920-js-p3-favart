@@ -107,8 +107,8 @@ export const ContainerWhom = styled.div`
 `;
 
 export const ImgWhom = styled.img`
-  width: 60vh;
-  height: 20vw;
+  width: 50vw;
+  height: 50vh;
   border-radius: 15px;
 
   @media ${device.smallDevices} {
@@ -147,3 +147,8 @@ export const Map = styled.div`
     display: none;
   }
 `;
+
+export const Testing = styled.h3`
+  text-align: center;
+  padding: 3vh 0 3vh 0
+`
