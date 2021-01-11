@@ -38,8 +38,7 @@ export const P = styled.h1`
 
 export const Formulaire = styled.form`
   width: 65vw;
-  float: right;
-  margin-top: 20vh;
+  margin-top: 8vh;
   margin-right: 2vw;
   display: flex;
   font-size: 1.5em;
@@ -57,7 +56,7 @@ export const DivLabel = styled.div`
   display: flex;
   justify-content: start;
   flex-direction: column;
-  margin: 5vh;
+  margin-bottom: 6vh;
   width: 100%;
   height: 2.7vh;
   @media ${Device.mobile} {
@@ -77,7 +76,7 @@ export const DivTheme = styled.div`
 
 export const Label = styled.label`
   color: black;
-  margin-right: 2vw;
+  margin-bottom: 0.5vw;
   width: 30%;
   font-family: "Noto Sans CJK JP";
   @media ${Device.mobile} {
@@ -86,12 +85,27 @@ export const Label = styled.label`
 `;
 
 export const Input = styled.input`
-  width: 40%;
+  width: 50%;
   text-align: center;
   font-family: "Noto Sans CJK JP";
   @media ${Device.mobile} {
     width: 70vw;
   }
+`;
+
+export const Textarea = styled.textarea`
+  width: 71.5%;
+  height: 25vh;
+  text-align: center;
+  font-family: "Noto Sans CJK JP";
+  @media ${Device.mobile} {
+    width: 70vw;
+  }
+`;
+
+export const CheckBox = styled.div`
+  display: flex;
+  font-family: "Noto Sans CJK JP";
 `;
 
 export const StyledButton = styled.input`
