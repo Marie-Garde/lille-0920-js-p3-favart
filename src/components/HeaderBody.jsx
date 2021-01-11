@@ -3,6 +3,7 @@ import Main from "./Main";
 import Footer from "./Footer";
 
 import {
+  Page,
   BlockTitle,
   ContainerTitle,
   Title,
@@ -10,6 +11,7 @@ import {
   BlockSentence,
   ContainerAuthorSentence,
   AuthorSentence,
+  BlockButton,
   ContainerMoreInformation,
   MoreInformationSentence,
 } from "../styled-components/HeaderBodyStyled.jsx";
@@ -21,6 +23,7 @@ export default function HeaderBody() {
   };
   return (
     <>
+    <Page>
       <BlockTitle>
         <ContainerTitle>
           <Title>
@@ -43,6 +46,7 @@ export default function HeaderBody() {
         {visible ? <Main /> : null}
         {visible ? <Footer /> : null}
       </>
-    </>
+      </ Page>
+      </>
   );
 }

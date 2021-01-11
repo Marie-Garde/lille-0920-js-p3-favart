@@ -1,6 +1,11 @@
 import styled from "styled-components";
 import { Device } from "../assets/Device/Device.jsx";
 
+export const Page=styled.div`
+background-color:#E5E5E5 ;
+height:86vh;
+`;
+
 export const BlockTitle = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -54,14 +59,17 @@ export const AuthorSentence = styled.p`
     font-size: 2vh;
   }
 `;
+export const BlockButton = styled.div`
+ background-color:red;
+`;
 
 export const ContainerMoreInformation = styled.button`
   cursor: pointer;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 17.9vh;
-  border: 2px solid #1f89d1;
+position:absolute;
+margin: 0 40vw;
+bottom:0;
   height: 8vh;
+  border:0px;
   width: 20vw;
   border-radius: 200px 200px 0 0;
   background-color: #1f89d1;
