@@ -3,6 +3,7 @@ import { Device } from "../assets/Device/Device";
 
 export const DivHeaderTop = styled.div`
   display: flex;
+  background-color:white;
   align-items: center;
   justify-content: space-evenly;
   position: -webkit-sticky;
