@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Device } from "../assets/Device/Device";
 
 export const DivMain = styled.div`
     padding-top : 10vh
@@ -7,6 +8,13 @@ export const DivMain = styled.div`
 export const DivInfos = styled.div`
   display: flex;
   justify-content: space-around;
+  @media ${Device.mobile} {
+    flex-direction: column;
+    margin-bottom : 0vh;
+align-items : center;
+
+
+}
 `;
 
 export const DivCards = styled.div`
@@ -17,6 +25,13 @@ export const DivCards = styled.div`
   background-color: #2386c9;
   border-radius: 15px;
   color: white;
+  @media ${Device.mobile} {
+    width: 80%;
+    margin-bottom : 6vh;
+    padding-bottom : 3vh;
+    padding-top : 3vh;
+
+}
 `;
 
 export const DivCardMiddle = styled.div`
@@ -26,7 +41,12 @@ export const DivCardMiddle = styled.div`
   color: white;
   display: flex;
   flex-direction: column;
-
+  @media ${Device.mobile} {
+    width: 80%;
+    margin-bottom : 6vh;
+    padding-bottom : 3vh;
+    padding-top : 3vh;
+}
 `;
 
 export const Button = styled.button`
@@ -42,6 +62,9 @@ export const Button = styled.button`
     color: grey;
     transition-duration: 500ms;
   }
+  @media ${Device.mobile} {
+    font-size: 1rem;
+  }
 `;
 
 export const H1 = styled.h1`
@@ -50,11 +73,18 @@ export const H1 = styled.h1`
   font-size: 4rem;
   margin-left: 4vw;
   margin-top: 8vh;
+  @media ${Device.mobile} {
+    font-size: 2.2rem;
+  }
+ 
 `;
 
 export const H2 = styled.h2`
   text-align: center;
   font-size: 2rem;
+  @media ${Device.mobile} {
+    font-size: 1.4rem;
+  }
 }
 
 `;
@@ -63,6 +93,9 @@ export const H2MiddleCard = styled.h2`
   padding-top : 2vh;
   font-size: 2rem;
   text-align : center;
+  @media ${Device.mobile} {
+    font-size: 1.4rem;
+  }
   `
 
 export const P = styled.p`
@@ -71,6 +104,9 @@ export const P = styled.p`
   padding-top : 4vh;
   font-family : "Noto Sans CJK JP";
   text-align : center;
+  @media ${Device.mobile} {
+    font-size: 1rem;
+  }
 `;
 
 export const Ul = styled.ul`
@@ -84,7 +120,9 @@ export const Li = styled.li`
   line-height: 4vh;
   text-align : center;
   font-family : "Noto Sans CJK JP";
-
+  @media ${Device.mobile} {
+    font-size: 1rem;
+  }
 `;
 
 export const Card = styled.div`
@@ -94,10 +132,15 @@ export const Card = styled.div`
   &:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   }
+  @media ${Device.mobile} {
+    width : 80%;
+    margin-bottom : 5vh;
+}
 `;
 
 export const Container = styled.div`
   padding: 2px 16px;
+
 `;
 
 export const ImgContainer = styled.img`
@@ -107,6 +150,12 @@ export const CardFlex = styled.div`
   display: flex;
   justify-content: space-around;
   padding-top : 9vh;
+  @media ${Device.mobile} {
+    flex-direction: column;
+    margin-bottom : 2vh;
+    align-items : center;
+
+}
   `;
 
 
@@ -115,6 +164,10 @@ export const CardFlex = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media ${Device.mobile} {
+    padding-top: 0vh;
+
+  }
   `;
 
   export const PContact = styled.p`  margin-left: 4vw;
@@ -122,6 +175,10 @@ export const CardFlex = styled.div`
   line-height: 4vh;
   padding-top : 4vh;
   font-family : "Noto Sans CJK JP";
+  @media ${Device.mobile} {
+    font-size: 1rem;
+    padding-bottom : 5vh;
+  }
   `;
 
   export const H4 = styled.h4`
