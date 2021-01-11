@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Device } from "../assets/Device/Device";
 
 export const P = styled.p`
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   text-align: center;
   margin-top: 3vh;
   margin-bottom: 6vh;
@@ -64,7 +64,7 @@ export const IdeeForte = styled.h1`
   text-align: center;
   padding-left: 1vw;
   padding-bottom: 2vh;
-  line-height: 1.2em;
+  line-height: 1.2rem;
   @media ${Device.mobile} {
     font-size: 1rem;
   }
