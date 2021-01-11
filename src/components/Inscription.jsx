@@ -12,6 +12,12 @@ import {
   StyledButton,
   Textarea,
   CheckBox,
+  DivLabelCheckBox,
+  TextareaAutre,
+  TextareaEnvies,
+  DivLabelText,
+  InputSite,
+  LabelCheckBox,
 } from "../styled-components/Inscription";
 
 export default function Inscription() {
@@ -25,22 +31,22 @@ export default function Inscription() {
         <Formulaire>
           <fieldset>
             <DivLabel>
-              <Label>Lastname *</Label>
+              <Label>Prénom *</Label>
               <Input
                 type="text"
                 name="name"
                 id="name"
-                placeholder="Lastname"
+                placeholder="Prénom"
                 required
               />
             </DivLabel>
             <DivLabel>
-              <Label>Firstname *</Label>
+              <Label>Nom *</Label>
               <Input
                 type="text"
                 name="firstname"
                 id="firstname"
-                placeholder="Firstname"
+                placeholder="Nom"
                 required
               />
             </DivLabel>
@@ -90,11 +96,11 @@ export default function Inscription() {
                 type="text"
                 name="message"
                 id="message"
-                placeholder="Votre domaine"
+                placeholder="Domaine d'activité"
               />
             </DivLabel>
-            <DivLabel>
-              <Label>Participe : </Label>
+            <DivLabelCheckBox>
+              <LabelCheckBox>Votre territoire d'actions </LabelCheckBox>
               <CheckBox>
                 <FormCheckbox inline>Haut-de-France</FormCheckbox>
                 <FormCheckbox inline>Ile-de-France</FormCheckbox>
@@ -102,9 +108,35 @@ export default function Inscription() {
                 <FormCheckbox inline>Normandie</FormCheckbox>
                 <FormCheckbox inline>National</FormCheckbox>
               </CheckBox>
-            </DivLabel>
-
-            <StyledButton type="submit" value="Send" />
+            </DivLabelCheckBox>
+            <DivLabelText>
+              <Label>Autre, précisez</Label>
+              <TextareaAutre
+                type="text"
+                name="precisez"
+                id="message"
+                placeholder="Autre, précisez"
+              />
+            </DivLabelText>
+            <DivLabelText>
+              <Label>Vos envies</Label>
+              <TextareaEnvies
+                type="text"
+                name="envies"
+                id="message"
+                placeholder="Vos envies"
+              />
+            </DivLabelText>
+            <DivLabelText>
+              <Label>Votre site internet</Label>
+              <InputSite
+                type="text"
+                name="Site internet"
+                id="SiteInternet"
+                placeholder="Votre site internet"
+              />
+            </DivLabelText>
+            <StyledButton type="submit" value="Envoyer" />
           </fieldset>
         </Formulaire>
       </FlexBox2>
