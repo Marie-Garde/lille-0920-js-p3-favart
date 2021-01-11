@@ -2,13 +2,13 @@ import styled from "styled-components";
 import { device } from "../Assets/Device/Device";
 
 export const Body = styled.div`
-  color: #e5e5e5;
   font-family: "Roboto", sans-serif;
+  background-color: #D3D3D3;
 `;
 
 export const H1Left = styled.h1`
   color: #122239;
-  margin: 5vh 0 1vh 7vw;
+  margin: 0 0 1vh 7vw;
   font-size: 3rem;
 
   @media ${device.smallDevices} {
@@ -33,10 +33,15 @@ export const ContainerWhy = styled.div`
   }
 `;
 
+export const List = styled.ul`
+  padding-left:0;
+`
+
 export const PWhy = styled.p`
   padding-left: 3vw;
   font-size: 1.2rem;
   color: black;
+  line-height: 140%;
 
   @media ${device.smallDevices} {
     text-align: justify;
@@ -45,8 +50,8 @@ export const PWhy = styled.p`
 `;
 
 export const ImgWhy = styled.img`
-  width: 50vh;
-  height: 20vw;
+  width: 30vw;
+  height: 40vh;
   border-radius: 15px;
 
   @media ${device.smallDevices} {
@@ -63,10 +68,11 @@ export const H2Title = styled.h2`
 `;
 
 export const PTitle = styled.p`
-  text-align: center;
+  text-align: justify;
   font-size: 1.2rem;
   margin: 2vh 7vw 8vh 7vw;
   color: black;
+  line-height: 140%;
 `;
 
 export const H1Right = styled.h1`
