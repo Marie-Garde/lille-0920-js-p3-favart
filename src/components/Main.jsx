@@ -1,6 +1,6 @@
 import React from "react";
-import HeaderMenu01 from "./Header/HeaderMenu01";
-import HeaderBody01 from "./Header/HeaderBody01";
+import HeaderMenu01 from "./header/HeaderMenu01";
+import HeaderBody01 from "./header/HeaderBody01";
 import {
   H1Left,
   ContainerWhy,
