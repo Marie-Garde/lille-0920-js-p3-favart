@@ -1,4 +1,5 @@
 import React from "react";
+import HeaderBody from "./HeaderBody01";
 
 import {
   ContainerHeaderMenu,
@@ -17,6 +18,7 @@ export default function HeaderMenu() {
           <MenuLink href="">/ 04</MenuLink>
         </ContainerHeaderMenuLink>
       </ContainerHeaderMenu>
+      <HeaderBody />
     </>
   );
 }
