@@ -10,12 +10,27 @@ export const Container = styled.div`
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 1vw;
+  @media ${Device.mobile} {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 50vw;
+  } ;
 `;
 export const Title = styled.h2`
   font-size: 1.5rem;
+  @media ${Device.mobile} {
+    font-size: 1rem;
+  }
 `;
 export const Details1 = styled.p`
   opacity: 0;
+  @media ${Device.mobile} {
+    opacity: 1;
+  }
 `;
 
 export const Grid1 = styled.div`
@@ -34,6 +49,11 @@ export const Grid1 = styled.div`
       opacity: 1;
       transition: opacity 0.3s ease;
     }
+  }
+  @media ${Device.mobile} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
