@@ -3,7 +3,6 @@ import { device } from "../Assets/Device/Device";
 
 export const Body = styled.div`
   font-family: "Roboto", sans-serif;
-  background-color: #D3D3D3;
 `;
 
 export const H1Left = styled.h1`
@@ -11,7 +10,7 @@ export const H1Left = styled.h1`
   margin: 0 0 1vh 7vw;
   font-size: 3rem;
 
-  @media ${device.smallDevices} {
+  @media ${device.mobile} {
     text-align: center;
     font-size: 2.3rem;
     margin: 5vh 0 3vh 0;
@@ -27,15 +26,19 @@ export const ContainerWhy = styled.div`
   text-align: justify;
   align-items: center;
 
-  @media ${device.smallDevices} {
+  @media ${device.mobile} {
     display: flex;
     flex-direction: column-reverse;
   }
 `;
 
 export const List = styled.ul`
-  padding-left:0;
-`
+  padding-left: 1.5vw;
+
+  @media ${device.mobile} {
+    padding-left: 5vw;
+  }
+`;
 
 export const PWhy = styled.p`
   padding-left: 3vw;
@@ -43,7 +46,7 @@ export const PWhy = styled.p`
   color: black;
   line-height: 140%;
 
-  @media ${device.smallDevices} {
+  @media ${device.mobile} {
     text-align: justify;
     padding-left: 0;
   }
@@ -54,9 +57,10 @@ export const ImgWhy = styled.img`
   height: 40vh;
   border-radius: 15px;
 
-  @media ${device.smallDevices} {
+  @media ${device.mobile} {
     width: 90vw;
     height: 40vh;
+    display: none
   }
 `;
 
@@ -82,7 +86,7 @@ export const H1Right = styled.h1`
   margin: 0 7vw 1vh 0;
   font-size: 3rem;
 
-  @media ${device.smallDevices} {
+  @media ${device.mobile} {
     text-align: center;
     font-size: 2.3rem;
     margin: 0 0 1vh 0;
@@ -100,7 +104,7 @@ export const ContainerWhom = styled.div`
   align-items: center;
   margin: 0 7vw 0 7vw;
 
-  @media ${device.smallDevices} {
+  @media ${device.mobile} {
     display: flex;
     flex-direction: column;
   }
@@ -111,9 +115,10 @@ export const ImgWhom = styled.img`
   height: 50vh;
   border-radius: 15px;
 
-  @media ${device.smallDevices} {
+  @media ${device.mobile} {
     width: 90vw;
     height: 40vh;
+    display: none
   }
 `;
 
@@ -122,10 +127,11 @@ export const PWhom = styled.p`
   font-size: 1.2rem;
   color: black;
 
-  @media ${device.smallDevices} {
+  @media ${device.mobile} {
     display: flex;
     justify-content: center;
     padding: 0;
+    flex-direction: column
   }
 `;
 
@@ -135,7 +141,7 @@ export const PMap = styled.p`
   font-size: 1.2rem;
   text-align: justify;
 
-  @media ${device.smallDevices} {
+  @media ${device.mobile} {
   }
 `;
 
@@ -143,12 +149,31 @@ export const Map = styled.div`
   text-align: center;
   margin: 5vh 0 5vh 0;
 
-  @media ${device.smallDevices} {
+  @media ${device.mobile} {
     display: none;
   }
 `;
 
-export const Testing = styled.h3`
+export const SubTitle = styled.h3`
   text-align: center;
-  padding: 3vh 0 3vh 0
+  padding: 6vh 0 6vh 0;
+`;
+
+export const Bold = styled.span`
+  font-weight: bold;
+`;
+
+export const Listli = styled.li`
+  padding: 1vh;
+  
+  @media ${device.mobile} {
+    padding: 2vh;
+  }
+`;
+
+export const ListliWhom = styled.li`
+  padding: 1vh;
+
+  @media ${device.mobile} {
+  }
 `
