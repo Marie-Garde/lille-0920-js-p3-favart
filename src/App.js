@@ -6,6 +6,7 @@ import Mainpage from "./components/Main";
 import Footer from "./components/Footer";
 import Agissons from "./components/Agissons";
 import Inscription from "./components/Inscription";
+import ActionPage from "./components/ActionPage"
 
 import { Switch, Route } from "react-router-dom";
 
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/agissons" component={Agissons} />
         <Route path="/connexion" component={Connexion} />
         <Route path="/inscription" component={Inscription} />
+        <Route path="/action" component={ActionPage} />
       </Switch>
       <Footer />
     </div>
