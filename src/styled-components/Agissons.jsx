@@ -381,13 +381,13 @@ export const Text4 = styled.h2`
 `;
 
 export const Liste4 = styled.ul`
-  font-size: 1em;
+  font-size: 1rem;
   list-style: square;
   padding-left: 2vw;
   font-family: "Noto Sans CJK JP";
   line-height: 1.2em;
   @media ${Device.mobile} {
-    font-size: 0.85em;
+    font-size: 0.85rem;
     text-align: center;
     list-style: none;
     padding-left: 0vw;
