@@ -5,6 +5,7 @@ import {
   ContainerHeaderMenu,
   ContainerHeaderMenuLink,
   MenuLink,
+  MenuLinkMain,
 } from "../../styled-components/header/HeaderMenuStyled.jsx";
 
 export default function HeaderMenu() {
@@ -12,10 +13,10 @@ export default function HeaderMenu() {
     <>
       <ContainerHeaderMenu>
         <ContainerHeaderMenuLink>
-          <MenuLink to="/">01 - Favart </MenuLink>
-          <MenuLink to="/agissons">/ 02 /</MenuLink>
-          <MenuLink href=""> 03 </MenuLink>
-          <MenuLink href="">/ 04</MenuLink>
+          <MenuLinkMain to="/">01 - Favart /</MenuLinkMain>
+          <MenuLink to="/agissons"> 02 /</MenuLink>
+          <MenuLink href=""> 03 / </MenuLink>
+          <MenuLink href=""> 04</MenuLink>
         </ContainerHeaderMenuLink>
       </ContainerHeaderMenu>
       <HeaderBody />

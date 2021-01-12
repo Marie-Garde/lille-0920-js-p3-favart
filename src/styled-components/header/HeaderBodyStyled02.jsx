@@ -21,10 +21,10 @@ export const ContainerTitle = styled.div`
   }
 `;
 export const Title = styled.h1`
-  font-size: 15vh;
+  font-size: 17vh;
   color: black;
   text-transform: uppercase;
-  font-family: "JosefinSans";
+  font-family: "Josefin Sans";
 `;
 
 export const TitleSpan = styled.span`
@@ -54,6 +54,7 @@ export const ContainerAuthorSentence = styled.div`
 export const AuthorSentence = styled.p`
   font-size: 4vh;
   font-style: italic;
+  font-family: "Josefin Sans";
   color: black;
   @media ${Device.mobile} {
     font-size: 2vh;
@@ -71,7 +72,7 @@ export const ContainerMoreInformation = styled.button`
   height: 8vh;
   border: 0px;
   width: 20vw;
-  border-radius: 200px 200px 0 0;
+  border-radius: 20px 20px 0 0;
   background-color: #1f89d1;
   display: flex;
   justify-content: center;

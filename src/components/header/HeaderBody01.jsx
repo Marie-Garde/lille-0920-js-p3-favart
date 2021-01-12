@@ -27,16 +27,16 @@ export default function HeaderBody() {
         <BlockTitle>
           <ContainerTitle>
             <Title>
-              pourquoi nous <TitleSpan>existons </TitleSpan> ?
+              pourquoi nous <TitleSpan>existons </TitleSpan>
             </Title>
           </ContainerTitle>
         </BlockTitle>
         <BlockSentence>
           <ContainerAuthorSentence>
             <AuthorSentence>
-              "Atteindre le plus grand nombre en mettant
+              "Atteindre le plus grand nombre en mettant la barre très haut"
+              Agnès Varda
             </AuthorSentence>
-            <AuthorSentence> la barre très haut" Agnès Varda</AuthorSentence>
           </ContainerAuthorSentence>
         </BlockSentence>
         <>

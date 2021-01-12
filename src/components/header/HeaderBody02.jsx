@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Main from "../Main";
+import Agissons from "../Agissons";
 import Footer from "../Footer";
 
 import {
@@ -14,7 +14,7 @@ import {
   BlockButton,
   ContainerMoreInformation,
   MoreInformationSentence,
-} from "../../styled-components/header/HeaderBodyStyled.jsx";
+} from "../../styled-components/header/HeaderBodyStyled02.jsx";
 
 export default function HeaderBody() {
   const [visible, setVisible] = useState(false);
@@ -34,16 +34,16 @@ export default function HeaderBody() {
         <BlockSentence>
           <ContainerAuthorSentence>
             <AuthorSentence>
-              "Il faut être enthousiaste de son métier pour y
+              "Il faut être enthousiaste de son métier pour y exceller", Denis
+              Diderot
             </AuthorSentence>
-            <AuthorSentence>exceller", Denis Diderot</AuthorSentence>
           </ContainerAuthorSentence>
         </BlockSentence>
         <>
           <ContainerMoreInformation visible={visible} onClick={onClick}>
             <MoreInformationSentence>En savoir plus</MoreInformationSentence>
           </ContainerMoreInformation>
-          {visible ? <Main /> : null}
+          {visible ? <Agissons /> : null}
           {visible ? <Footer /> : null}
         </>
       </Page>
