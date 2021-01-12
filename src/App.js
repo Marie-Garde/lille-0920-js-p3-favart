@@ -18,7 +18,7 @@ export default function App() {
         <Route exact path="/" component={Mainpage} />
         <Route path="/agissons" component={Agissons} />
         <Route path="/connexion" component={Connexion} />
-    <Route path="/inscription" component={Inscription} />
+        <Route path="/inscription" component={Inscription} />
       </Switch>
       <Footer />
     </div>

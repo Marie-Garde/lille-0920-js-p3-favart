@@ -43,7 +43,6 @@ export const AuthorSentence = styled.p`
   }
 `;
 
-
 export const ContainerMoreInformation = styled.button`
   cursor: pointer;
   margin-right: auto;
