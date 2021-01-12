@@ -1,5 +1,9 @@
 import styled from "styled-components";
 import { Device } from "../assets/Device/Device";
+import experimentation from "../assets/Agissons/experimentation.jpg";
+import communauté from "../assets/Agissons/communauté.jpg";
+import economique from "../assets/Agissons/economique.jpg";
+import juridique from "../assets/Agissons/juridique.png";
 
 export const P = styled.p`
   font-size: 2.5rem;
@@ -25,12 +29,14 @@ export const Card = styled.div`
   margin-top: 5vh;
   margin-left: 11vw;
   position: relative;
-  -webkit-box-shadow: 0px 10px 25px -4px rgba(0, 0, 0, 0.65);
-  -moz-box-shadow: 0px 10px 25px -4px rgba(0, 0, 0, 0.65);
-  box-shadow: 0px 10px 25px -4px rgba(0, 0, 0, 0.65);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
   @media ${Device.mobile} {
     width: 90vw;
-    height: 90vh;
+    height: 100vh;
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
@@ -82,27 +88,16 @@ export const Text = styled.h2`
   }
 `;
 
-export const Liste = styled.ul`
-  font-size: 1rem;
-  list-style: square;
-  padding-left: 2vw;
-  font-family: "Noto Sans CJK JP";
-  line-height: 1.2rem;
-  @media ${Device.mobile} {
-    font-size: 0.85rem;
-    text-align: center;
-    list-style: none;
-  }
-`;
-
 export const CardImg = styled.img`
   width: 30vw;
   position: absolute;
   left: 90vh;
   border: 2px solid;
-  -webkit-box-shadow: 0px 10px 25px -4px rgba(0, 0, 0, 0.65);
-  -moz-box-shadow: 0px 10px 25px -4px rgba(0, 0, 0, 0.65);
-  box-shadow: 0px 10px 25px -4px rgba(0, 0, 0, 0.65);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
   @media ${Device.mobile} {
     width: 60vw;
     left: 14vw;
@@ -125,7 +120,7 @@ export const Card2 = styled.div`
   box-shadow: 0px 10px 25px -4px rgba(0, 0, 0, 0.65);
   @media ${Device.mobile} {
     width: 90vw;
-    height: 70vh;
+    height: 85vh;
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
@@ -181,20 +176,6 @@ export const Text2 = styled.h2`
   }
 `;
 
-export const Liste2 = styled.ul`
-  font-size: 1rem;
-  list-style: square;
-  padding-left: 2vw;
-  font-family: "Noto Sans CJK JP";
-  line-height: 1.2rem;
-  @media ${Device.mobile} {
-    font-size: 0.85rem;
-    text-align: center;
-    list-style: none;
-    padding-left: 0vw;
-  }
-`;
-
 export const CardImg2 = styled.img`
   width: 30vw;
   position: absolute;
@@ -225,7 +206,7 @@ export const Card3 = styled.div`
   box-shadow: 0px 10px 25px -4px rgba(0, 0, 0, 0.65);
   @media ${Device.mobile} {
     width: 90vw;
-    height: 65vh;
+    height: 87vh;
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
@@ -279,19 +260,6 @@ export const Text3 = styled.h2`
   }
 `;
 
-export const Liste3 = styled.ul`
-  font-size: 1rem;
-  list-style: square;
-  padding-left: 2vw;
-  font-family: "Noto Sans CJK JP";
-  line-height: 1.2rem;
-  @media ${Device.mobile} {
-    font-size: 0.85rem;
-    text-align: center;
-    list-style: none;
-  }
-`;
-
 export const CardImg3 = styled.img`
   width: 30vw;
   position: absolute;
@@ -323,7 +291,7 @@ export const Card4 = styled.div`
   box-shadow: 0px 10px 25px -4px rgba(0, 0, 0, 0.65);
   @media ${Device.mobile} {
     width: 90vw;
-    height: 60vh;
+    height: 85vh;
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
@@ -380,20 +348,6 @@ export const Text4 = styled.h2`
   }
 `;
 
-export const Liste4 = styled.ul`
-  font-size: 1rem;
-  list-style: square;
-  padding-left: 2vw;
-  font-family: "Noto Sans CJK JP";
-  line-height: 1.2em;
-  @media ${Device.mobile} {
-    font-size: 0.85rem;
-    text-align: center;
-    list-style: none;
-    padding-left: 0vw;
-  }
-`;
-
 export const CardImg4 = styled.img`
   width: 30vw;
   position: absolute;
@@ -407,4 +361,84 @@ export const CardImg4 = styled.img`
     left: 14vw;
     bottom: -19vh;
   }
+`;
+
+export const Ingenieries = styled.div`
+  display: flex;
+  justify-content: space-around;
+  margin-right: 8.5vw;
+  margin-left: 8.5vw;
+  margin-bottom: 8vh;
+  @media ${Device.mobile} {
+  }
+`;
+
+export const Button1 = styled.a`
+  position: relative;
+  background-color: black;
+  border: solid 1px black;
+  width: 15vw;
+  height: 12vh;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+  @media ${Device.mobile} {
+    display: none;
+  }
+`;
+
+export const P1 = styled.p`
+  font-size: 3rem;
+  font-family: "Josefin Sans";
+  position: absolute;
+  left: 12%;
+  top: 30%;
+  color: white;
+`;
+
+export const P2 = styled.p`
+  font-size: 3rem;
+  font-family: "Josefin Sans";
+  position: absolute;
+  left: 2%;
+  top: 30%;
+  color: white;
+`;
+
+export const P3 = styled.p`
+  font-size: 3rem;
+  font-family: "Josefin Sans";
+  position: absolute;
+  left: 8%;
+  top: 30%;
+  color: white;
+`;
+
+export const Explorer = styled.img`
+  width: 15vw;
+  height: 12vh;
+  opacity: 50%;
+`;
+
+export const Engager = styled.img`
+  width: 15vw;
+  height: 12vh;
+  opacity: 50%;
+`;
+
+export const Construire = styled.img`
+  width: 15vw;
+  height: 12vh;
+  opacity: 50%;
+`;
+
+export const Deployer = styled.img`
+  width: 15vw;
+  height: 12vh;
+  opacity: 50%;
 `;

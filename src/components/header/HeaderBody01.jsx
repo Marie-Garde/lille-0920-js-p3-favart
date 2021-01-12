@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Main from "./Main";
-import Footer from "./Footer";
+import Main from "../Main";
+import Footer from "../Footer";
 
 import {
   ContainerTitle,
