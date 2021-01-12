@@ -60,7 +60,7 @@ export const ImgWhy = styled.img`
   @media ${device.mobile} {
     width: 90vw;
     height: 40vh;
-    display: none
+    display: none;
   }
 `;
 
@@ -118,7 +118,7 @@ export const ImgWhom = styled.img`
   @media ${device.mobile} {
     width: 90vw;
     height: 40vh;
-    display: none
+    display: none;
   }
 `;
 
@@ -131,7 +131,7 @@ export const PWhom = styled.p`
     display: flex;
     justify-content: center;
     padding: 0;
-    flex-direction: column
+    flex-direction: column;
   }
 `;
 
@@ -165,7 +165,7 @@ export const Bold = styled.span`
 
 export const Listli = styled.li`
   padding: 1vh;
-  
+
   @media ${device.mobile} {
     padding: 2vh;
   }
@@ -176,4 +176,4 @@ export const ListliWhom = styled.li`
 
   @media ${device.mobile} {
   }
-`
+`;

@@ -16,7 +16,7 @@ import {
   SubTitle,
   Bold,
   Listli,
-  ListliWhom
+  ListliWhom,
 } from "../Styled-components/MainStyle";
 
 export default function MainPage() {
@@ -93,12 +93,16 @@ export default function MainPage() {
           des :
           <List>
             <ListliWhom>Personnes : précarité, exclusion</ListliWhom>
-            <ListliWhom>Territoires : pauvreté, chômage, mal-logement</ListliWhom>
+            <ListliWhom>
+              Territoires : pauvreté, chômage, mal-logement
+            </ListliWhom>
             <ListliWhom>
               Politiques publiques : éducation, action sociale, santé, sport
             </ListliWhom>
           </List>
-          <p>Les solutions que nous développons répondent à quatre principes :</p>
+          <p>
+            Les solutions que nous développons répondent à quatre principes :
+          </p>
           <List>
             <ListliWhom>
               Être non extractives en ne consommant aucune ressource rare
