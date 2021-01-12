@@ -3,8 +3,7 @@ import { Reset } from "styled-reset";
 import Connexion from "./components/Connexion";
 import HeaderTop from "./components/HeaderTop";
 import Mainpage from "./components/header/HeaderMenu01";
-import Footer from "./components/Footer";
-import Agissons from "./components/Agissons";
+import Agissons from "./components/header/HeaderMenu02";
 
 import { Switch, Route } from "react-router-dom";
 
