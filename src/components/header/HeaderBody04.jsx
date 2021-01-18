@@ -13,7 +13,7 @@ import {
   AuthorSentence,
   ContainerMoreInformation,
   MoreInformationSentence,
-} from "../../styled-components/header/HeaderBodyStyled03.jsx";
+} from "../../styled-components/header/HeaderBodyStyled04.jsx";
 
 export default function HeaderBody() {
   const [visible, setVisible] = useState(false);
