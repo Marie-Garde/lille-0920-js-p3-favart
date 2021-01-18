@@ -31,7 +31,7 @@ export const MenuLink = styled(Link)`
   }
 `;
 
-export const MenuLinkAction = styled(Link)`
+export const MenuLinkSommaire = styled(Link)`
   font-size: 1.5rem;
   color: white;
   font-family: "Josefin Sans";

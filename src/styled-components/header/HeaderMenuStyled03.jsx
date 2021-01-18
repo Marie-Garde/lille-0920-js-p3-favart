@@ -13,7 +13,7 @@ export const ContainerHeaderMenu = styled.div`
   @media ${Device.mobile} {
     display: flex;
     justify-content: center;
-    height: 7vh;
+    height: 10vh;
   }
 `;
 
