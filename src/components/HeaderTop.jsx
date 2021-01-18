@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
 import {
   DivHeaderTop,
   Logo,
-  ContainerLogo,
   ContainerIcon,
   IconTwitter,
   IconLinkedin,
@@ -24,9 +23,7 @@ export default function HeaderTop() {
   return (
     <>
       <DivHeaderTop>
-        <ContainerLogo to="/">
-          <Logo src={logo} alt="logo favart" />
-        </ContainerLogo>
+        <Logo src={logo} alt="logo favart" />
         <ContainerIcon>
           <IconTwitter src={twitter} alt="logo twitter" />
 
