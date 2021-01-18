@@ -3,6 +3,9 @@ import {
   FlexBox,
   FlexBox1,
   FlexBox2,
+  H1,
+  P,
+  Img
 } from "../styled-components/RessourcePage";
 
 import documents from "../assets/Documents/Ressource";
@@ -15,10 +18,10 @@ export default function RessourcePage() {
         {documents.map((card) => (
           <DivCard>
             <a href={card.link}>
-              <img src={card.aperçu} alt="" />
+              <Img src={card.aperçu} alt="" />
             </a>
-            <p>{card.titre}</p>
-            <p>{card.resume}</p>
+            <H1>{card.titre}</H1>
+            <P>{card.resume}</P>
           </DivCard>
         ))}
       </FlexBox2>

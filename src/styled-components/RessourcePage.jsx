@@ -26,10 +26,8 @@ export const FlexBox1 = styled.div`
 export const FlexBox2 = styled.div`
 width: 75%;
   display: flex;
-  justify-content:space-between;
+  justify-content:space-around;
   flex-wrap: wrap;
-  padding-right: 3vw;
-  padding-left: 3vw;
   padding-top: 15vh;
 `;
 
@@ -37,4 +35,20 @@ export const DivCard = styled.div`
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   height: 50vh;
+  width : 40%;
 `;
+
+export const H1 = styled.h1`
+font-size : 1.7rem;
+padding-top : 2vh;
+padding-left : 2vh;
+`;
+
+export const P = styled.p`
+font-size : 1.2rem;
+padding-top : 4vh;
+padding-left : 2vh;
+`;
+
+export const Img = styled.img`
+width : 100%`;
