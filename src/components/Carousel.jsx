@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { Slide } from "react-slideshow-image";
 import 'react-slideshow-image/dist/styles.css';
 import {SlideStyle, Img, Carousel} from '../styled-components/CarouselStyle';
-import logo5678 from '../assets/images/logo5678.png';
-import logo1234 from '../assets/images/logo1234.png'
-import logo9101112 from '../assets/images/logo9101112.png';
+import carousel1 from '../assets/images/carousel1.png';
+import carousel2 from '../assets/images/carousel2.png'
+import carousel3 from '../assets/images/carousel3.png';
 
 
 const AutoplayExample = () => {
@@ -15,13 +15,13 @@ const AutoplayExample = () => {
       <Carousel>
         <Slide autoplay={autoplay}>
           <SlideStyle>
-            <Img src={logo1234} />
+            <Img src={carousel1} />
           </SlideStyle>
           <SlideStyle>
-            <Img src={logo5678} />
+            <Img src={carousel2} />
           </SlideStyle>
           <SlideStyle>
-            <Img src={logo9101112}/>
+            <Img src={carousel3}/>
           </SlideStyle>
         </Slide>
       </Carousel>
