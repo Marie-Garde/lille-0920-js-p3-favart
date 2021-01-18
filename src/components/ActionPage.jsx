@@ -29,6 +29,7 @@ import linkedin from "../assets/icons/linkedin.png";
 export default function ActionPage() {
   return (
     <DivMain>
+      <H1>Expérimentons ensemble !</H1>
       <DivInfos>
         <DivCards>
           <H2>En savoir plus sur nos interventions</H2>
@@ -55,7 +56,7 @@ export default function ActionPage() {
             <Li>- Engager une action commune avec Favart</Li>
             <Li>- Solliciter l’engagement de Favart dans vos dynamiques</Li>
           </Ul>
-            <ButtonCardMiddle>Nous rejoindre</ButtonCardMiddle>
+          <ButtonCardMiddle>Nous rejoindre</ButtonCardMiddle>
         </DivCardMiddle>
         <DivCards>
           <H2>Echangeons ensemble</H2>

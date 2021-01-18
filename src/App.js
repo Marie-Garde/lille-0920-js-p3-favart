@@ -6,7 +6,7 @@ import Mainpage from "./components/Main";
 import Footer from "./components/Footer";
 import Agissons from "./components/Agissons";
 import Inscription from "./components/Inscription";
-import ActionPage from "./components/ActionPage"
+import ActionPage from "./components/ActionPage";
 
 import { Switch, Route } from "react-router-dom";
 

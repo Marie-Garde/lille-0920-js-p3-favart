@@ -4,6 +4,7 @@ import { Device } from "../assets/Device/Device";
 export const DivMain = styled.div`
   padding-top: 10vh;
   background-color: #e5e5e5;
+  font-family: "Noto Sans CJK JP";
 `;
 
 //Informations cards
@@ -58,7 +59,6 @@ export const Li = styled.li`
   line-height: 3.5vh;
   margin-left: 4vh;
   margin-right: 2vh;
-  font-family: "Noto Sans CJK JP";
   @media ${Device.mobile} {
     font-size: 1rem;
   }
@@ -93,7 +93,7 @@ export const Button = styled.button`
   border-radius: 5px;
   font-weight: bold;
   font-size: 2rem;
-  margin-top: 5vh;
+  margin-top: 8.9vh;
   padding: 2vh;
   cursor: pointer;
   &:hover {
@@ -163,7 +163,6 @@ export const P = styled.p`
   font-size: 1.4rem;
   line-height: 3vh;
   padding-top: 4vh;
-  font-family: "Noto Sans CJK JP";
   margin-left: 4vh;
   margin-right: 2vh;
   @media ${Device.mobile} {
@@ -175,6 +174,7 @@ export const H1 = styled.h1`
   font-weight: bold;
   color: #122239;
   font-size: 4rem;
+  padding-bottom: 6vh;
   margin-left: 4vw;
   margin-top: 8vh;
   @media ${Device.mobile} {
@@ -208,7 +208,8 @@ export const Card = styled.div`
 `;
 
 export const ImgContainer = styled.img`
-  width: 100%;
+  margin-left: 15%;
+  width: 70%;
   border-radius: 50%;
 `;
 
