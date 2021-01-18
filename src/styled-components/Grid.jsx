@@ -8,63 +8,101 @@ export const Container = styled.div`
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 1vw;
+  transition: ease 2s;
+
   @media ${Device.mobile} {
     display: flex;
     flex-direction: column;
-
     margin-left: auto;
     margin-right: auto;
     height: auto;
     width: 50vw;
   } ;
 `;
+
+export const BlockLogoTitle = styled.div``;
+
 export const Title = styled.h2`
-  font-size: 1.5rem;
+  opacity: 0;
+  font-size: 2rem;
   margin-bottom:2vh;
-  text-decoration:underline;
+  text-transform: uppercase;
   @media ${Device.mobile} {
     font-size: 1rem;
   }
 `;
-export const Details1 = styled.div`
+
+export const LogoProjet = styled.img`
+  margin: 1vh 1vw 1vh 1vw;
+  background-color: white;
+`;
+
+export const BlockUl = styled.div`
   opacity: 0;
+  margin: 7vh 7vw 10vh 7vw;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  line-height:140%;
+  font-size:1.3rem;
+`;
+
+export const BlockDescription = styled.div`
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Description = styled.p`
+  opacity: 0;
+  margin-bottom: 5vh;
   @media ${Device.mobile} {
     opacity: 1;
   }
 `;
-
-export const LogoProjet = styled.img`
-  height: auto;
-  width: auto;
-  background-color: white;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-margin: 1vh 1vw 1vh 1vw
-`;
+export const ContainerBlock = styled.div``;
 
 export const Grid1 = styled.div`
   grid-column-start: 2;
   grid-row-start: 1;
-  background: red;
-  color: white;
+  height: 22vh;
+  background: #e5e5e5;
+  color: black;
   text-align: center;
   transition: 0.2s ease;
   border-radius: 5px;
   height:22.5vh;
+  
 
   &:hover {
 
     grid-column: 1/4;
     grid-row: 1/3;
+    height: auto;
     z-index: 1;
     transition: 0.2s ease;
-    height:auto;
-    ${Details1} {
+    ${Description} {
       opacity: 1;
       transition: opacity 0.3s ease;
     }
-
+    ${Title} {
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+    ${BlockLogoTitle} {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    ${BlockUl} {
+      opacity: 1;
+    }
+    ${ContainerBlock} {
+      opacity: 1;
+    }
+    ${BlockDescription} {
+      opacity: 1;
+    }
   }
 
 
