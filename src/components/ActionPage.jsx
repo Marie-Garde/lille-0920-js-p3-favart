@@ -20,6 +20,7 @@ import {
   ImgLogo,
   DivLogo,
   ButtonCardMiddle,
+  ButtonFlash,
 } from "../styled-components/ActionPage";
 import geffroy from "../assets/ActionImg/Geffroy.jpeg";
 import marsac from "../assets/ActionImg/Marsac.jpeg";
@@ -54,28 +55,21 @@ export default function ActionPage() {
             <Li>- Engager une action commune avec Favart</Li>
             <Li>- Solliciter l’engagement de Favart dans vos dynamiques</Li>
           </Ul>
-          <DivCenter>
             <ButtonCardMiddle>Nous rejoindre</ButtonCardMiddle>
-          </DivCenter>
         </DivCardMiddle>
         <DivCards>
           <H2>Echangeons ensemble</H2>
           <P>
             Vous souhaitez échanger avec nous d’un projet, d’un enjeu, d’une
-            idée. Contactez-nous et prenons le temps de partager ce qui vous
+            idée.Contactez-nous et prenons le temps de partager ce qui vous
             anime.
           </P>
           <DivCenter>
-            <Button>Rendez-vous flash</Button>
+            <ButtonFlash>Rendez-vous flash</ButtonFlash>
           </DivCenter>
         </DivCards>
       </DivInfos>
-
-      <DivCenter>
-        <Button>Nous rejoindre</Button>
-      </DivCenter>
       <H1>Notre équipe</H1>
-
       <CardFlex>
         <Card>
           <ImgContainer src={geffroy} alt="#" />

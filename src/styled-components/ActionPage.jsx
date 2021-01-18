@@ -6,22 +6,6 @@ export const DivMain = styled.div`
   background-color: #e5e5e5;
 `;
 
-export const DivCards = styled.div`
-  display: flex;
-  width: 30%;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #2386c9;
-  border-radius: 15px;
-  color: white;
-  @media ${Device.mobile} {
-    width: 80%;
-    margin-bottom: 6vh;
-    padding-bottom: 3vh;
-    padding-top: 3vh;
-  }
-`;
-
 //Informations cards
 
 export const DivInfos = styled.div`
@@ -31,6 +15,21 @@ export const DivInfos = styled.div`
     flex-direction: column;
     margin-bottom: 0vh;
     align-items: center;
+  }
+`;
+
+export const DivCards = styled.div`
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  background-color: #2386c9;
+  border-radius: 15px;
+  color: white;
+  @media ${Device.mobile} {
+    width: 80%;
+    margin-bottom: 6vh;
+    padding-bottom: 3vh;
+    padding-top: 3vh;
   }
 `;
 
@@ -56,7 +55,7 @@ export const Ul = styled.ul`
   font-size: 1.4rem;
 `;
 export const Li = styled.li`
-  line-height: 3vh;
+  line-height: 3.5vh;
   margin-left: 4vh;
   margin-right: 2vh;
   font-family: "Noto Sans CJK JP";
@@ -66,6 +65,7 @@ export const Li = styled.li`
 `;
 
 export const H2 = styled.h2`
+padding-top : 3vh;
   text-align: center;
   font-size: 2rem;
   @media ${Device.mobile} {
@@ -76,15 +76,16 @@ export const H2 = styled.h2`
 `;
 
 export const H2MiddleCard = styled.h2`
-  padding-top: 2vh;
   font-size: 2rem;
   text-align: center;
+  padding-top: 3vh;
+
   @media ${Device.mobile} {
     font-size: 1.4rem;
   }
 `;
 
-//Code for buttons
+//Buttons
 export const Button = styled.button`
   background-color: #122239;
   color: white;
@@ -92,6 +93,7 @@ export const Button = styled.button`
   border-radius: 5px;
   font-weight: bold;
   font-size: 2rem;
+  margin-top: 5vh;
   padding: 2vh;
   cursor: pointer;
   &:hover {
@@ -105,10 +107,35 @@ export const Button = styled.button`
 
 export const ButtonCardMiddle = styled.div`
   background-color: #2386c9;
+  color: white;
+  text-align: center;
   border: none;
   border-radius: 5px;
   font-weight: bold;
   font-size: 2rem;
+  margin-left: 15vh;
+  margin-bottom: 3.2vh;
+  padding: 2vh;
+  width: 43%;
+  cursor: pointer;
+  font-family: "Noto Sans CJK JP";
+  &:hover {
+    color: grey;
+    transition-duration: 500ms;
+  }
+  @media ${Device.mobile} {
+    font-size: 1rem;
+  }
+`;
+
+export const ButtonFlash = styled.button`
+  background-color: #122239;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 9vh;
   padding: 2vh;
   cursor: pointer;
   &:hover {
