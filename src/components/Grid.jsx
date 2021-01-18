@@ -1,10 +1,11 @@
 import React from "react";
+import oxalia from "../assets/logosProjetsGrid//logo-oxalia.png";
 
 import {
   Container,
   Title,
   Grid1,
-  Details1,
+  Description,
   Grid2,
   Details2,
   Grid3,
@@ -16,6 +17,10 @@ import {
   Grid6,
   Details6,
   LogoProjet,
+  BlockLogoTitle,
+  BlockUl,
+  BlockDescription,
+  ContainerBlock,
 } from "../styled-components/Grid";
 
 export default function Grid() {
@@ -23,17 +28,28 @@ export default function Grid() {
     <>
       <Container>
         <Grid1>
-          <LogoProjet
-            src="../../assets/logosProjetsGrid/logo-oxalia.png"
-            alt="image projet"
-          />
-          <Details1>
+          <BlockLogoTitle>
+            <LogoProjet src={oxalia} alt="image projet" />
             <Title>Programme D’abord Jeune</Title>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum alias
-            voluptates fugiat modi eveniet rerum vitae distinctio laudantium
-            porro labore dolore illum sapiente temporibus eius nulla in, tenetur
-            odio. Rerum.
-          </Details1>
+          </BlockLogoTitle>
+          <ContainerBlock>
+            <BlockUl>
+              <ul>
+                <li>Localisation:lalala</li>
+                <li>Status:lalala</li>
+                <li>date début: lalala</li>
+                <li>date fin: lalala</li>
+              </ul>
+            </BlockUl>
+            <BlockDescription>
+              <Description>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum
+                alias voluptates fugiat modi eveniet rerum vitae distinctio
+                laudantium porro labore dolore illum sapiente temporibus eius
+                nulla in, tenetur odio. Rerum.
+              </Description>
+            </BlockDescription>
+          </ContainerBlock>
         </Grid1>
         <Grid2>
           <Title>Block2</Title>
