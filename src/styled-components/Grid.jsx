@@ -64,9 +64,7 @@ export const Grid1 = styled.div`
       opacity: 1;
       transition: opacity 0.3s ease;
     }
-    ${Intels} {
-      opacity:1;
-    }
+
   }
 
 

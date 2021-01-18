@@ -14,7 +14,7 @@ import {
   Head,
   Test,
   ProjectTitle,
-  Intels
+
 } from "../styled-components/Grid";
 
 import oxalia from "../assets/oxalia.png";
@@ -44,7 +44,6 @@ export default function Grid() {
                 </ul>
               </Test>
             </div>
-            <Intels>
               <Details1>
                 <Title>Programme D’abord Jeune :</Title>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum
@@ -52,7 +51,6 @@ export default function Grid() {
                 laudantium porro labore dolore illum sapiente temporibus eius
                 nulla in, tenetur odio. Rerum.
               </Details1>
-            </Intels>
           </Flexbox>
         </Grid1>
         <Grid2>
