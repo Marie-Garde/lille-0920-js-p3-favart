@@ -6,8 +6,8 @@ import Mainpage from "./components/Main";
 import Footer from "./components/Footer";
 import Agissons from "./components/Agissons";
 import Inscription from "./components/Inscription";
-
 import { Switch, Route } from "react-router-dom";
+import RessourcePage from "./components/RessourcePage";
 
 export default function App() {
   return (
