@@ -2,21 +2,8 @@ import styled from "styled-components";
 import { Device } from "../assets/Device/Device";
 
 export const DivMain = styled.div`
-    padding-top : 10vh;
-    background-color: #e5e5e5;
-
-`;
-
-export const DivInfos = styled.div`
-  display: flex;
-  justify-content: space-around;
-  @media ${Device.mobile} {
-    flex-direction: column;
-    margin-bottom : 0vh;
-align-items : center;
-
-
-}
+  padding-top: 10vh;
+  background-color: #e5e5e5;
 `;
 
 export const DivCards = styled.div`
@@ -29,11 +16,22 @@ export const DivCards = styled.div`
   color: white;
   @media ${Device.mobile} {
     width: 80%;
-    margin-bottom : 6vh;
-    padding-bottom : 3vh;
-    padding-top : 3vh;
+    margin-bottom: 6vh;
+    padding-bottom: 3vh;
+    padding-top: 3vh;
+  }
+`;
 
-}
+//Informations cards
+
+export const DivInfos = styled.div`
+  display: flex;
+  justify-content: space-around;
+  @media ${Device.mobile} {
+    flex-direction: column;
+    margin-bottom: 0vh;
+    align-items: center;
+  }
 `;
 
 export const DivCardMiddle = styled.div`
@@ -45,12 +43,48 @@ export const DivCardMiddle = styled.div`
   flex-direction: column;
   @media ${Device.mobile} {
     width: 80%;
-    margin-bottom : 6vh;
-    padding-bottom : 3vh;
-    padding-top : 3vh;
-}
+    margin-bottom: 6vh;
+    padding-bottom: 3vh;
+    padding-top: 3vh;
+  }
 `;
 
+export const Ul = styled.ul`
+  padding-top: 2vh;
+  padding-bottom: 3vh;
+  list-style: none;
+  font-size: 1.4rem;
+`;
+export const Li = styled.li`
+  line-height: 3vh;
+  margin-left: 4vh;
+  margin-right: 2vh;
+  font-family: "Noto Sans CJK JP";
+  @media ${Device.mobile} {
+    font-size: 1rem;
+  }
+`;
+
+export const H2 = styled.h2`
+  text-align: center;
+  font-size: 2rem;
+  @media ${Device.mobile} {
+    font-size: 1.4rem;
+  }
+}
+
+`;
+
+export const H2MiddleCard = styled.h2`
+  padding-top: 2vh;
+  font-size: 2rem;
+  text-align: center;
+  @media ${Device.mobile} {
+    font-size: 1.4rem;
+  }
+`;
+
+//Code for buttons
 export const Button = styled.button`
   background-color: #122239;
   color: white;
@@ -58,12 +92,53 @@ export const Button = styled.button`
   border-radius: 5px;
   font-weight: bold;
   font-size: 2rem;
-  padding : 2vh;
+  padding: 2vh;
   cursor: pointer;
   &:hover {
     color: grey;
     transition-duration: 500ms;
   }
+  @media ${Device.mobile} {
+    font-size: 1rem;
+  }
+`;
+
+export const ButtonCardMiddle = styled.div`
+  background-color: #2386c9;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 2vh;
+  cursor: pointer;
+  &:hover {
+    color: grey;
+    transition-duration: 500ms;
+  }
+  @media ${Device.mobile} {
+    font-size: 1rem;
+  }
+`;
+
+export const DivCenter = styled.div`
+  padding-top: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media ${Device.mobile} {
+    padding-top: 0vh;
+  }
+`;
+
+//Text styles
+
+export const P = styled.p`
+  font-size: 1.4rem;
+  line-height: 3vh;
+  padding-top: 4vh;
+  font-family: "Noto Sans CJK JP";
+  margin-left: 4vh;
+  margin-right: 2vh;
   @media ${Device.mobile} {
     font-size: 1rem;
   }
@@ -78,56 +153,20 @@ export const H1 = styled.h1`
   @media ${Device.mobile} {
     font-size: 2.2rem;
   }
- 
 `;
 
-export const H2 = styled.h2`
-  text-align: center;
-  font-size: 2rem;
-  @media ${Device.mobile} {
-    font-size: 1.4rem;
-  }
-}
+//Staff cards
 
-`;
-
-export const H2MiddleCard = styled.h2`
-  padding-top : 2vh;
-  font-size: 2rem;
-  text-align : center;
+export const CardFlex = styled.div`
+  display: flex;
+  justify-content: space-around;
+  padding-top: 9vh;
   @media ${Device.mobile} {
-    font-size: 1.4rem;
-  }
-  `
-
-export const P = styled.p`
-  font-size: 1.4rem;
-  line-height: 3vh;
-  padding-top : 4vh;
-  font-family : "Noto Sans CJK JP";
-  margin-left : 4vh;
-  margin-right : 2vh;
-  @media ${Device.mobile} {
-    font-size: 1rem;
+    flex-direction: column;
+    margin-bottom: 2vh;
+    align-items: center;
   }
 `;
-
-export const Ul = styled.ul`
-padding-top : 2vh;
-padding-bottom : 3vh;
-  list-style: none;
-  font-size: 1.4rem;
-`;
-export const Li = styled.li`
-  line-height: 3vh;
-  margin-left : 4vh;
-  margin-right : 2vh;
-  font-family : "Noto Sans CJK JP";
-  @media ${Device.mobile} {
-    font-size: 1rem;
-  }
-`;
-
 export const Card = styled.div`
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -136,72 +175,47 @@ export const Card = styled.div`
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   }
   @media ${Device.mobile} {
-    width : 80%;
-    margin-bottom : 5vh;
-}
-`;
-
-export const Container = styled.div`
-  padding: 2px 16px;
-
+    width: 80%;
+    margin-bottom: 5vh;
+  }
 `;
 
 export const ImgContainer = styled.img`
   width: 100%;
-  border-radius : 50%;
+  border-radius: 50%;
 `;
-export const CardFlex = styled.div`
-  display: flex;
-  justify-content: space-around;
-  padding-top : 9vh;
-  @media ${Device.mobile} {
-    flex-direction: column;
-    margin-bottom : 2vh;
-    align-items : center;
 
-}
-  `;
+export const Container = styled.div`
+  padding: 2px 16px;
+`;
 
-
-  export const DivCenter = styled.div`
-  padding-top: 8vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @media ${Device.mobile} {
-    padding-top: 0vh;
-
-  }
-  `;
-
-  export const PContact = styled.p`  margin-left: 4vw;
+export const PContact = styled.p`
+  margin-left: 4vw;
   font-size: 1.4rem;
   line-height: 4vh;
-  padding-top : 4vh;
-  font-family : "Noto Sans CJK JP";
+  padding-top: 4vh;
+  font-family: "Noto Sans CJK JP";
   @media ${Device.mobile} {
     font-size: 1rem;
-    padding-bottom : 5vh;
+    padding-bottom: 5vh;
   }
-  `;
+`;
 
-  export const H4 = styled.h4`
+export const H4 = styled.h4`
   font-size: 2rem;
-  padding-top : 3vh;
-  text-align : center;
-  `
-
-  export const ImgLogo = styled.img`
-  background-color : #122239;
-  padding : 1.5vh;
-  text-align : center;
-  margin-bottom : 3vh;
-
-  `;
-
-  export const DivLogo = styled.div`
+  padding-top: 3vh;
+  text-align: center;
+`;
+export const DivLogo = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top : 3vh;
-  `
+  padding-top: 3vh;
+`;
+
+export const ImgLogo = styled.img`
+  background-color: #122239;
+  padding: 1.5vh;
+  text-align: center;
+  margin-bottom: 3vh;
+`;

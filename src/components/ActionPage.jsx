@@ -19,6 +19,7 @@ import {
   PContact,
   ImgLogo,
   DivLogo,
+  ButtonCardMiddle,
 } from "../styled-components/ActionPage";
 import geffroy from "../assets/ActionImg/Geffroy.jpeg";
 import marsac from "../assets/ActionImg/Marsac.jpeg";
@@ -35,9 +36,9 @@ export default function ActionPage() {
             présentation institutionnelle, retours d’expériences, présentation
             détaillée de nos 4 ingénieries, ...
           </P>
-          <DivCenter>          <Button>Nous rejoindre</Button>
+          <DivCenter>
+            <Button>Nous rejoindre</Button>
           </DivCenter>
-
         </DivCards>
         <DivCardMiddle>
           <H2MiddleCard>Agissons ensemble</H2MiddleCard>
@@ -53,9 +54,9 @@ export default function ActionPage() {
             <Li>- Engager une action commune avec Favart</Li>
             <Li>- Solliciter l’engagement de Favart dans vos dynamiques</Li>
           </Ul>
-          <DivCenter><Button>Nous rejoindre</Button></DivCenter>
-          
-
+          <DivCenter>
+            <ButtonCardMiddle>Nous rejoindre</ButtonCardMiddle>
+          </DivCenter>
         </DivCardMiddle>
         <DivCards>
           <H2>Echangeons ensemble</H2>
@@ -65,7 +66,7 @@ export default function ActionPage() {
             anime.
           </P>
           <DivCenter>
-          <button>Rendez-vous flash</button>
+            <Button>Rendez-vous flash</Button>
           </DivCenter>
         </DivCards>
       </DivInfos>
@@ -92,9 +93,9 @@ export default function ActionPage() {
               Fondation Rexel …).
             </P>
             <DivLogo>
-                <a href="https://www.linkedin.com/in/favart/ ">
+              <a href="https://www.linkedin.com/in/favart/ ">
                 <ImgLogo src={linkedin} alt="logo linkedin" />
-                </a>
+              </a>
             </DivLogo>
           </Container>
         </Card>
@@ -121,9 +122,9 @@ export default function ActionPage() {
               citoyennes.
             </P>
             <DivLogo>
-                <a href="https://www.linkedin.com/in/barthelemymarsac/ ">
+              <a href="https://www.linkedin.com/in/barthelemymarsac/ ">
                 <ImgLogo src={linkedin} alt="logo linkedin" />
-                </a>
+              </a>
             </DivLogo>
           </Container>
         </Card>
