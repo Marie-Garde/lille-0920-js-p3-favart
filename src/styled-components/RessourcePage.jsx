@@ -30,3 +30,8 @@ export const FlexBox2 = styled.div`
   padding-top: 8vh;
 `;
 
+export const FlexItem = styled.div`
+display : flex;
+width : 100%vh;
+justify-content : space-space-between;
+`
