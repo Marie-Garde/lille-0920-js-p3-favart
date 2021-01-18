@@ -12,7 +12,7 @@ const AutoplayExample = () => {
 
   return (
     <div>
-      <div>
+      <Carousel>
         <Slide autoplay={autoplay}>
           <SlideStyle>
             <Img src={logo1234} />
@@ -24,7 +24,7 @@ const AutoplayExample = () => {
             <Img src={logo9101112}/>
           </SlideStyle>
         </Slide>
-      </div>
+      </Carousel>
     </div>
   );
 };
