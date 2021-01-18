@@ -1,9 +1,5 @@
 import styled from "styled-components";
 import { Device } from "../assets/Device/Device";
-import experimentation from "../assets/Agissons/experimentation.jpg";
-import communauté from "../assets/Agissons/communauté.jpg";
-import economique from "../assets/Agissons/economique.jpg";
-import juridique from "../assets/Agissons/juridique.png";
 
 export const P = styled.p`
   font-size: 2.5rem;
@@ -16,11 +12,12 @@ export const P = styled.p`
     font-size: 1.5rem;
     margin-right: 4vw;
     margin-left: 4vw;
+    margin-bottom: 0;
   }
 `;
 
 export const Card = styled.div`
-  background-color: #f0e9e9;
+  background-color: #cfcece;
   width: 50vw;
   height: 40vh;
   display: flex;
@@ -57,6 +54,7 @@ export const Title = styled.h1`
   font-family: "Josefin Sans";
   padding-bottom: 2vh;
   padding-left: 1vw;
+  text-align: justify;
   @media ${Device.mobile} {
     text-align: center;
     font-size: 1.7rem;
@@ -82,6 +80,7 @@ export const Text = styled.h2`
   font-family: "Noto Sans CJK JP";
   padding-bottom: 1vh;
   line-height: 1.2rem;
+  text-align: justify;
   @media ${Device.mobile} {
     font-size: 0.85rem;
     text-align: center;
@@ -106,7 +105,7 @@ export const CardImg = styled.img`
 `;
 
 export const Card2 = styled.div`
-  background-color: #f0e9e9;
+  background-color: #cfcece;
   width: 50vw;
   height: 40vh;
   display: flex;
@@ -131,6 +130,7 @@ export const Card2 = styled.div`
 export const CardText2 = styled.div`
   width: 50vw;
   margin-left: 3vw;
+  margin-right: 2vw;
   @media ${Device.mobile} {
     width: 80vw;
     margin-left: 0vw;
@@ -169,6 +169,7 @@ export const Text2 = styled.h2`
   font-family: "Noto Sans CJK JP";
   padding-bottom: 1vh;
   line-height: 1.2rem;
+  text-align: justify;
   @media ${Device.mobile} {
     font-size: 0.85rem;
     text-align: center;
@@ -192,7 +193,7 @@ export const CardImg2 = styled.img`
 `;
 
 export const Card3 = styled.div`
-  background-color: #f0e9e9;
+  background-color: #cfcece;
   width: 50vw;
   height: 40vh;
   display: flex;
@@ -254,6 +255,7 @@ export const Text3 = styled.h2`
   font-family: "Noto Sans CJK JP";
   padding-bottom: 1vh;
   line-height: 1.2rem;
+  text-align: justify;
   @media ${Device.mobile} {
     font-size: 0.85rem;
     text-align: center;
@@ -276,7 +278,7 @@ export const CardImg3 = styled.img`
 `;
 
 export const Card4 = styled.div`
-  background-color: #f0e9e9;
+  background-color: #cfcece;
   width: 50vw;
   height: 40vh;
   display: flex;
@@ -303,6 +305,7 @@ export const Card4 = styled.div`
 export const CardText4 = styled.div`
   width: 50vw;
   margin-left: 3vw;
+  margin-right: 2vw;
   @media ${Device.mobile} {
     width: 80vw;
     margin-left: 0vw;
@@ -341,6 +344,7 @@ export const Text4 = styled.h2`
   font-family: "Noto Sans CJK JP";
   padding-bottom: 1vh;
   line-height: 1.2rem;
+  text-align: justify;
   @media ${Device.mobile} {
     font-size: 0.85rem;
     text-align: center;
@@ -378,7 +382,7 @@ export const Button1 = styled.a`
   background-color: black;
   border: solid 1px black;
   width: 15vw;
-  height: 12vh;
+  height: 9vh;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   -webkit-transition: 0.3s ease-in-out;
@@ -393,52 +397,52 @@ export const Button1 = styled.a`
 `;
 
 export const P1 = styled.p`
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: "Josefin Sans";
   position: absolute;
-  left: 12%;
+  left: 15%;
   top: 30%;
   color: white;
 `;
 
 export const P2 = styled.p`
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: "Josefin Sans";
   position: absolute;
-  left: 2%;
+  left: 8.5%;
   top: 30%;
   color: white;
 `;
 
 export const P3 = styled.p`
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: "Josefin Sans";
   position: absolute;
-  left: 8%;
+  left: 14.5%;
   top: 30%;
   color: white;
 `;
 
 export const Explorer = styled.img`
   width: 15vw;
-  height: 12vh;
+  height: 9vh;
   opacity: 50%;
 `;
 
 export const Engager = styled.img`
   width: 15vw;
-  height: 12vh;
+  height: 9vh;
   opacity: 50%;
 `;
 
 export const Construire = styled.img`
   width: 15vw;
-  height: 12vh;
+  height: 9vh;
   opacity: 50%;
 `;
 
 export const Deployer = styled.img`
   width: 15vw;
-  height: 12vh;
+  height: 9vh;
   opacity: 50%;
 `;
