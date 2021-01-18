@@ -16,7 +16,7 @@ export default function HeaderMenu() {
           <MenuLink to="/"> 01 /</MenuLink>
           <MenuLinkAgissons to="/agissons"> 02 - Agissons /</MenuLinkAgissons>
           <MenuLink to="/ilsetelles"> 03 /</MenuLink>
-          <MenuLink href=""> 04</MenuLink>
+          <MenuLink to="/action"> 04</MenuLink>
         </ContainerHeaderMenuLink>
       </ContainerHeaderMenu>
       <HeaderBody />

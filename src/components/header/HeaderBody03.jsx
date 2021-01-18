@@ -34,7 +34,7 @@ export default function HeaderBody() {
         <BlockSentence>
           <ContainerAuthorSentence>
             <AuthorSentence>
-              "Il y a plus dans l'échange que dans la chose échangée" Claude
+              "Il y a plus dans l'échange que dans la chose échangée", Claude
               Lévi-Strauss
             </AuthorSentence>
           </ContainerAuthorSentence>
