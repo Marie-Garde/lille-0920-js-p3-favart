@@ -15,6 +15,7 @@ import {
   Details5,
   Grid6,
   Details6,
+  LogoProjet,
 } from "../styled-components/Grid";
 
 export default function Grid() {
@@ -22,8 +23,12 @@ export default function Grid() {
     <>
       <Container>
         <Grid1>
-          <Title>Block1</Title>
+          <LogoProjet
+            src="../../assets/logosProjetsGrid/logo-oxalia.png"
+            alt="image projet"
+          />
           <Details1>
+            <Title>Programme D’abord Jeune</Title>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum alias
             voluptates fugiat modi eveniet rerum vitae distinctio laudantium
             porro labore dolore illum sapiente temporibus eius nulla in, tenetur

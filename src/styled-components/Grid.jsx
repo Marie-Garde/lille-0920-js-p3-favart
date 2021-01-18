@@ -3,9 +3,8 @@ import { Device } from "../assets/Device/Device";
 
 export const Container = styled.div`
   display: grid;
-  height: 100vh;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin-left: 7vw;
+  margin-right: 7vw;
   border: 2px dotted black;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -26,12 +25,14 @@ export const Title = styled.h2`
     font-size: 1rem;
   }
 `;
-export const Details1 = styled.p`
+export const Details1 = styled.div`
   opacity: 0;
   @media ${Device.mobile} {
     opacity: 1;
   }
 `;
+
+export const LogoProjet = styled.img``;
 
 export const Grid1 = styled.div`
   grid-column-start: 2;
