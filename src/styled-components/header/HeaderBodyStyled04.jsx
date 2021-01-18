@@ -60,9 +60,6 @@ export const AuthorSentence = styled.p`
     font-size: 2vh;
   }
 `;
-export const BlockButton = styled.div`
-  background-color: red;
-`;
 
 export const ContainerMoreInformation = styled.button`
   cursor: pointer;
