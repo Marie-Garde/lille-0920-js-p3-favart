@@ -4,36 +4,56 @@ import {
   Container,
   Title,
   Grid1,
-  Details1,
   Grid2,
-  Details2,
   Grid3,
-  Details3,
   Grid4,
-  Details4,
-  Grid5,
-  Details5,
-  Grid6,
-  Details6,
+  Details1,
+  Details2,
   LogoProjet,
+  Flexbox,
+  Head,
+  Test,
+  ProjectTitle,
+  Intels
 } from "../styled-components/Grid";
+
+import oxalia from "../assets/oxalia.png";
 
 export default function Grid() {
   return (
     <>
       <Container>
         <Grid1>
-          <LogoProjet
-            src="../../assets/logosProjetsGrid/logo-oxalia.png"
-            alt="image projet"
-          />
-          <Details1>
-            <Title>Programme D’abord Jeune</Title>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum alias
-            voluptates fugiat modi eveniet rerum vitae distinctio laudantium
-            porro labore dolore illum sapiente temporibus eius nulla in, tenetur
-            odio. Rerum.
-          </Details1>
+          <Flexbox>
+            <Head>
+              <LogoProjet src={oxalia} alt="image projet" />
+            </Head>
+            <div>
+              <Test>
+                <ul>
+                  <li>Localisation :</li>
+                  <li>Status :</li>
+                  <li>Date de début :</li>
+                  <li>Date de fin :</li>
+                </ul>
+                <ul>
+                  <li>Paris</li>
+                  <li>Online</li>
+                  <li>13 Juillet 2019</li>
+                  <li>10 Septembre 2309:</li>
+                </ul>
+              </Test>
+            </div>
+            <Intels>
+              <Details1>
+                <Title>Programme D’abord Jeune :</Title>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum
+                alias voluptates fugiat modi eveniet rerum vitae distinctio
+                laudantium porro labore dolore illum sapiente temporibus eius
+                nulla in, tenetur odio. Rerum.
+              </Details1>
+            </Intels>
+          </Flexbox>
         </Grid1>
         <Grid2>
           <Title>Block2</Title>
@@ -44,38 +64,24 @@ export default function Grid() {
             odio. Rerum.
           </Details2>
         </Grid2>
-
         <Grid3>
-          <Title>Block3</Title>
-          <Details3>
+          <Title>Block2</Title>
+          <Details2>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum alias
             voluptates fugiat modi eveniet rerum vitae distinctio laudantium
             porro labore dolore illum sapiente temporibus eius nulla in, tenetur
             odio. Rerum.
-          </Details3>
+          </Details2>
         </Grid3>
         <Grid4>
-          <Title>Block4</Title>
-          <Details4>ribus eius nulla in, tenetur odio. Rerum.</Details4>
+          <Title>Block2</Title>
+          <Details2>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum alias
+            voluptates fugiat modi eveniet rerum vitae distinctio laudantium
+            porro labore dolore illum sapiente temporibus eius nulla in, tenetur
+            odio. Rerum.
+          </Details2>
         </Grid4>
-        <Grid5>
-          <Title>Block5</Title>
-          <Details5>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum alias
-            voluptates fugiat modi eveniet rerum vitae distinctio laudantium
-            porro labore dolore illum sapiente temporibus eius nulla in, tenetur
-            odio. Rerum.
-          </Details5>
-        </Grid5>
-        <Grid6>
-          <Title>Block6</Title>
-          <Details6>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum alias
-            voluptates fugiat modi eveniet rerum vitae distinctio laudantium
-            porro labore dolore illum sapiente temporibus eius nulla in, tenetur
-            odio. Rerum.
-          </Details6>
-        </Grid6>
       </Container>
     </>
   );

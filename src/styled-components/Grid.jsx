@@ -3,11 +3,10 @@ import { Device } from "../assets/Device/Device";
 
 export const Container = styled.div`
   display: grid;
-  margin-left: 7vw;
-  margin-right: 7vw;
+  margin: 3vh 7vw 3vh 7vw;
   border: 2px dotted black;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-gap: 1vw;
   @media ${Device.mobile} {
     display: flex;
@@ -21,6 +20,8 @@ export const Container = styled.div`
 `;
 export const Title = styled.h2`
   font-size: 1.5rem;
+  margin-bottom:2vh;
+  text-decoration:underline;
   @media ${Device.mobile} {
     font-size: 1rem;
   }
@@ -32,7 +33,15 @@ export const Details1 = styled.div`
   }
 `;
 
-export const LogoProjet = styled.img``;
+export const LogoProjet = styled.img`
+  height: auto;
+  width: auto;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+margin: 1vh 1vw 1vh 1vw
+`;
 
 export const Grid1 = styled.div`
   grid-column-start: 2;
@@ -41,16 +50,26 @@ export const Grid1 = styled.div`
   color: white;
   text-align: center;
   transition: 0.2s ease;
+  border-radius: 5px;
+  height:22.5vh;
+
   &:hover {
+
     grid-column: 1/4;
     grid-row: 1/3;
     z-index: 1;
     transition: 0.2s ease;
+    height:auto;
     ${Details1} {
       opacity: 1;
       transition: opacity 0.3s ease;
     }
+    ${Intels} {
+      opacity:1;
+    }
   }
+
+
   @media ${Device.mobile} {
     display: flex;
     justify-content: center;
@@ -159,3 +178,34 @@ export const Grid6 = styled.div`
     }
   }
 `;
+
+export const Flexbox = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Head = styled.div`
+display: flex;
+flex-direction: row;
+`;
+
+export const ProjectTitle = styled.h1`
+  align-items:center;
+  display:flex;
+  margin-left:25%
+`
+
+export const Test = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: start;
+  margin: 1vh 4vw 2vh 4vw;
+  line-height:150%
+`;
+
+export const List = styled.ul`
+
+`
+
+
