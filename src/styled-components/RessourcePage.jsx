@@ -10,6 +10,7 @@ export const FlexBox = styled.div`
 
 export const FlexBox1 = styled.div`
   flex: 1;
+  width : 25%;
   background: rgb(35, 134, 201);
   background: linear-gradient(
     180deg,
@@ -23,15 +24,17 @@ export const FlexBox1 = styled.div`
 `;
 
 export const FlexBox2 = styled.div`
-  flex: 2;
-  height: 100vh;
+width: 75%;
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
   padding-right: 3vw;
   padding-left: 3vw;
-  padding-top: 8vh;
+  padding-top: 15vh;
 `;
 
-export const FlexItem = styled.div`
-display : flex;
-width : 100%vh;
-justify-content : space-space-between;
-`
+export const DivCard = styled.div`
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  height: 50vh;
+`;

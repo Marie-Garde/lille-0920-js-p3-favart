@@ -1,4 +1,5 @@
 import {
+    DivCard,
   FlexBox,
   FlexBox1,
   FlexBox2,
@@ -12,13 +13,13 @@ export default function RessourcePage() {
       <FlexBox1></FlexBox1>
       <FlexBox2>
         {documents.map((card) => (
-          <div>
+          <DivCard>
             <a href={card.link}>
               <img src={card.aperçu} alt="" />
             </a>
             <p>{card.titre}</p>
             <p>{card.resume}</p>
-          </div>
+          </DivCard>
         ))}
       </FlexBox2>
     </FlexBox>
