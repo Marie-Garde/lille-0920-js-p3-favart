@@ -11,7 +11,10 @@ import AutoplayExemple from "./components/Carousel";
 export default function App() {
   return (
     <div>
+      <Reset />
+      <Mainpage />
       <AutoplayExemple />
+      <Footer/>
     </div>
   );
 }

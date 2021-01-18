@@ -8,5 +8,5 @@ width:20px;
 
 export const Img = styled.img`
 width:100vw;
-height:50vh
+height:27vh;
 `
