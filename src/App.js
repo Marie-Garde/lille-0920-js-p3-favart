@@ -4,6 +4,7 @@ import Connexion from "./components/Connexion";
 import HeaderTop from "./components/HeaderTop";
 import Mainpage from "./components/header/HeaderMenu01";
 import Agissons from "./components/header/HeaderMenu02";
+import IlsEtElles from "./components/header/HeaderMenu03";
 
 import { Switch, Route } from "react-router-dom";
 
@@ -16,6 +17,7 @@ export default function App() {
         <Route exact path="/" component={Mainpage} />
         <Route path="/agissons" component={Agissons} />
         <Route path="/connexion" component={Connexion} />
+        <Route path="/ilsetelles" component={IlsEtElles} />
       </Switch>
     </div>
   );
