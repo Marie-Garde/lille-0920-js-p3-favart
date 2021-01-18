@@ -2,7 +2,9 @@ import styled from "styled-components";
 import { Device } from "../assets/Device/Device";
 
 export const DivMain = styled.div`
-    padding-top : 10vh
+    padding-top : 10vh;
+    background-color: #e5e5e5;
+
 `;
 
 export const DivInfos = styled.div`
@@ -100,10 +102,11 @@ export const H2MiddleCard = styled.h2`
 
 export const P = styled.p`
   font-size: 1.4rem;
-  line-height: 4vh;
+  line-height: 3vh;
   padding-top : 4vh;
   font-family : "Noto Sans CJK JP";
-  text-align : center;
+  margin-left : 4vh;
+  margin-right : 2vh;
   @media ${Device.mobile} {
     font-size: 1rem;
   }
@@ -114,11 +117,11 @@ padding-top : 2vh;
 padding-bottom : 3vh;
   list-style: none;
   font-size: 1.4rem;
-  line-height: 4vh;
 `;
 export const Li = styled.li`
-  line-height: 4vh;
-  text-align : center;
+  line-height: 3vh;
+  margin-left : 4vh;
+  margin-right : 2vh;
   font-family : "Noto Sans CJK JP";
   @media ${Device.mobile} {
     font-size: 1rem;
@@ -128,7 +131,7 @@ export const Li = styled.li`
 export const Card = styled.div`
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 20%;
+  width: 50vh;
   &:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   }
@@ -145,6 +148,7 @@ export const Container = styled.div`
 
 export const ImgContainer = styled.img`
   width: 100%;
+  border-radius : 50%;
 `;
 export const CardFlex = styled.div`
   display: flex;

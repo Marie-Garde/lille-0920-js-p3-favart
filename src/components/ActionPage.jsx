@@ -35,6 +35,9 @@ export default function ActionPage() {
             présentation institutionnelle, retours d’expériences, présentation
             détaillée de nos 4 ingénieries, ...
           </P>
+          <DivCenter>          <Button>Nous rejoindre</Button>
+          </DivCenter>
+
         </DivCards>
         <DivCardMiddle>
           <H2MiddleCard>Agissons ensemble</H2MiddleCard>
@@ -50,6 +53,9 @@ export default function ActionPage() {
             <Li>- Engager une action commune avec Favart</Li>
             <Li>- Solliciter l’engagement de Favart dans vos dynamiques</Li>
           </Ul>
+          <DivCenter><Button>Nous rejoindre</Button></DivCenter>
+          
+
         </DivCardMiddle>
         <DivCards>
           <H2>Echangeons ensemble</H2>
@@ -58,6 +64,9 @@ export default function ActionPage() {
             idée. Contactez-nous et prenons le temps de partager ce qui vous
             anime.
           </P>
+          <DivCenter>
+          <button>Rendez-vous flash</button>
+          </DivCenter>
         </DivCards>
       </DivInfos>
 
