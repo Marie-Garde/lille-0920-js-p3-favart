@@ -14,7 +14,7 @@ export const FSentence = styled.h1`
   margin: 0 7vw 0 7vw;
 
   @media ${Device.mobile} {
-    font-size:1.8rem;
+    font-size: 1.8rem;
   }
 `;
 
@@ -57,7 +57,7 @@ export const ContainerWhy = styled.div`
 
 export const List = styled.ul`
   padding-left: 1.5vw;
-  padding:2vh 0 2vh 0;
+  padding: 2vh 0 2vh 0;
 
   @media ${Device.mobile} {
     padding-left: 5vw;
@@ -181,7 +181,7 @@ export const Map = styled.div`
 export const SubTitle = styled.h3`
   text-align: center;
   padding: 6vh 0 6vh 0;
-  font-size:1.5rem;
+  font-size: 1.5rem;
   color: #122239;
 `;
 

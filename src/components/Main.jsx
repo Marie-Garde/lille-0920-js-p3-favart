@@ -1,8 +1,8 @@
 import React from "react";
 import HeaderMenu01 from "./header/HeaderMenu01";
 import HeaderBody01 from "./header/HeaderBody01";
-import woods from '../Assets/images/woods.jfif';
-import docteur from '../Assets/images/docteur.jfif'
+import woods from "../Assets/images/woods.jfif";
+import docteur from "../Assets/images/docteur.jfif";
 import {
   H1Left,
   ContainerWhy,
@@ -44,10 +44,7 @@ export default function MainPage() {
       </FPagraph>
       <H1Left>Pourquoi FAVART ?</H1Left>
       <ContainerWhy>
-        <ImgWhy
-          src={woods}
-          alt="Forêt avec rayons de soleil"
-        ></ImgWhy>
+        <ImgWhy src={woods} alt="Forêt avec rayons de soleil"></ImgWhy>
         <PWhy>
           <h3>Ce que les crises nous apprennent :</h3>
           <List>
