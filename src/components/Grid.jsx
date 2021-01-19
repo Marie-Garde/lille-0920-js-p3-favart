@@ -21,6 +21,10 @@ import {
   BlockUl,
   BlockDescription,
   ContainerBlock,
+  ContainerUl1,
+  ContainerUl2,
+  Span1,
+  Outils,
 } from "../styled-components/Grid";
 
 export default function Grid() {
@@ -34,20 +38,83 @@ export default function Grid() {
           </BlockLogoTitle>
           <ContainerBlock>
             <BlockUl>
-              <ul>
-                <li>Localisation:lalala</li>
-                <li>Status:lalala</li>
-                <li>date début: lalala</li>
-                <li>date fin: lalala</li>
-              </ul>
+              <ContainerUl1>
+                <ul>
+                  <li>
+                    Porteur du projet :
+                    <Span1>Groupement Oxalia (bailleurs sociaux)</Span1>
+                  </li>
+                  <li>
+                    Enjeux :
+                    <Span1>
+                      Prévenir les sorties sèches à la fin des dispositifs
+                      institutionnels et permettre l’accès au l’autonomie
+                      citoyenne des jeunes
+                    </Span1>
+                  </li>
+                  <li>
+                    Territoires :{" "}
+                    <Span1>
+                      Hauts-de-France, Valenciennois, Métropole Européenne de
+                      Lille, Maubeugeois-Avesnois
+                    </Span1>
+                  </li>
+                  <li>
+                    Mission Favart :
+                    <Span1>
+                      Mise en œuvre d’une nouvelle stratégie régionale pour
+                      lutter contre les sorties sèches à la fin de l’aide
+                      sociale à l’enfance (ASE)
+                    </Span1>
+                  </li>
+                  <li>
+                    Outils Favart :
+                    <Outils>
+                      <li>Droit à l’expérimentation</li>
+                      <li>Communauté d’action</li>
+                      <li>Modèle opérationnel</li>
+                      <li>Modèle économique à impact</li>
+                      <li>Modèle juridique et financier</li>
+                    </Outils>
+                  </li>
+                </ul>
+              </ContainerUl1>
+              {/*<ContainerUl2>
+                <ul>
+                  <li>Groupement Oxalia (bailleurs sociaux)</li>
+                  <li>
+                    Prévenir les sorties sèches à la fin des dispositifs
+                    institutionnels et permettre l’accès au l’autonomie
+                    citoyenne des jeunes
+                  </li>
+                  <li>
+                    Hauts-de-France, Valenciennois, Métropole Européenne de
+                    Lille, Maubeugeois-Avesnois
+                  </li>
+                  <li>
+                    Mise en œuvre d’une nouvelle stratégie régionale pour lutter
+                    contre les sorties sèches à la fin de l’aide sociale à
+                    l’enfance (ASE)
+                  </li>
+                  <li>
+                    <ul>
+                      <li>Droit à l’expérimentation</li>
+                      <li>Communauté d’action</li>
+                      <li>Modèle opérationnel</li>
+                      <li>Modèle économique à impact</li>
+                      <li>Modèle juridique et financier</li>
+                    </ul>
+                  </li>
+                </ul>
+              </ContainerUl2>*/}
             </BlockUl>
             <BlockDescription>
-              <Description>
+              {/*<Description>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum
                 alias voluptates fugiat modi eveniet rerum vitae distinctio
                 laudantium porro labore dolore illum sapiente temporibus eius
                 nulla in, tenetur odio. Rerum.
-              </Description>
+              </Description>*/}
             </BlockDescription>
           </ContainerBlock>
         </Grid1>
