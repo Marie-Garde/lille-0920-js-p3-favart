@@ -3,12 +3,12 @@ import { Device } from "../Assets/Device/Device";
 
 export const Container = styled.div`
   display: grid;
-  margin: 3vh 7vw 3vh 7vw;
+  margin-left: 7vw;
+  margin-right: 7vw;
   border: 2px dotted black;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-gap: 1vw;
-  transition: ease 2s;
 
   @media ${Device.mobile} {
     display: flex;
@@ -24,38 +24,60 @@ export const BlockLogoTitle = styled.div``;
 
 export const Title = styled.h2`
   opacity: 0;
-  font-size: 2rem;
-  margin-bottom:2vh;
-  text-transform: uppercase;
+  font-size: 2.5rem;
   @media ${Device.mobile} {
     font-size: 1rem;
   }
 `;
 
 export const LogoProjet = styled.img`
-  margin: 1vh 1vw 1vh 1vw;
+  margin: 1.5vh;
   background-color: white;
 `;
 
 export const BlockUl = styled.div`
   opacity: 0;
-  margin: 7vh 7vw 10vh 7vw;
+  font-size: 1rem;
   display: flex;
-  flex-direction: row;
-  justify-content:space-between;
-  line-height:140%;
-  font-size:1.3rem;
+  justify-content: space-between;
+  text-align: start;
+  margin-top: 3vh;
+  line-height: 2.5vh;
+`;
+export const ContainerUl1 = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export const Span1 = styled.p`
+  display: inline-block;
+  flex-wrap: wrap;
+  margin-left: 10vw;
+`;
+export const ContainerUl2 = styled.div`
+  display: flex;
+  flex-wrap: wrap;
 `;
 
 export const BlockDescription = styled.div`
   opacity: 0;
   display: flex;
   flex-direction: column;
+  padding-bottom: 5vh;
+`;
+
+export const OutilsContainer = styled.div`
+  display: flex;
+  justify-content: flex-start;
+`;
+export const Outils = styled.ul`
+  list-style-type: circle;
 `;
 
 export const Description = styled.p`
   opacity: 0;
-  margin-bottom: 5vh;
+  font-size: 1rem;
+  line-height: 2.5vh;
   @media ${Device.mobile} {
     opacity: 1;
   }
@@ -66,15 +88,12 @@ export const Grid1 = styled.div`
   grid-column-start: 2;
   grid-row-start: 1;
   height: 22vh;
-  background: #e5e5e5;
+  background-color: #1f89d1;
   color: black;
   text-align: center;
   transition: 0.2s ease;
-  border-radius: 5px;
-  height:22.5vh;
-  
-
   &:hover {
+    background: #e5e5e5;
 
     grid-column: 1/4;
     grid-row: 1/3;
@@ -104,8 +123,6 @@ export const Grid1 = styled.div`
       opacity: 1;
     }
   }
-
-
   @media ${Device.mobile} {
     display: flex;
     justify-content: center;
@@ -214,34 +231,3 @@ export const Grid6 = styled.div`
     }
   }
 `;
-
-export const Flexbox = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-export const Head = styled.div`
-display: flex;
-flex-direction: row;
-`;
-
-export const ProjectTitle = styled.h1`
-  align-items:center;
-  display:flex;
-  margin-left:25%
-`
-
-export const Test = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  text-align: start;
-  margin: 1vh 4vw 2vh 4vw;
-  line-height:150%
-`;
-
-export const List = styled.ul`
-
-`
-
-

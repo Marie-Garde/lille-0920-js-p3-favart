@@ -5,15 +5,28 @@ import {
   Container,
   Title,
   Grid1,
+  Description,
   Grid2,
-  Grid3,
-  Grid4,
   Details2,
+  Grid3,
+  Details3,
+  Grid4,
+  Details4,
+  Grid5,
+  Details5,
+  Grid6,
+  Details6,
   LogoProjet,
   BlockLogoTitle,
   BlockUl,
+  BlockDescription,
   ContainerBlock,
-} from "../Styled-components/Grid";
+  ContainerUl1,
+  ContainerUl2,
+  Span1,
+  Outils,
+  OutilsContainer,
+} from "../styled-components/Grid";
 
 export default function Grid() {
   return (
@@ -22,24 +35,90 @@ export default function Grid() {
         <Grid1>
           <BlockLogoTitle>
             <LogoProjet src={oxalia} alt="image projet" />
-            <Title>Groupement Oxalia</Title>
+            <Title>Programme D’abord Jeune</Title>
           </BlockLogoTitle>
           <ContainerBlock>
             <BlockUl>
-              <ul>
-                <li>Porteur de projet :</li>
-                <li>Enjeux :</li>
-                <li>Mission FAVART :</li>
-                <li>Territoire :</li>
-                <li>Partenaires :</li>
-              </ul>
-              <ul>
-                <li>Foncière Chênelet</li>
-                <li>Transformer la vacance foncière en logement social très écologique pour les personnes à faible revenu</li>
-                <li>Transformer le modèle économique du logement social à travers la mise en oeuvre du plus important Contrat à Impact Social structuré en France basé sur les coûts évités économiques, sociaux et environnementaux</li>
-                <li>Ministère du Logement, Agence nationale de l’habitat</li>
-              </ul>
+              <ContainerUl1>
+                <ul>
+                  <li>
+                    Porteur du projet :
+                    <Span1>Groupement Oxalia (bailleurs sociaux)</Span1>
+                  </li>
+                  <li>
+                    Enjeux :
+                    <Span1>
+                      Prévenir les sorties sèches à la fin des dispositifs
+                      institutionnels et permettre l’accès au l’autonomie
+                      citoyenne des jeunes
+                    </Span1>
+                  </li>
+                  <li>
+                    Territoires :
+                    <Span1>
+                      Hauts-de-France, Valenciennois, Métropole Européenne de
+                      Lille, Maubeugeois-Avesnois
+                    </Span1>
+                  </li>
+                  <li>
+                    Mission Favart :
+                    <Span1>
+                      Mise en œuvre d’une nouvelle stratégie régionale pour
+                      lutter contre les sorties sèches à la fin de l’aide
+                      sociale à l’enfance (ASE)
+                    </Span1>
+                  </li>
+                  <li>
+                    <OutilsContainer>
+                      Outils Favart :
+                      <Outils>
+                        <li>Droit à l’expérimentation</li>
+                        <li>Communauté d’action</li>
+                        <li>Modèle opérationnel</li>
+                        <li>Modèle économique à impact</li>
+                        <li>Modèle juridique et financier</li>
+                      </Outils>
+                    </OutilsContainer>
+                  </li>
+                </ul>
+              </ContainerUl1>
+              {/*<ContainerUl2>
+                <ul>
+                  <li>Groupement Oxalia (bailleurs sociaux)</li>
+                  <li>
+                    Prévenir les sorties sèches à la fin des dispositifs
+                    institutionnels et permettre l’accès au l’autonomie
+                    citoyenne des jeunes
+                  </li>
+                  <li>
+                    Hauts-de-France, Valenciennois, Métropole Européenne de
+                    Lille, Maubeugeois-Avesnois
+                  </li>
+                  <li>
+                    Mise en œuvre d’une nouvelle stratégie régionale pour lutter
+                    contre les sorties sèches à la fin de l’aide sociale à
+                    l’enfance (ASE)
+                  </li>
+                  <li>
+                    <ul>
+                      <li>Droit à l’expérimentation</li>
+                      <li>Communauté d’action</li>
+                      <li>Modèle opérationnel</li>
+                      <li>Modèle économique à impact</li>
+                      <li>Modèle juridique et financier</li>
+                    </ul>
+                  </li>
+                </ul>
+              </ContainerUl2>*/}
             </BlockUl>
+            <BlockDescription>
+              {/*<Description>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum
+                alias voluptates fugiat modi eveniet rerum vitae distinctio
+                laudantium porro labore dolore illum sapiente temporibus eius
+                nulla in, tenetur odio. Rerum.
+              </Description>*/}
+            </BlockDescription>
           </ContainerBlock>
         </Grid1>
         <Grid2>
@@ -51,24 +130,38 @@ export default function Grid() {
             odio. Rerum.
           </Details2>
         </Grid2>
+
         <Grid3>
-          <Title>Block2</Title>
-          <Details2>
+          <Title>Block3</Title>
+          <Details3>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum alias
             voluptates fugiat modi eveniet rerum vitae distinctio laudantium
             porro labore dolore illum sapiente temporibus eius nulla in, tenetur
             odio. Rerum.
-          </Details2>
+          </Details3>
         </Grid3>
         <Grid4>
-          <Title>Block2</Title>
-          <Details2>
+          <Title>Block4</Title>
+          <Details4>ribus eius nulla in, tenetur odio. Rerum.</Details4>
+        </Grid4>
+        <Grid5>
+          <Title>Block5</Title>
+          <Details5>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum alias
             voluptates fugiat modi eveniet rerum vitae distinctio laudantium
             porro labore dolore illum sapiente temporibus eius nulla in, tenetur
             odio. Rerum.
-          </Details2>
-        </Grid4>
+          </Details5>
+        </Grid5>
+        <Grid6>
+          <Title>Block6</Title>
+          <Details6>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum alias
+            voluptates fugiat modi eveniet rerum vitae distinctio laudantium
+            porro labore dolore illum sapiente temporibus eius nulla in, tenetur
+            odio. Rerum.
+          </Details6>
+        </Grid6>
       </Container>
     </>
   );
