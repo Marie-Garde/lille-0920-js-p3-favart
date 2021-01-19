@@ -4,11 +4,15 @@ import Footer from "../Footer";
 import HeaderMenu01 from "./HeaderMenu01";
 
 import {
+  Page,
+  BlockTitle,
   ContainerTitle,
   Title,
   TitleSpan,
+  BlockSentence,
   ContainerAuthorSentence,
   AuthorSentence,
+  BlockButton,
   ContainerMoreInformation,
   MoreInformationSentence,
 } from "../../styled-components/header/HeaderBodyStyled.jsx";
@@ -20,26 +24,30 @@ export default function HeaderBody() {
   };
   return (
     <>
-      <HeaderMenu01 />
-      <ContainerTitle>
-        <Title>
-          pourquoi nous <TitleSpan>existons</TitleSpan>?
-        </Title>
-      </ContainerTitle>
-
-      <ContainerAuthorSentence>
-        <AuthorSentence>
-          "Atteindre le plus grand nombre en mettant
-        </AuthorSentence>
-        <AuthorSentence> la barre très haut" Agnès Varda</AuthorSentence>
-      </ContainerAuthorSentence>
-      <>
-        <ContainerMoreInformation visible={visible} onClick={onClick}>
-          <MoreInformationSentence>En savoir plus</MoreInformationSentence>
-        </ContainerMoreInformation>
-        {visible ? <Main /> : null}
-        {visible ? <Footer /> : null}
-      </>
+      <Page>
+        <BlockTitle>
+          <ContainerTitle>
+            <Title>
+              pourquoi nous <TitleSpan>existons </TitleSpan> ?
+            </Title>
+          </ContainerTitle>
+        </BlockTitle>
+        <BlockSentence>
+          <ContainerAuthorSentence>
+            <AuthorSentence>
+              "Atteindre le plus grand nombre en mettant
+            </AuthorSentence>
+            <AuthorSentence> la barre très haut" Agnès Varda</AuthorSentence>
+          </ContainerAuthorSentence>
+        </BlockSentence>
+        <>
+          <ContainerMoreInformation visible={visible} onClick={onClick}>
+            <MoreInformationSentence>En savoir plus</MoreInformationSentence>
+          </ContainerMoreInformation>
+          {visible ? <Main /> : null}
+          {visible ? <Footer /> : null}
+        </>
+      </Page>
     </>
   );
 }
