@@ -15,9 +15,9 @@ import {
   Input,
   Button,
   SpanLink,
-} from "../styled-components/PageInscription";
+} from "../styled-components/SignUp";
 
-export default function connexion() {
+export default function signup() {
   return (
     <Background>
       <ContainerInscription>

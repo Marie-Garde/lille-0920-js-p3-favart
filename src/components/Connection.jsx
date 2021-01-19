@@ -15,9 +15,9 @@ import {
   Input,
   Button,
   SpanLink,
-} from "../styled-components/Connexion";
+} from "../styled-components/Connection";
 
-export default function connexion() {
+export default function connection() {
   return (
     <Background>
       <ContainerInscription>
