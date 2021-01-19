@@ -3,6 +3,7 @@ import { device } from "../Assets/Device/Device";
 
 export const Body = styled.div`
   font-family: "Roboto", sans-serif;
+  background-color: #e5e5e5;
 `;
 
 export const FSentence = styled.h1`
