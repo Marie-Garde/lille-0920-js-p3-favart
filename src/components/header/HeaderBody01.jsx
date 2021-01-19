@@ -14,7 +14,7 @@ import {
   BlockButton,
   ContainerMoreInformation,
   MoreInformationSentence,
-} from "../../styled-components/header/HeaderBodyStyled.jsx";
+} from "../../Styled-components/header/HeaderBodyStyled.jsx";
 
 export default function HeaderBody() {
   const [visible, setVisible] = useState(false);

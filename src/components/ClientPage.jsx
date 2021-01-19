@@ -1,4 +1,4 @@
-import ImgRessources from "../assets/ImgRessources.jpg";
+import ImgRessources from "../Assets/ImgRessources.jpg";
 
 import {
   FlexBox,
@@ -18,7 +18,7 @@ import {
   AgirImg,
   Flash,
   TextFlash,
-} from "../styled-components/ClientPage";
+} from "../Styled-components/ClientPage";
 
 export default function connexion() {
   return (

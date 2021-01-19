@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Device } from "../assets/Device/Device";
+import { Device } from "../Assets/Device/Device";
 
 export const Container = styled.div`
   display: grid;
