@@ -1,4 +1,6 @@
 import React from "react";
+import HeaderMenu01 from "./header/HeaderMenu01";
+import HeaderBody01 from "./header/HeaderBody01";
 import {
   H1Left,
   ContainerWhy,
@@ -23,6 +25,7 @@ import {
 
 export default function MainPage() {
   return (
+
     <Body>
       <FSentence>
         Explorer de nouveaux moyens d’action pour relever les grands défis de
@@ -99,7 +102,7 @@ export default function MainPage() {
         </List>
       </PTitle>
 
-      <H1Right>Auprès de qui ?</H1Right>
+        <H1Right>Auprès de qui ?</H1Right>
 
       <ContainerWhom>
         <PWhom>
