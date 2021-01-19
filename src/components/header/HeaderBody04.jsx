@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Main from "../Main"; //A changer par la page passons à l'action
+import Main from "../Main"; //We'll have to change to "action" page
 import Footer from "../Footer";
 
 import {
@@ -38,13 +38,15 @@ export default function HeaderBody() {
             </AuthorSentence>
           </ContainerAuthorSentence>
         </BlockSentence>
-        <>
-          <ContainerMoreInformation visible={visible} onClick={onClick}>
-            <MoreInformationSentence>En savoir plus</MoreInformationSentence>
-          </ContainerMoreInformation>
-          {visible ? <Main /> : null}
-          {visible ? <Footer /> : null}
-        </>
+        <ContainerMoreInformation visible={visible} onClick={onClick}>
+          <MoreInformationSentence>En savoir plus</MoreInformationSentence>
+        </ContainerMoreInformation>
+        {visible && (
+          <>
+            <Main />
+            <Footer />
+          </>
+        )}
       </Page>
     </>
   );

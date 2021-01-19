@@ -38,13 +38,15 @@ export default function HeaderBody() {
             </AuthorSentence>
           </ContainerAuthorSentence>
         </BlockSentence>
-        <>
-          <ContainerMoreInformation visible={visible} onClick={onClick}>
-            <MoreInformationSentence>En savoir plus</MoreInformationSentence>
-          </ContainerMoreInformation>
-          {visible ? <Main /> : null}
-          {visible ? <Footer /> : null}
-        </>
+        <ContainerMoreInformation visible={visible} onClick={onClick}>
+          <MoreInformationSentence>En savoir plus</MoreInformationSentence>
+        </ContainerMoreInformation>
+        {visible && (
+          <>
+            <Main />
+            <Footer />
+          </>
+        )}
       </Page>
     </>
   );
