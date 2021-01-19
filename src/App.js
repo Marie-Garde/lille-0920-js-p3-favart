@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Agissons from "./components/Agissons";
 import PageInscription from "./components/PageInscription";
 
+
 import { Switch, Route } from "react-router-dom";
 
 export default function App() {
