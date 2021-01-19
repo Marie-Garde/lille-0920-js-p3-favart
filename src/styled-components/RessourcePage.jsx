@@ -25,6 +25,8 @@ export const FlexBox1 = styled.div`
 `;
 
 export const FlexBox2 = styled.div`
+    font-family: "Noto Sans CJK JP";
+    color : #122239;
   width: 75%;
   display: flex;
   justify-content:space-around;
@@ -65,6 +67,7 @@ export const P = styled.p`
 font-size : 1.2rem;
 padding-top : 4vh;
 padding-left : 2vh;
+padding-right : 2vh;
 @media ${Device.mobile} {
   font-size : 1.1rem;
 
