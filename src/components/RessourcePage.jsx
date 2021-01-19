@@ -19,7 +19,7 @@ export default function RessourcePage() {
     <FlexBox>
       <FlexBox1>
         <Text>
-          <Name>Name Surname</Name>
+          <Name>Surname</Name>
           <Job>Function</Job>
           <Company>Company</Company>
         </Text>

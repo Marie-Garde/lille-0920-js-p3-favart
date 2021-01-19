@@ -19,16 +19,22 @@ export const FlexBox1 = styled.div`
   );
   height: 150vh;
   @media ${Device.mobile} {
-    display: none;
+    display: column;
+    width : 100%;
   }
 `;
 
 export const FlexBox2 = styled.div`
-width: 75%;
+  width: 75%;
   display: flex;
   justify-content:space-around;
   flex-wrap: wrap;
   padding-top: 15vh;
+  @media ${Device.mobile} {
+    display: column;
+    width : 100%;
+    padding-top: 7vh;
+  }
 `;
 
 export const DivCard = styled.div`
@@ -36,18 +42,33 @@ export const DivCard = styled.div`
   transition: 0.3s;
   height: 50vh;
   width : 40%;
+  @media ${Device.mobile} {
+    width : 80%;
+    height: 62vh;
+    margin-bottom : 7vh;
+
+}
+
 `;
 
 export const H1 = styled.h1`
 font-size : 1.7rem;
 padding-top : 2vh;
 padding-left : 2vh;
+@media ${Device.mobile} {
+  font-size : 1.2rem;
+
+}
 `;
 
 export const P = styled.p`
 font-size : 1.2rem;
 padding-top : 4vh;
 padding-left : 2vh;
+@media ${Device.mobile} {
+  font-size : 1.1rem;
+
+}
 `;
 
 export const Img = styled.img`
@@ -66,6 +87,8 @@ export const Name = styled.h1`
   font-size: 2rem;
   text-align: center;
   padding-bottom: 2vh;
+  @media ${Device.mobile} {
+font-size : 1.5rem;  }
 `;
 
 export const Job = styled.h2`
@@ -73,10 +96,14 @@ export const Job = styled.h2`
   font-size: 1.6rem;
   text-align: center;
   padding-bottom: 2vh;
+  @media ${Device.mobile} {
+font-size : 1.2rem;  }
 `;
 
 export const Company = styled.h2`
   color: white;
   font-size: 1.8rem;
   text-align: center;
+  @media ${Device.mobile} {
+font-size : 1.2rem;  }
 `;
