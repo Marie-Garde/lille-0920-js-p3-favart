@@ -24,7 +24,7 @@ export const BlockLogoTitle = styled.div``;
 export const Title = styled.h2`
   opacity: 0;
   font-size: 2rem;
-  margin-bottom:2vh;
+  margin-bottom: 2vh;
   text-transform: uppercase;
   transition: ease 2s;
   @media ${Device.mobile} {
@@ -43,9 +43,9 @@ export const BlockUl = styled.div`
   margin: 7vh 7vw 10vh 7vw;
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
-  line-height:140%;
-  font-size:1.3rem;
+  justify-content: space-between;
+  line-height: 140%;
+  font-size: 1.3rem;
   transition: ease 2s;
 `;
 
@@ -75,11 +75,9 @@ export const Grid1 = styled.div`
   text-align: center;
   transition: 0.2s ease;
   border-radius: 5px;
-  height:22.5vh;
-  
+  height: 22.5vh;
 
   &:hover {
-
     grid-column: 1/4;
     grid-row: 1/3;
     height: auto;
@@ -108,7 +106,6 @@ export const Grid1 = styled.div`
       opacity: 1;
     }
   }
-
 
   @media ${Device.mobile} {
     display: flex;
@@ -225,15 +222,15 @@ export const Flexbox = styled.div`
 `;
 
 export const Head = styled.div`
-display: flex;
-flex-direction: row;
+  display: flex;
+  flex-direction: row;
 `;
 
 export const ProjectTitle = styled.h1`
-  align-items:center;
-  display:flex;
-  margin-left:25%
-`
+  align-items: center;
+  display: flex;
+  margin-left: 25%;
+`;
 
 export const Test = styled.div`
   display: flex;
@@ -241,11 +238,7 @@ export const Test = styled.div`
   justify-content: space-between;
   text-align: start;
   margin: 1vh 4vw 2vh 4vw;
-  line-height:150%
+  line-height: 150%;
 `;
 
-export const List = styled.ul`
-
-`
-
-
+export const List = styled.ul``;

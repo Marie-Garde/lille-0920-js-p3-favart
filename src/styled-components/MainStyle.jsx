@@ -9,16 +9,16 @@ export const Body = styled.div`
 
 export const FSentence = styled.h1`
   color: #122239;
-  font-size:3rem;
+  font-size: 3rem;
   text-align: center;
   margin: 0 7vw 0 7vw;
-`
+`;
 
 export const FPagraph = styled.p`
-  line-height:140%;
+  line-height: 140%;
   margin: 5vh 7vw 5vh 7vw;
-  font-size:1.3rem;
-`
+  font-size: 1.3rem;
+`;
 
 export const H1Left = styled.h1`
   color: #122239;
