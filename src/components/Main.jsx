@@ -25,7 +25,6 @@ import {
 
 export default function MainPage() {
   return (
-
     <Body>
       <FSentence>
         Explorer de nouveaux moyens d’action pour relever les grands défis de
@@ -102,7 +101,7 @@ export default function MainPage() {
         </List>
       </PTitle>
 
-        <H1Right>Auprès de qui ?</H1Right>
+      <H1Right>Auprès de qui ?</H1Right>
 
       <ContainerWhom>
         <PWhom>
