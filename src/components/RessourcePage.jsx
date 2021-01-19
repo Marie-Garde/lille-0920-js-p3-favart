@@ -9,7 +9,7 @@ import {
   Text,
   Name,
   Job,
-  Company
+  Company,
 } from "../styled-components/RessourcePage";
 
 import documents from "../assets/Documents/Ressource";
