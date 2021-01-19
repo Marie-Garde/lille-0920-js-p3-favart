@@ -1,4 +1,6 @@
 import React from "react";
+import HeaderMenu01 from "./header/HeaderMenu01";
+import HeaderBody01 from "./header/HeaderBody01";
 import {
   H1Left,
   ContainerWhy,
@@ -23,6 +25,7 @@ import {
 
 export default function MainPage() {
   return (
+
     <Body>
       <FSentence>Explorer de nouveaux moyens d’action pour relever les grands défis de notre société</FSentence>
       <FPagraph>Favart est une agence d’ingénierie en innovation sociétale. Nous imaginons, développons et essaimons depuis plus de 10 ans des solutions de rupture à fort impact sociétal afin de répondre aux situations de fragilité de personnes (précarité, exclusion), de territoires (pauvreté, chômage, logement), de systèmes (Education, Action Sociale, Santé, …). Nous mettons en œuvre de nouveaux moyens d’action à destination des entreprises, des associations, des services de l’Etat et des collectivités locales afin de répondre aux enjeux des territoires.</FPagraph>
@@ -87,7 +90,7 @@ export default function MainPage() {
         </List>
       </PTitle>
 
-      <H1Right>Auprès de qui ?</H1Right>
+        <H1Right>Auprès de qui ?</H1Right>
 
       <ContainerWhom>
         <PWhom>
