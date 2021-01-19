@@ -3,40 +3,42 @@ import { Device } from "../assets/Device/Device";
 
 export const Container = styled.div`
   display: grid;
-  margin-left: 7vw;
-  margin-right: 7vw;
-  border: 2px dotted black;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  margin: 2vh 7vw 0 7vw;
+  height: auto;
+  grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-gap: 1vw;
-
   @media ${Device.mobile} {
     display: flex;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
     height: 125vh;
-    width: 80vw;
+    width: 90vw;
   } ;
 `;
 
 export const BlockLogoTitle = styled.div`
   margin: 1vh 2vw 4vh 2vw;
   @media ${Device.mobile} {
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
   }
 `;
 
 export const Title = styled.h2`
+  color: #0d253f;
   opacity: 0;
-  font-size: 2rem;
+  font-weight: bold;
+
+  font-size: 2.5rem;
   @media ${Device.mobile} {
-    font-size: 1.5rem;
     opacity: 1;
-    width: 70vw;
-    margin-left: 10vw;
+
+    font-size: 2rem;
+    margin-top: 2vh;
   }
 `;
 
@@ -44,7 +46,7 @@ export const LogoProjet = styled.img`
   background-color: white;
   border-radius: 10px;
   @media ${Device.mobile} {
-    width: 30vw;
+    width: 40vw;
   }
 `;
 
@@ -63,22 +65,20 @@ export const BlockUl = styled.div`
 export const ContainerUl1 = styled.div`
   display: flex;
   align-items: center;
-  @media ${Device.mobile} {
-    align-items: flex-start;
-  }
 `;
 
 export const OutilsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  @media ${Device.mobile} {
-  } ;
 `;
 
 export const Center = styled.ul`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media ${Device.mobile} {
+    margin-left: 10vw;
+  }
 `;
 
 export const Tools = styled.li`
@@ -89,6 +89,10 @@ export const Tools = styled.li`
 
 export const LiList = styled.li`
   margin-bottom: 1vh;
+  @media ${Device.mobile} {
+    margin-bottom: 3vh;
+    line-height: 2.5vh;
+  }
 `;
 
 export const Span = styled.span`
@@ -99,8 +103,8 @@ export const Span = styled.span`
 export const ContainerBlock = styled.div``;
 
 export const Grid1 = styled.div`
-  grid-column-start: 2;
-  grid-row-start: 1;
+  grid-column: 2/3;
+  grid-row: 1/2;
   height: 22vh;
   background-color: #1f89d1;
   overflow: hidden;
@@ -111,16 +115,15 @@ export const Grid1 = styled.div`
     grid-row: 1/3;
     height: auto;
     z-index: 1;
-    transition: 0.2s ease;
   }
   ${Title} {
     opacity: 1;
-    transition: opacity 0.3s ease;
   }
   ${BlockLogoTitle} {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    opacity: 1;
   }
   ${BlockUl} {
     opacity: 1;
@@ -133,6 +136,8 @@ export const Grid1 = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    background: grey;
+    color: white;
     height: 200vh;
   } ;
 `;
@@ -147,98 +152,114 @@ export const Details2 = styled.p`
 export const Grid2 = styled.div`
   grid-column-start: 4;
   grid-row-start: 1;
-  background: green;
-  color: white;
-  text-align: center;
+  height: 22vh;
+  background-color: #1f89d1;
+  transition: 0.2s ease;
+  overflow: hidden;
   &:hover {
+    background: #e5e5e5;
+
     grid-column: 3/6;
     grid-row: 1/3;
+    height: auto;
     z-index: 1;
-    ${Details2} {
+    transition: 0.2s ease;
+
+    ${Title} {
       opacity: 1;
       transition: opacity 0.3s ease;
     }
+    ${BlockLogoTitle} {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    ${BlockUl} {
+      opacity: 1;
+    }
+    ${ContainerBlock} {
+      opacity: 1;
+    }
   }
-`;
-export const Details3 = styled.p`
-  opacity: 0 BlockDescription;
+  @media ${Device.mobile} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const Grid3 = styled.div`
-  grid-column-start: 2;
-  grid-row-start: 2;
-  background: blue;
-  color: white;
-  text-align: center;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  height: 22vh;
+  background-color: #1f89d1;
+  transition: 0.2s ease;
+  overflow: hidden;
   &:hover {
+    background: #e5e5e5;
     grid-column: 1/4;
-    grid-row: 2/4;
+    grid-row: 2/6;
+    height: auto;
     z-index: 1;
-    ${Details3} {
+    transition: 0.2s ease;
+
+    ${Title} {
       opacity: 1;
       transition: opacity 0.3s ease;
     }
+    ${BlockLogoTitle} {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    ${BlockUl} {
+      opacity: 1;
+    }
+    ${ContainerBlock} {
+      opacity: 1;
+    }
   }
-`;
-
-export const Details4 = styled.p`
-  opacity: 0;
+  @media ${Device.mobile} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const Grid4 = styled.div`
   grid-column-start: 4;
   grid-row-start: 2;
-  background: gray;
-  color: white;
-  text-align: center;
+  height: 22vh;
+  background-color: #1f89d1;
+  transition: 0.2s ease;
   &:hover {
-    grid-column: 3/6;
-    grid-row: 2/4;
-    z-index: 1;
+    background: #e5e5e5;
 
-    ${Details4} {
+    grid-column: 3/6;
+    grid-row: 1/3;
+    height: auto;
+    z-index: 1;
+    transition: 0.2s ease;
+
+    ${Title} {
       opacity: 1;
       transition: opacity 0.3s ease;
+    }
+    ${BlockLogoTitle} {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    ${BlockUl} {
+      opacity: 1;
+    }
+    ${ContainerBlock} {
+      opacity: 1;
     }
   }
-`;
-export const Details5 = styled.p`
-  opacity: 0;
-`;
-
-export const Grid5 = styled.div`
-  grid-column-start: 2;
-  grid-row-start: 3;
-  background: purple;
-  color: white;
-  text-align: center;
-  &:hover {
-    grid-column: 1/4;
-    grid-row: 2/4;
-    z-index: 1;
-    ${Details5} {
-      opacity: 1;
-      transition: opacity 0.3s ease;
-    }
-  }
-`;
-
-export const Details6 = styled.p`
-  opacity: 0;
-`;
-export const Grid6 = styled.div`
-  grid-column-start: 4;
-  grid-row-start: 3;
-  background: orange;
-  color: white;
-  text-align: center;
-  &:hover {
-    grid-column: 3/6;
-    grid-row: 2/4;
-    z-index: 1;
-    ${Details6} {
-      opacity: 1;
-      transition: opacity 0.3s ease;
-    }
+  @media ${Device.mobile} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;
