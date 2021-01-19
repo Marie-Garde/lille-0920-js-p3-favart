@@ -1,8 +1,8 @@
 import React from "react";
 import HeaderMenu01 from "./header/HeaderMenu01";
 import HeaderBody01 from "./header/HeaderBody01";
-import woods from "../Assets/images/woods.jfif";
-import docteur from "../Assets/images/docteur.jfif";
+import woods from "../assets/images/woods.jfif";
+import docteur from "../assets/images/docteur.jfif";
 import {
   H1Left,
   ContainerWhy,
@@ -23,7 +23,7 @@ import {
   ListliWhom,
   FSentence,
   FPagraph,
-} from "../Styled-components/MainStyle";
+} from "../styled-components/MainStyle";
 
 export default function MainPage() {
   return (

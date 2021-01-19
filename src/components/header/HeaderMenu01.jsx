@@ -4,7 +4,7 @@ import {
   ContainerHeaderMenu,
   ContainerHeaderMenuLink,
   MenuLink,
-} from "../../Styled-components/header/HeaderMenuStyled.jsx";
+} from "../../styled-components/header/HeaderMenuStyled.jsx";
 
 export default function HeaderMenu() {
   return (

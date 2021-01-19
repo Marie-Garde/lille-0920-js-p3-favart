@@ -18,7 +18,7 @@ import {
   DivLabelText,
   InputSite,
   LabelCheckBox,
-} from "../Styled-components/Inscription";
+} from "../styled-components/Inscription";
 
 export default function Inscription() {
   return (

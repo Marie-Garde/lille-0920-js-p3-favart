@@ -1,4 +1,4 @@
-import logoFavart from "../Assets/logoFavart.jpg";
+import logoFavart from "../assets/logoFavart.jpg";
 
 import {
   Background,
@@ -10,7 +10,7 @@ import {
   Span,
   TitleForm,
   H2,
-} from "../Styled-components/Connexion";
+} from "../styled-components/Connexion";
 
 export default function connexion() {
   return (

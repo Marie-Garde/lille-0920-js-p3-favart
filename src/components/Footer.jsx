@@ -10,9 +10,9 @@ import {
   H1Underline,
   UlIconsMobile,
   Li,
-} from "../Styled-components/Footer";
+} from "../styled-components/Footer";
 
-import { ulMap } from "../Assets/others/IconsList";
+import { ulMap } from "../assets/others/IconsList";
 
 export default function Footer() {
   return (
