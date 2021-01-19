@@ -73,7 +73,7 @@ export default function ActionPage() {
       <H1>Notre équipe</H1>
       <CardFlex>
         <Card>
-          <ImgContainer src={geffroy} alt="#" />
+          <ImgContainer src={geffroy} alt="Mr Geffroy" />
           <Container>
             <H4>Yoann Geffroy</H4>
             <P>Directeur-Fondateur</P>
@@ -96,7 +96,7 @@ export default function ActionPage() {
         </Card>
 
         <Card>
-          <ImgContainer src={marsac} alt="#" />
+          <ImgContainer src={marsac} alt="Mr Marsac" />
           <Container>
             <H4>Marssac Barthélémy</H4>
             <P>Responsable Hauts-de-France</P>
