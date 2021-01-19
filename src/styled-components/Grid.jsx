@@ -65,9 +65,13 @@ export const BlockDescription = styled.div`
   flex-direction: column;
   padding-bottom: 5vh;
 `;
+
+export const OutilsContainer = styled.div`
+  display: flex;
+  justify-content: flex-start;
+`;
 export const Outils = styled.ul`
   list-style-type: circle;
-  margin-left: 25vw;
 `;
 
 export const Description = styled.p`

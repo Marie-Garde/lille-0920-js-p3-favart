@@ -25,6 +25,7 @@ import {
   ContainerUl2,
   Span1,
   Outils,
+  OutilsContainer,
 } from "../styled-components/Grid";
 
 export default function Grid() {
@@ -53,7 +54,7 @@ export default function Grid() {
                     </Span1>
                   </li>
                   <li>
-                    Territoires :{" "}
+                    Territoires :
                     <Span1>
                       Hauts-de-France, Valenciennois, Métropole Européenne de
                       Lille, Maubeugeois-Avesnois
@@ -68,14 +69,16 @@ export default function Grid() {
                     </Span1>
                   </li>
                   <li>
-                    Outils Favart :
-                    <Outils>
-                      <li>Droit à l’expérimentation</li>
-                      <li>Communauté d’action</li>
-                      <li>Modèle opérationnel</li>
-                      <li>Modèle économique à impact</li>
-                      <li>Modèle juridique et financier</li>
-                    </Outils>
+                    <OutilsContainer>
+                      Outils Favart :
+                      <Outils>
+                        <li>Droit à l’expérimentation</li>
+                        <li>Communauté d’action</li>
+                        <li>Modèle opérationnel</li>
+                        <li>Modèle économique à impact</li>
+                        <li>Modèle juridique et financier</li>
+                      </Outils>
+                    </OutilsContainer>
                   </li>
                 </ul>
               </ContainerUl1>
