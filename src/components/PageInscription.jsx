@@ -1,4 +1,4 @@
-import logoFavart from "../assets/logoFavart.jpg";
+import logoFavart from "../assets/logo-icon-header/FAVART.jpg";
 
 import {
   Background,
@@ -13,6 +13,8 @@ import {
   DivLabel,
   Formulaire,
   Input,
+  Button,
+  SpanLink,
 } from "../styled-components/PageInscription";
 
 export default function connexion() {
@@ -64,8 +66,11 @@ export default function connexion() {
                 required
               />
             </DivLabel>
+            <Button>Confirmer</Button>
           </Formulaire>
-          <H2>Déjà un compte ? Connexion</H2>
+          <H2>
+            Déjà un compte ? <SpanLink to="/connexion">Connexion</SpanLink>
+          </H2>
         </ContainerForm>
       </ContainerInscription>
     </Background>

@@ -1,4 +1,4 @@
-import logoFavart from "../assets/logoFavart.jpg";
+import logoFavart from "../assets/logo-icon-header/FAVART.jpg";
 
 import {
   Background,
@@ -10,6 +10,11 @@ import {
   Span,
   TitleForm,
   H2,
+  DivLabel,
+  Formulaire,
+  Input,
+  Button,
+  SpanLink,
 } from "../styled-components/Connexion";
 
 export default function connexion() {
@@ -23,8 +28,32 @@ export default function connexion() {
           </Slogan>
         </ContainerLogo>
         <ContainerForm>
-          <TitleForm>Inscription</TitleForm>
-          <H2>Déjà un compte ? Connexion</H2>
+          <TitleForm>Connexion</TitleForm>
+          <Formulaire>
+            <DivLabel>
+              <Input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required
+              />
+            </DivLabel>
+            <DivLabel>
+              <Input
+                type="text"
+                name="password"
+                id="password"
+                placeholder="Mot de passe"
+                required
+              />
+            </DivLabel>
+            <Button>Confirmer</Button>
+          </Formulaire>
+          <H2>
+            Pas encore de compte ?{" "}
+            <SpanLink to="/inscription">Inscription</SpanLink>
+          </H2>
         </ContainerForm>
       </ContainerInscription>
     </Background>
