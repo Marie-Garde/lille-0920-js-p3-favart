@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Device } from "../Assets/Device/Device";
+import { Device } from "../assets/Device/Device";
 
 export const Container = styled.div`
   display: grid;
@@ -20,19 +20,21 @@ export const Container = styled.div`
   } ;
 `;
 
-export const BlockLogoTitle = styled.div``;
+export const BlockLogoTitle = styled.div`
+  margin: 1vh 2vw 4vh 2vw;
+`;
 
 export const Title = styled.h2`
   opacity: 0;
-  font-size: 2.5rem;
+  font-size: 2rem;
   @media ${Device.mobile} {
     font-size: 1rem;
   }
 `;
 
 export const LogoProjet = styled.img`
-  margin: 1.5vh;
   background-color: white;
+  border-radius: 10px;
 `;
 
 export const BlockUl = styled.div`
@@ -41,7 +43,6 @@ export const BlockUl = styled.div`
   display: flex;
   justify-content: space-between;
   text-align: start;
-  margin-top: 3vh;
   line-height: 2.5vh;
 `;
 export const ContainerUl1 = styled.div`
@@ -49,11 +50,6 @@ export const ContainerUl1 = styled.div`
   align-items: center;
 `;
 
-export const Span1 = styled.p`
-  display: inline-block;
-  flex-wrap: wrap;
-  margin-left: 10vw;
-`;
 export const ContainerUl2 = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -68,11 +64,20 @@ export const BlockDescription = styled.div`
 
 export const OutilsContainer = styled.div`
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
 `;
-export const Outils = styled.ul`
-  list-style-type: circle;
-`;
+
+export const Center = styled.ul`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`
+
+export const Tools = styled.li`
+  list-style-type: disc;
+  margin-left:1vw;
+  margin-top:1vh;
+`
 
 export const Description = styled.p`
   opacity: 0;
@@ -82,15 +87,17 @@ export const Description = styled.p`
     opacity: 1;
   }
 `;
-export const ContainerBlock = styled.div``;
+
+export const LiList = styled.li`
+  margin-bottom: 1vh;
+`
+export const ContainerBlock = styled.div``
 
 export const Grid1 = styled.div`
   grid-column-start: 2;
   grid-row-start: 1;
   height: 22vh;
   background-color: #1f89d1;
-  color: black;
-  text-align: center;
   transition: 0.2s ease;
   &:hover {
     background: #e5e5e5;
@@ -129,6 +136,10 @@ export const Grid1 = styled.div`
     align-items: center;
   }
 `;
+
+export const Test = styled.ul`
+  margin: 0 2vw 0 2vw;
+`
 
 export const Details2 = styled.p`
   opacity: 0;
@@ -231,3 +242,8 @@ export const Grid6 = styled.div`
     }
   }
 `;
+
+export const Span = styled.span`
+  font-weight: bold;
+  font-size:1.4rem;
+`

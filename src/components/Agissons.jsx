@@ -1,7 +1,7 @@
-import experimentation from "../Assets/Agissons/experimentation.jpg";
-import communauté from "../Assets/Agissons/communauté.jpg";
-import economique from "../Assets/Agissons/economique.jpg";
-import juridique from "../Assets/Agissons/juridique.png";
+import experimentation from "../assets/Agissons/experimentation.jpg";
+import communauté from "../assets/Agissons/communauté.jpg";
+import economique from "../assets/Agissons/economique.jpg";
+import juridique from "../assets/Agissons/juridique.png";
 
 import {
   P,
@@ -33,7 +33,7 @@ import {
   IdeeForte4,
   Text4,
   Liste4,
-} from "../Styled-components/Agissons.jsx";
+} from "../styled-components/Agissons.jsx";
 
 export default function Agissons() {
   return (

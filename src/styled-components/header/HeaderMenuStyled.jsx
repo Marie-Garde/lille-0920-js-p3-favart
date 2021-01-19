@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Device } from "../../Assets/Device/Device";
+import { Device } from "../../assets/Device/Device";
 
 export const ContainerHeaderMenu = styled.div`
   display: flex;

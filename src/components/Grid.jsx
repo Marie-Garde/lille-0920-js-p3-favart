@@ -1,5 +1,5 @@
 import React from "react";
-import oxalia from "../Assets/logosProjetsGrid//logo-oxalia.png";
+import oxalia from "../assets/logosProjetsGrid//logo-oxalia.png";
 
 import {
   Container,
@@ -23,9 +23,13 @@ import {
   ContainerBlock,
   ContainerUl1,
   ContainerUl2,
-  Span1,
-  Outils,
+  p,
+  Tools,
   OutilsContainer,
+  Test,
+  LiList,
+  Span,
+  Center
 } from "../styled-components/Grid";
 
 export default function Grid() {
@@ -40,47 +44,47 @@ export default function Grid() {
           <ContainerBlock>
             <BlockUl>
               <ContainerUl1>
-                <ul>
-                  <li>
-                    Porteur du projet :
-                    <Span1>Groupement Oxalia (bailleurs sociaux)</Span1>
-                  </li>
-                  <li>
-                    Enjeux :
-                    <Span1>
+                <Test>
+                  <LiList>
+                    <Span>Porteur du projet :</Span>
+                    <p>Groupement Oxalia (bailleurs sociaux)</p>
+                  </LiList>
+                  <LiList>
+                  <Span>Enjeux :</Span>
+                    <p>
                       Prévenir les sorties sèches à la fin des dispositifs
                       institutionnels et permettre l’accès au l’autonomie
                       citoyenne des jeunes
-                    </Span1>
-                  </li>
-                  <li>
-                    Territoires :
-                    <Span1>
+                    </p>
+                  </LiList>
+                  <LiList>
+                  <Span>Territoires :</Span>
+                    <p>
                       Hauts-de-France, Valenciennois, Métropole Européenne de
-                      Lille, Maubeugeois-Avesnois
-                    </Span1>
-                  </li>
-                  <li>
-                    Mission Favart :
-                    <Span1>
+                      LiListlle, Maubeugeois-Avesnois
+                    </p>
+                  </LiList>
+                  <LiList>
+                  <Span>Mission Favart :</Span>
+                    <p>
                       Mise en œuvre d’une nouvelle stratégie régionale pour
                       lutter contre les sorties sèches à la fin de l’aide
                       sociale à l’enfance (ASE)
-                    </Span1>
-                  </li>
-                  <li>
+                    </p>
+                  </LiList>
+                  <LiList>
                     <OutilsContainer>
-                      Outils Favart :
-                      <Outils>
-                        <li>Droit à l’expérimentation</li>
-                        <li>Communauté d’action</li>
-                        <li>Modèle opérationnel</li>
-                        <li>Modèle économique à impact</li>
-                        <li>Modèle juridique et financier</li>
-                      </Outils>
+                    <Span>Outils Favart :</Span>
+                      <Center>
+                        <Tools>Droit à l’expérimentation</Tools>
+                        <Tools>Communauté d’action</Tools>
+                        <Tools>Modèle opérationnel</Tools>
+                        <Tools>Modèle économique à impact</Tools>
+                        <Tools>Modèle juridique et financier</Tools>
+                      </Center>
                     </OutilsContainer>
-                  </li>
-                </ul>
+                  </LiList>
+                </Test>
               </ContainerUl1>
               {/*<ContainerUl2>
                 <ul>
