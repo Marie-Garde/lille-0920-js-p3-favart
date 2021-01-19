@@ -1,6 +1,8 @@
 import React from "react";
 import HeaderMenu01 from "./header/HeaderMenu01";
 import HeaderBody01 from "./header/HeaderBody01";
+import woods from '../Assets/images/woods.jfif';
+import docteur from '../Assets/images/docteur.jfif'
 import {
   H1Left,
   ContainerWhy,
@@ -43,8 +45,8 @@ export default function MainPage() {
       <H1Left>Pourquoi FAVART ?</H1Left>
       <ContainerWhy>
         <ImgWhy
-          src="https://images.unsplash.com/photo-1562569517-22bcc82b5dd4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80"
-          alt="Représentants de l'entreprise FAVART"
+          src={woods}
+          alt="Forêt avec rayons de soleil"
         ></ImgWhy>
         <PWhy>
           <h3>Ce que les crises nous apprennent :</h3>
@@ -141,8 +143,8 @@ export default function MainPage() {
         </PWhom>
 
         <ImgWhom
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS57CPtbyMeYcowMud7zNR9YfejzAy0VKrx_Q&usqp=CAU"
-          alt="Jonas Salk, inventeur du vaccin contre la polio (1ère cause de mortalité chez l’enfant au milieu du XXe siècle) a fait de ce vaccin un bien commun en refusant de le breveter : ”Il n’y a pas de brevet. Pourriez-vous breveter le soleil ?”"
+          src={docteur}
+          alt="Jonas Salk, inventeur du vaccin contre la polio"
         />
       </ContainerWhom>
       <SubTitle>

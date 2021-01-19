@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Device } from "../assets/Device/Device";
+import { Device } from "../Assets/Device/Device";
 
 export const Body = styled.div`
   font-family: "Roboto", sans-serif;
@@ -12,12 +12,20 @@ export const FSentence = styled.h1`
   font-size: 3rem;
   text-align: center;
   margin: 0 7vw 0 7vw;
+
+  @media ${Device.mobile} {
+    font-size:1.8rem;
+  }
 `;
 
 export const FPagraph = styled.p`
   line-height: 140%;
   margin: 5vh 7vw 5vh 7vw;
   font-size: 1.3rem;
+
+  @media ${Device.mobile} {
+    text-align: justify;
+  }
 `;
 
 export const H1Left = styled.h1`
@@ -49,8 +57,9 @@ export const ContainerWhy = styled.div`
 
 export const List = styled.ul`
   padding-left: 1.5vw;
+  padding:2vh 0 2vh 0;
 
-  @media ${device.mobile} {
+  @media ${Device.mobile} {
     padding-left: 5vw;
   }
 `;
@@ -89,7 +98,7 @@ export const H2Title = styled.h2`
 export const PTitle = styled.p`
   text-align: justify;
   font-size: 1.2rem;
-  margin: 2vh 7vw 8vh 7vw;
+  margin: 3vh 7vw 3vh 7vw;
   color: black;
   line-height: 140%;
 `;
@@ -172,6 +181,8 @@ export const Map = styled.div`
 export const SubTitle = styled.h3`
   text-align: center;
   padding: 6vh 0 6vh 0;
+  font-size:1.5rem;
+  color: #122239;
 `;
 
 export const Bold = styled.span`
@@ -180,15 +191,17 @@ export const Bold = styled.span`
 
 export const Listli = styled.li`
   padding: 1vh;
+  list-style-type: disc;
 
-  @media ${device.mobile} {
+  @media ${Device.mobile} {
     padding: 2vh;
   }
 `;
 
 export const ListliWhom = styled.li`
   padding: 1vh;
+  list-style-type: disc;
 
-  @media ${device.mobile} {
+  @media ${Device.mobile} {
   }
 `;
