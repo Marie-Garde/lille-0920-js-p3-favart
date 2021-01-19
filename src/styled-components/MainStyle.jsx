@@ -76,8 +76,6 @@ export const ImgWhy = styled.img`
   height: 40vh;
   border-radius: 15px;
   @media ${Device.mobile} {
-    width: 90vw;
-    height: 40vh;
     display: none;
   }
 `;
