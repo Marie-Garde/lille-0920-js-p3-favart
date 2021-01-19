@@ -52,3 +52,31 @@ padding-left : 2vh;
 
 export const Img = styled.img`
 width : 100%`;
+
+export const Text = styled.div`
+  margin-top: 40vh;
+  @media ${Device.mobile} {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+`;
+
+export const Name = styled.h1`
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 2vh;
+`;
+
+export const Job = styled.h2`
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
+  padding-bottom: 2vh;
+`;
+
+export const Company = styled.h2`
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+`;

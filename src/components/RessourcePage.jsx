@@ -1,11 +1,15 @@
 import {
-    DivCard,
+  DivCard,
   FlexBox,
   FlexBox1,
   FlexBox2,
   H1,
   P,
-  Img
+  Img,
+  Text,
+  Name,
+  Job,
+  Company
 } from "../styled-components/RessourcePage";
 
 import documents from "../assets/Documents/Ressource";
@@ -13,7 +17,13 @@ import documents from "../assets/Documents/Ressource";
 export default function RessourcePage() {
   return (
     <FlexBox>
-      <FlexBox1></FlexBox1>
+      <FlexBox1>
+        <Text>
+          <Name>Name Surname</Name>
+          <Job>Function</Job>
+          <Company>Company</Company>
+        </Text>
+      </FlexBox1>
       <FlexBox2>
         {documents.map((card) => (
           <DivCard>
