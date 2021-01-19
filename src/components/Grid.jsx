@@ -5,31 +5,21 @@ import {
   Container,
   Title,
   Grid1,
-  Description,
   Grid2,
   Details2,
   Grid3,
   Details3,
-  Grid4,
-  Details4,
-  Grid5,
-  Details5,
-  Grid6,
-  Details6,
   LogoProjet,
   BlockLogoTitle,
   BlockUl,
-  BlockDescription,
   ContainerBlock,
   ContainerUl1,
-  ContainerUl2,
-  p,
   Tools,
   OutilsContainer,
   Test,
   LiList,
   Span,
-  Center
+  Center,
 } from "../styled-components/Grid";
 
 export default function Grid() {
@@ -50,7 +40,7 @@ export default function Grid() {
                     <p>Groupement Oxalia (bailleurs sociaux)</p>
                   </LiList>
                   <LiList>
-                  <Span>Enjeux :</Span>
+                    <Span>Enjeux :</Span>
                     <p>
                       Prévenir les sorties sèches à la fin des dispositifs
                       institutionnels et permettre l’accès au l’autonomie
@@ -58,14 +48,14 @@ export default function Grid() {
                     </p>
                   </LiList>
                   <LiList>
-                  <Span>Territoires :</Span>
+                    <Span>Territoires :</Span>
                     <p>
                       Hauts-de-France, Valenciennois, Métropole Européenne de
                       LiListlle, Maubeugeois-Avesnois
                     </p>
                   </LiList>
                   <LiList>
-                  <Span>Mission Favart :</Span>
+                    <Span>Mission Favart :</Span>
                     <p>
                       Mise en œuvre d’une nouvelle stratégie régionale pour
                       lutter contre les sorties sèches à la fin de l’aide
@@ -74,7 +64,7 @@ export default function Grid() {
                   </LiList>
                   <LiList>
                     <OutilsContainer>
-                    <Span>Outils Favart :</Span>
+                      <Span>Outils Favart :</Span>
                       <Center>
                         <Tools>Droit à l’expérimentation</Tools>
                         <Tools>Communauté d’action</Tools>
@@ -115,14 +105,6 @@ export default function Grid() {
                 </ul>
               </ContainerUl2>*/}
             </BlockUl>
-            <BlockDescription>
-              {/*<Description>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum
-                alias voluptates fugiat modi eveniet rerum vitae distinctio
-                laudantium porro labore dolore illum sapiente temporibus eius
-                nulla in, tenetur odio. Rerum.
-              </Description>*/}
-            </BlockDescription>
           </ContainerBlock>
         </Grid1>
         <Grid2>
@@ -144,28 +126,6 @@ export default function Grid() {
             odio. Rerum.
           </Details3>
         </Grid3>
-        <Grid4>
-          <Title>Block4</Title>
-          <Details4>ribus eius nulla in, tenetur odio. Rerum.</Details4>
-        </Grid4>
-        <Grid5>
-          <Title>Block5</Title>
-          <Details5>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum alias
-            voluptates fugiat modi eveniet rerum vitae distinctio laudantium
-            porro labore dolore illum sapiente temporibus eius nulla in, tenetur
-            odio. Rerum.
-          </Details5>
-        </Grid5>
-        <Grid6>
-          <Title>Block6</Title>
-          <Details6>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum alias
-            voluptates fugiat modi eveniet rerum vitae distinctio laudantium
-            porro labore dolore illum sapiente temporibus eius nulla in, tenetur
-            odio. Rerum.
-          </Details6>
-        </Grid6>
       </Container>
     </>
   );
