@@ -1,20 +1,21 @@
 import ClientPage from "./components/ClientPage";
 import { Reset } from "styled-reset";
 import Connexion from "./components/Connexion";
-import HeaderBody from "./components/HeaderBody";
-import HeaderMenu from "./components/HeaderMenu";
 import HeaderTop from "./components/HeaderTop";
 import Mainpage from "./components/Main";
 import Footer from "./components/Footer";
-import AutoplayExemple from "./components/Carousel";
+import Agissons from "./components/Agissons";
+import Inscription from "./components/Inscription";
+import Header03 from './components/header/HeaderBody03'
+
+import { Switch, Route } from "react-router-dom";
 
 export default function App() {
   return (
     <div>
       <Reset />
-      <Mainpage />
-      <AutoplayExemple />
-      <Footer/>
+      <HeaderTop/>
+      <Header03 />
     </div>
   );
 }
