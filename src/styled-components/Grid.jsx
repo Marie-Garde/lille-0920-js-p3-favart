@@ -3,8 +3,9 @@ import { Device } from "../assets/Device/Device";
 
 export const Container = styled.div`
   display: grid;
-  margin: 2vh 7vw 0 7vw;
+  margin: 0 vh 7vw 0 7vw;
   height: auto;
+
   grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-gap: 1vw;
@@ -14,12 +15,13 @@ export const Container = styled.div`
     margin-left: auto;
     margin-right: auto;
     height: 125vh;
-    width: 90vw;
+    width: 100vw;
   } ;
 `;
 
 export const BlockLogoTitle = styled.div`
-  margin: 1vh 2vw 4vh 2vw;
+  margin: 1.5vh 1.5vw 4vh 1.5vw;
+
   @media ${Device.mobile} {
     display: flex;
     flex-direction: column;
@@ -30,13 +32,12 @@ export const BlockLogoTitle = styled.div`
 
 export const Title = styled.h2`
   color: #0d253f;
-  opacity: 0;
   font-weight: bold;
-
-  font-size: 2.5rem;
+  overflow: hidden;
+  font-size: 3.5rem;
+  padding: 1vh 0vw;
   @media ${Device.mobile} {
-    opacity: 1;
-
+    display: flex;
     font-size: 2rem;
     margin-top: 2vh;
   }
@@ -44,7 +45,6 @@ export const Title = styled.h2`
 
 export const LogoProjet = styled.img`
   background-color: white;
-  border-radius: 10px;
   @media ${Device.mobile} {
     width: 40vw;
   }
@@ -108,12 +108,14 @@ export const Grid1 = styled.div`
   height: 22vh;
   background-color: #1f89d1;
   overflow: hidden;
+  width: 20vw;
   &:hover {
     background: grey;
     color: white;
     grid-column: 1/4;
     grid-row: 1/3;
     height: auto;
+    width: auto;
     z-index: 1;
   }
   ${Title} {
@@ -139,6 +141,7 @@ export const Grid1 = styled.div`
     background: grey;
     color: white;
     height: 200vh;
+    width: auto;
   } ;
 `;
 
