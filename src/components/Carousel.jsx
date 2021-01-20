@@ -12,7 +12,7 @@ const AutoplayExample = () => {
 
   return (
     <div>
-      <Title>Ils le font avec nous :</Title>
+      <Title>Nos partenaires :</Title>
       <Carousel>
         <Slide autoplay={autoplay}>
           <SlideStyle>

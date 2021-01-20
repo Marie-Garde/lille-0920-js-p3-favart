@@ -20,11 +20,13 @@ import {
   LiList,
   Span,
   Center,
+  TitleUp,
 } from "../styled-components/Grid";
 
 export default function Grid() {
   return (
     <>
+    <TitleUp>Nos projets partenaires :</TitleUp>
       <Container>
         <Grid1>
           <BlockLogoTitle>

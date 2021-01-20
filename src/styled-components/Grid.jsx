@@ -8,6 +8,7 @@ export const Container = styled.div`
   grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 1vw;
+
   @media ${Device.mobile} {
     display: flex;
     flex-direction: column;
@@ -253,3 +254,8 @@ export const Grid3 = styled.div`
     align-items: center;
   }
 `;
+
+export const TitleUp = styled.h2`
+  font-size: 7rem;
+  margin: 10vh 5vw 0vh 5vw;
+`
