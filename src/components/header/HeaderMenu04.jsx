@@ -1,12 +1,12 @@
 import React from "react";
-import HeaderBody from "./HeaderBody01";
+import HeaderBody from "./HeaderBody04";
 
 import {
   ContainerHeaderMenu,
   ContainerHeaderMenuLink,
   MenuLink,
-  MenuLinkMain,
-} from "../../styled-components/header/HeaderMenuStyled.jsx";
+  MenuLinkAction,
+} from "../../styled-components/header/HeaderMenuStyled04.jsx";
 
 export default function HeaderMenu() {
   return (
@@ -14,10 +14,10 @@ export default function HeaderMenu() {
       <ContainerHeaderMenu>
         <ContainerHeaderMenuLink>
           <MenuLink to="/sommaire">00 /</MenuLink>
-          <MenuLinkMain to="/"> 01 - Favart /</MenuLinkMain>
+          <MenuLink to="/"> 01 /</MenuLink>
           <MenuLink to="/agissons"> 02 /</MenuLink>
           <MenuLink to="/ilsetelles"> 03 / </MenuLink>
-          <MenuLink to="/action"> 04</MenuLink>
+          <MenuLinkAction to="/action"> 04 - Passons à l'action</MenuLinkAction>
         </ContainerHeaderMenuLink>
       </ContainerHeaderMenu>
       <HeaderBody />

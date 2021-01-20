@@ -11,7 +11,6 @@ import {
   BlockSentence,
   ContainerAuthorSentence,
   AuthorSentence,
-  BlockButton,
   ContainerMoreInformation,
   MoreInformationSentence,
 } from "../../styled-components/header/HeaderBodyStyled.jsx";
@@ -27,25 +26,27 @@ export default function HeaderBody() {
         <BlockTitle>
           <ContainerTitle>
             <Title>
-              pourquoi nous <TitleSpan>existons </TitleSpan> ?
+              pourquoi nous <TitleSpan>existons </TitleSpan>
             </Title>
           </ContainerTitle>
         </BlockTitle>
         <BlockSentence>
           <ContainerAuthorSentence>
             <AuthorSentence>
-              "Atteindre le plus grand nombre en mettant
+              "Atteindre le plus grand nombre en mettant la barre très haut",
+              Agnès Varda
             </AuthorSentence>
-            <AuthorSentence> la barre très haut" Agnès Varda</AuthorSentence>
           </ContainerAuthorSentence>
         </BlockSentence>
-        <>
-          <ContainerMoreInformation visible={visible} onClick={onClick}>
-            <MoreInformationSentence>En savoir plus</MoreInformationSentence>
-          </ContainerMoreInformation>
-          {visible ? <Main /> : null}
-          {visible ? <Footer /> : null}
-        </>
+        <ContainerMoreInformation visible={visible} onClick={onClick}>
+          <MoreInformationSentence>En savoir plus</MoreInformationSentence>
+        </ContainerMoreInformation>
+        {visible && (
+          <>
+            <Main />
+            <Footer />
+          </>
+        )}
       </Page>
     </>
   );

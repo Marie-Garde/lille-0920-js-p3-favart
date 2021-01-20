@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { Device } from "../assets/Device/Device";
 
 export const P = styled.p`
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   text-align: center;
-  margin-top: 3vh;
+  margin-top: 15vh;
   margin-bottom: 6vh;
   font-family: "Josefin Sans";
   font-weight: bold;

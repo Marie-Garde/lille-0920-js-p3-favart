@@ -3,7 +3,7 @@ import { Device } from "../../assets/Device/Device.jsx";
 
 export const Page = styled.div`
   background-color: #e5e5e5;
-  height: 92vh;
+  height: 86vh;
 `;
 
 export const BlockTitle = styled.div`
@@ -16,6 +16,9 @@ export const ContainerTitle = styled.div`
   max-width: 85vw;
   margin-top: 10vh;
   margin-bottom: 10vh;
+  @media ${Device.mobile} {
+    margin-bottom: 7vh;
+  }
 `;
 
 export const Title = styled.h1`
@@ -24,7 +27,7 @@ export const Title = styled.h1`
   text-transform: uppercase;
   font-family: "Josefin Sans";
   @media ${Device.mobile} {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 `;
 
@@ -33,7 +36,7 @@ export const TitleSpan = styled.span`
   color: #1f89d1;
   text-transform: uppercase;
   @media ${Device.mobile} {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 `;
 
@@ -53,7 +56,6 @@ export const ContainerAuthorSentence = styled.div`
     line-height: 1.2em;
   }
 `;
-
 export const AuthorSentence = styled.p`
   font-size: 4vh;
   font-style: italic;

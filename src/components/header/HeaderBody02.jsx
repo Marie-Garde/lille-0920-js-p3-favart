@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import Grid from "../Grid";
-import Carousel from "../Carousel";
+import Agissons from "../Agissons";
 import Footer from "../Footer";
 
 import {
@@ -12,9 +11,10 @@ import {
   BlockSentence,
   ContainerAuthorSentence,
   AuthorSentence,
+  BlockButton,
   ContainerMoreInformation,
   MoreInformationSentence,
-} from "../../styled-components/header/HeaderBodyStyled03.jsx";
+} from "../../styled-components/header/HeaderBodyStyled02.jsx";
 
 export default function HeaderBody() {
   const [visible, setVisible] = useState(false);
@@ -27,16 +27,15 @@ export default function HeaderBody() {
         <BlockTitle>
           <ContainerTitle>
             <Title>
-              <TitleSpan>Ils </TitleSpan> et <TitleSpan>elles</TitleSpan> le
-              font avec nous
+              Comment nous <TitleSpan>agissons </TitleSpan>
             </Title>
           </ContainerTitle>
         </BlockTitle>
         <BlockSentence>
           <ContainerAuthorSentence>
             <AuthorSentence>
-              "Il y a plus dans l'échange que dans la chose échangée", Claude
-              Lévi-Strauss
+              "Il faut être enthousiaste de son métier pour y exceller", Denis
+              Diderot
             </AuthorSentence>
           </ContainerAuthorSentence>
         </BlockSentence>
@@ -45,8 +44,7 @@ export default function HeaderBody() {
         </ContainerMoreInformation>
         {visible && (
           <>
-            <Grid />
-            <Carousel />
+            <Agissons />
             <Footer />
           </>
         )}

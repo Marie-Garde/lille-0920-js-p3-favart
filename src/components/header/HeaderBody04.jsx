@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import Grid from "../Grid";
-import Carousel from "../Carousel";
+import Main from "../Main"; //We'll have to change to "action" page
 import Footer from "../Footer";
 
 import {
@@ -14,7 +13,7 @@ import {
   AuthorSentence,
   ContainerMoreInformation,
   MoreInformationSentence,
-} from "../../styled-components/header/HeaderBodyStyled03.jsx";
+} from "../../styled-components/header/HeaderBodyStyled04.jsx";
 
 export default function HeaderBody() {
   const [visible, setVisible] = useState(false);
@@ -27,16 +26,15 @@ export default function HeaderBody() {
         <BlockTitle>
           <ContainerTitle>
             <Title>
-              <TitleSpan>Ils </TitleSpan> et <TitleSpan>elles</TitleSpan> le
-              font avec nous
+              Passons à <TitleSpan>l'action </TitleSpan>
             </Title>
           </ContainerTitle>
         </BlockTitle>
         <BlockSentence>
           <ContainerAuthorSentence>
             <AuthorSentence>
-              "Il y a plus dans l'échange que dans la chose échangée", Claude
-              Lévi-Strauss
+              "Cela semble toujours impossible, jusqu’à ce qu’on le fasse",
+              Nelson Mandela
             </AuthorSentence>
           </ContainerAuthorSentence>
         </BlockSentence>
@@ -45,8 +43,7 @@ export default function HeaderBody() {
         </ContainerMoreInformation>
         {visible && (
           <>
-            <Grid />
-            <Carousel />
+            <Main />
             <Footer />
           </>
         )}

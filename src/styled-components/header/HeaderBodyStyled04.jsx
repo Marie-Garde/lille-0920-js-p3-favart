@@ -3,7 +3,7 @@ import { Device } from "../../assets/Device/Device.jsx";
 
 export const Page = styled.div`
   background-color: #e5e5e5;
-  height: 92vh;
+  height: 86vh;
 `;
 
 export const BlockTitle = styled.div`
@@ -53,12 +53,11 @@ export const ContainerAuthorSentence = styled.div`
     line-height: 1.2em;
   }
 `;
-
 export const AuthorSentence = styled.p`
   font-size: 4vh;
   font-style: italic;
-  color: black;
   font-family: "Josefin Sans";
+  color: black;
   @media ${Device.mobile} {
     font-size: 1.5rem;
   }
