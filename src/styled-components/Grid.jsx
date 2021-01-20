@@ -1,13 +1,27 @@
 import styled from "styled-components";
 import { Device } from "../assets/Device/Device";
 
+export const Page = styled.div`
+  background-color: #e5e5e5;
+`;
+
+export const FirstTitle = styled.p`
+  margin: 11.5vh 7vw 14vh 7vw;
+  font-size: 3rem;
+  text-align: center;
+  @media ${Device.mobile} {
+    font-size: 1.5rem;
+    margin-bottom: 14vh;
+  }
+`;
+
 export const Container = styled.div`
   display: grid;
-  margin: 10vh 0vw 5vh 0vw;
+  margin: 1vh 0vw 5vh 0vw;
   background-color: #e5e5e5;
-  grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-gap: 1vw;
+  grid-gap: 3vw;
   @media ${Device.mobile} {
     display: flex;
     flex-direction: column;
@@ -29,8 +43,8 @@ export const BlockLogoTitle = styled.div`
   }
 `;
 
-export const Title = styled.h2`
-  color: #0d253f;
+export const TitleProject = styled.h2`
+  color: white;
   font-weight: bold;
   overflow: hidden;
   font-size: 3.5rem;
@@ -64,6 +78,11 @@ export const BlockUl = styled.div`
 export const ContainerUl1 = styled.div`
   display: flex;
   align-items: center;
+  @media ${Device.mobile} {
+    text-align: justify;
+    margin-left: 7vw;
+    margin-right: 7vw;
+  }
 `;
 
 export const OutilsContainer = styled.div`
@@ -99,8 +118,7 @@ export const Span = styled.span`
   font-size: 1.4rem;
 `;
 
-export const ContainerBlock = styled.div`
-`;
+export const ContainerBlock = styled.div``;
 
 export const Grid1 = styled.div`
   grid-column: 2/3;
@@ -110,7 +128,8 @@ export const Grid1 = styled.div`
   overflow: hidden;
   width: 20vw;
   &:hover {
-    background: grey;
+    background-color: #0d253f;
+
     color: white;
     grid-column: 1/4;
     grid-row: 1/3;
@@ -118,7 +137,7 @@ export const Grid1 = styled.div`
     width: auto;
     z-index: 1;
   }
-  ${Title} {
+  ${TitleProject} {
     opacity: 1;
   }
   ${BlockLogoTitle} {
@@ -138,7 +157,7 @@ export const Grid1 = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background: grey;
+    background-color: #0d253f;
     color: white;
     height: auto;
     width: auto;
@@ -181,7 +200,7 @@ export const Grid2 = styled.div`
   background-color: #1f89d1;
   overflow: hidden;
   &:hover {
-    background: grey;
+    background-color: #0d253f;
     color: white;
     grid-column: 3/6;
     grid-row: 1/3;
@@ -189,7 +208,7 @@ export const Grid2 = styled.div`
     width: auto;
     z-index: 1;
 
-    ${Title} {
+    ${TitleProject} {
       opacity: 1;
     }
     ${BlockLogoTitle} {
@@ -209,7 +228,7 @@ export const Grid2 = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background: grey;
+    background-color: #0d253f;
     color: white;
     height: 100%;
     width: auto;
@@ -231,7 +250,7 @@ export const Grid3 = styled.div`
     z-index: 1;
     transition: 0.2s ease;
 
-    ${Title} {
+    ${TitleProject} {
       opacity: 1;
       transition: opacity 0.3s ease;
     }
