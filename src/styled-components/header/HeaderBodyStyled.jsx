@@ -77,7 +77,6 @@ export const ContainerMoreInformation = styled.button`
   justify-content: center;
   align-items: center;
   ${({ visible }) => visible && `display: none;`}
-
   @media ${Device.mobile} {
     display: none;
   }
