@@ -15,3 +15,8 @@ export const Carousel = styled.div`
         display:none;
     }
 `
+
+export const Title = styled.h2`
+    font-size: 3rem;
+    text-align: center;
+`

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Slide } from "react-slideshow-image";
 import 'react-slideshow-image/dist/styles.css';
-import {SlideStyle, Img, Carousel} from '../styled-components/CarouselStyle';
+import {SlideStyle, Img, Carousel, Title} from '../styled-components/CarouselStyle';
 import carousel1 from '../assets/images/carousel1.png';
 import carousel2 from '../assets/images/carousel2.png'
 import carousel3 from '../assets/images/carousel3.png';
@@ -12,6 +12,7 @@ const AutoplayExample = () => {
 
   return (
     <div>
+      <Title>Ils le font avec nous :</Title>
       <Carousel>
         <Slide autoplay={autoplay}>
           <SlideStyle>

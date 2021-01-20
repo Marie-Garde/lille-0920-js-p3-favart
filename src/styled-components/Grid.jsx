@@ -3,19 +3,17 @@ import { Device } from "../assets/Device/Device";
 
 export const Container = styled.div`
   display: grid;
-  gap: 40px 30px;
   margin: 10vh 0vw 5vh 0vw;
-  height: auto;
   background-color: #e5e5e5;
   grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-gap: 1vw;
   @media ${Device.mobile} {
     display: flex;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    height: 125vh;
+    height: auto;
     width: 100vw;
   } ;
 `;
@@ -142,7 +140,7 @@ export const Grid1 = styled.div`
     align-items: flex-start;
     background: grey;
     color: white;
-    height: 200vh;
+    height: auto;
     width: auto;
   } ;
 `;
@@ -150,34 +148,51 @@ export const Grid1 = styled.div`
 export const Test = styled.ul`
   margin: 0 2vw 0 2vw;
 `;
+export const BlockLogoTitle2 = styled.div`
+  margin: 1.5vh 1.5vw 4vh 1.5vw;
 
-export const Details2 = styled.p`
-  opacity: 0;
+  @media ${Device.mobile} {
+    display: flex;
+    border: 2px solid red;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
+
+export const LogoProjet2 = styled.img`
+  background-color: white;
+  height: 19vh;
+  width: 18vw;
+  @media ${Device.mobile} {
+    width: 50vw;
+    height: 16vh;
+  }
+`;
+
 export const Grid2 = styled.div`
   grid-column-start: 4;
   grid-row-start: 1;
   height: 22vh;
   background-color: #1f89d1;
-  transition: 0.2s ease;
   overflow: hidden;
   &:hover {
-    background: #e5e5e5;
-
+    background: grey;
+    color: white;
     grid-column: 3/6;
     grid-row: 1/3;
     height: auto;
+    width: auto;
     z-index: 1;
-    transition: 0.2s ease;
 
     ${Title} {
       opacity: 1;
-      transition: opacity 0.3s ease;
     }
     ${BlockLogoTitle} {
       display: flex;
       justify-content: space-around;
       align-items: center;
+      opacity: 1;
     }
     ${BlockUl} {
       opacity: 1;
@@ -188,9 +203,13 @@ export const Grid2 = styled.div`
   }
   @media ${Device.mobile} {
     display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    flex-direction: column;
+    align-items: flex-start;
+    background: grey;
+    color: white;
+    height: 100%;
+    width: auto;
+  } ;
 `;
 
 export const Grid3 = styled.div`
@@ -203,44 +222,6 @@ export const Grid3 = styled.div`
   &:hover {
     background: #e5e5e5;
     grid-column: 1/4;
-    grid-row: 2/6;
-    height: auto;
-    z-index: 1;
-    transition: 0.2s ease;
-
-    ${Title} {
-      opacity: 1;
-      transition: opacity 0.3s ease;
-    }
-    ${BlockLogoTitle} {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
-    ${BlockUl} {
-      opacity: 1;
-    }
-    ${ContainerBlock} {
-      opacity: 1;
-    }
-  }
-  @media ${Device.mobile} {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-`;
-
-export const Grid4 = styled.div`
-  grid-column: 4/5;
-  grid-row: 2/3;
-  height: 22vh;
-  background-color: #1f89d1;
-  transition: 0.2s ease;
-  &:hover {
-    background: #e5e5e5;
-
-    grid-column: 3/6;
     grid-row: 2/6;
     height: auto;
     z-index: 1;
