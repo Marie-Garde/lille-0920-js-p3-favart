@@ -150,10 +150,13 @@ export const Test = styled.ul`
 `;
 export const BlockLogoTitle2 = styled.div`
   margin: 1.5vh 1.5vw 4vh 1.5vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 
   @media ${Device.mobile} {
     display: flex;
-    border: 2px solid red;
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -163,7 +166,7 @@ export const BlockLogoTitle2 = styled.div`
 export const LogoProjet2 = styled.img`
   background-color: white;
   height: 19vh;
-  width: 18vw;
+  width: 16vw;
   @media ${Device.mobile} {
     width: 50vw;
     height: 16vh;
@@ -174,6 +177,7 @@ export const Grid2 = styled.div`
   grid-column-start: 4;
   grid-row-start: 1;
   height: 22vh;
+  width: 19vw;
   background-color: #1f89d1;
   overflow: hidden;
   &:hover {
