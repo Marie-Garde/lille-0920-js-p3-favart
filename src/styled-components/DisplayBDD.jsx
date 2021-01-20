@@ -84,7 +84,7 @@ export const FlexText = styled.div`
 
 export const CardText = styled.h1`
   font-size: 1.2rem;
-  padding-right: 1vw;
+  padding-right: 1.1vw;
   font-weight: bold;
   @media ${Device.mobile} {
     font-size: 0.9rem;
