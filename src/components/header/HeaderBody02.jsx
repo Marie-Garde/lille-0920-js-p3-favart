@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Main from "../Main";
+import Agissons from "../Agissons";
 import Footer from "../Footer";
 
 import {
@@ -11,9 +11,10 @@ import {
   BlockSentence,
   ContainerAuthorSentence,
   AuthorSentence,
+  BlockButton,
   ContainerMoreInformation,
   MoreInformationSentence,
-} from "../../styled-components/header/HeaderBodyStyled.jsx";
+} from "../../styled-components/header/HeaderBodyStyled02.jsx";
 
 export default function HeaderBody() {
   const [visible, setVisible] = useState(false);
@@ -26,15 +27,15 @@ export default function HeaderBody() {
         <BlockTitle>
           <ContainerTitle>
             <Title>
-              pourquoi nous <TitleSpan>existons </TitleSpan>
+              Comment nous <TitleSpan>agissons </TitleSpan>
             </Title>
           </ContainerTitle>
         </BlockTitle>
         <BlockSentence>
           <ContainerAuthorSentence>
             <AuthorSentence>
-              "Atteindre le plus grand nombre en mettant la barre très haut",
-              Agnès Varda
+              "Il faut être enthousiaste de son métier pour y exceller", Denis
+              Diderot
             </AuthorSentence>
           </ContainerAuthorSentence>
         </BlockSentence>
@@ -43,7 +44,7 @@ export default function HeaderBody() {
         </ContainerMoreInformation>
         {visible && (
           <>
-            <Main />
+            <Agissons />
             <Footer />
           </>
         )}

@@ -1,23 +1,23 @@
 import React from "react";
-import HeaderBody from "./HeaderBody01";
+import HeaderBody from "./HeaderBody00";
 
 import {
   ContainerHeaderMenu,
   ContainerHeaderMenuLink,
   MenuLink,
-  MenuLinkMain,
-} from "../../styled-components/header/HeaderMenuStyled.jsx";
+  MenuLinkSommaire,
+} from "../../styled-components/header/HeaderMenuStyled00.jsx";
 
 export default function HeaderMenu() {
   return (
     <>
       <ContainerHeaderMenu>
         <ContainerHeaderMenuLink>
-          <MenuLink to="/sommaire">00 /</MenuLink>
-          <MenuLinkMain to="/"> 01 - Favart /</MenuLinkMain>
+          <MenuLinkSommaire to="/sommaire">00 - Sommaire /</MenuLinkSommaire>
+          <MenuLink to="/"> 01 /</MenuLink>
           <MenuLink to="/agissons"> 02 /</MenuLink>
           <MenuLink to="/ilsetelles"> 03 / </MenuLink>
-          <MenuLink to="/action"> 04</MenuLink>
+          <MenuLink to="/action"> 04 </MenuLink>
         </ContainerHeaderMenuLink>
       </ContainerHeaderMenu>
       <HeaderBody />
