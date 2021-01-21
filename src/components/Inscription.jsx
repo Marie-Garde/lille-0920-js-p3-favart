@@ -1,4 +1,5 @@
-import { FormCheckbox } from "shards-react";
+import useForm from "./InscriptionSignUp.jsx";
+import { useState, useEffect } from "react";
 
 import {
   FlexBox,
@@ -21,22 +22,8 @@ import {
 } from "../styled-components/Inscription";
 
 export default function Inscription() {
-  const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    setLoading(true);
-    axios({
-      method: "POST",
-      url: `http://localhost:3001/client`,
-    }).then((res) => {
-      setClients(res.data);
-      setLoading(false);
-    });
-  }, [setClients]);
-
-
-
-
+  const {handleChange, values, handleSubmit} = useForm();
   return (
     <FlexBox>
       <FlexBox1></FlexBox1>
@@ -44,7 +31,7 @@ export default function Inscription() {
         <P>
           Avant d’accéder à l’espace client, veuillez renseigner ces champs :
         </P>
-        <Formulaire>
+        <Formulaire onSubmit={handleSubmit}>
           <fieldset>
             <DivLabel>
               <Label>Prénom *</Label>
@@ -53,7 +40,7 @@ export default function Inscription() {
                 name="name"
                 id="name"
                 placeholder="Prénom"
-                value={value.name}
+                value={values.name}
                 onChange={handleChange}
                 required
               />
@@ -65,7 +52,7 @@ export default function Inscription() {
                 name="surname"
                 id="surname"
                 placeholder="Nom"
-                value={value.surname}
+                value={values.surname}
                 onChange={handleChange}
                 required
               />
@@ -77,7 +64,7 @@ export default function Inscription() {
                 name="email"
                 id="email"
                 placeholder="Email"
-                value={value.email}
+                value={values.email}
                 onChange={handleChange}
                 required
               />
@@ -85,11 +72,11 @@ export default function Inscription() {
             <DivLabel>
               <Label>Téléphone *</Label>
               <Input
-                type="number"
+                type="text"
                 name="phone"
                 id="phone"
                 placeholder="Numéro de téléphone"
-                value={value.phone}
+                value={values.phone}
                 onChange={handleChange}
                 required
               />
@@ -97,11 +84,11 @@ export default function Inscription() {
             <DivLabel>
               <Label>Mot de passe *</Label>
               <Input
-                type="text"
+                type="password"
                 name="password"
                 id="password"
                 placeholder="Mot de passe"
-                value={value.password}
+                value={values.password}
                 onChange={handleChange}
                 required
               />
@@ -109,11 +96,11 @@ export default function Inscription() {
             <DivLabel>
               <Label>Mot de passe *</Label>
               <Input
-                type="text"
+                type="password"
                 name="password2"
                 id="password2"
                 placeholder="Confirmer le mot de passe"
-                value={confirmPassword}
+                value={values.password2}
                 onChange={handleChange}
                 required
               />
@@ -125,7 +112,7 @@ export default function Inscription() {
                 name="job"
                 id="job"
                 placeholder="Métier"
-                value={value.job}
+                value={values.job}
                 onChange={handleChange}
                 required
               />
@@ -137,7 +124,7 @@ export default function Inscription() {
                 name="structure_name"
                 id="structure_name"
                 placeholder="Nom de la structure"
-                value={value.structure_name}
+                value={values.structure_name}
                 onChange={handleChange}
                 required
               />
@@ -149,7 +136,7 @@ export default function Inscription() {
                 name="structure_type :"
                 id="structure_type :"
                 placeholder="Type de la structure"
-                value={value.structure_type}
+                value={values.structure_type}
                 onChange={handleChange}
                 required
               />
@@ -161,7 +148,7 @@ export default function Inscription() {
                 name="structure_field"
                 id="structure_field"
                 placeholder="Domaine de la structure"
-                value={value.structure_field}
+                value={values.structure_field}
                 onChange={handleChange}
                 required
               />
@@ -173,7 +160,7 @@ export default function Inscription() {
                 name="job_field"
                 id="job_field"
                 placeholder="Domaine d'activité"
-                value={value.job_field}
+                value={values.job_field}
                 onChange={handleChange}
               />
             </DivLabel>
@@ -184,7 +171,7 @@ export default function Inscription() {
                 name="territory"
                 id="territory"
                 placeholder="Votre territoire d'action"
-                value={value.territory}
+                value={values.territory}
                 onChange={handleChange}
               />
             </DivLabel>
@@ -194,7 +181,7 @@ export default function Inscription() {
                 type="text"
                 name="wishes"
                 id="wishes"
-                value={value.wishes}
+                value={values.wishes}
                 onChange={handleChange}
                 placeholder="Vos envies"
               />
@@ -205,7 +192,7 @@ export default function Inscription() {
                 type="text"
                 name="website"
                 id="website"
-                value={value.website}
+                value={values.website}
                 onChange={handleChange}
                 placeholder="Votre site internet"
               />

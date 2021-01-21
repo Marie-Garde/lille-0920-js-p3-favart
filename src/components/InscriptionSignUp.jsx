@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 
-export default useForm = () => {
+export default function useForm(){
   const [values, setValues] = useState({
     name: "",
     surname: "",
     email: "",
-    phone: null,
+    phone: "",
     password: "",
+    password2:"",
     job: "",
     structure_name: "",
     structure_type: "",
@@ -17,8 +18,7 @@ export default useForm = () => {
     website: "",
   });
 
-  const [confirmPassword, setConfirmPassword] = useState("")
-  ;
+ 
   const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
@@ -26,6 +26,11 @@ export default useForm = () => {
     setValues({ ...values, [name]: value });
   };
 
-  return { handleChange };
+  const handleSubmit = e =>{
+      e.preventDefault();
+
+  }
+
+  return { handleChange, values, handleSubmit };
 };
 

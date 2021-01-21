@@ -15,7 +15,7 @@ export default function App() {
       <Reset />
       <HeaderTop />
       <Switch>
-        <Route exact path="/" component={Mainpage} />
+        <Route exact path="/" component={Inscription} />
         <Route path="/agissons" component={Agissons} />
         <Route path="/connexion" component={Connexion} />
         <Route path="/inscription" component={Inscription} />
