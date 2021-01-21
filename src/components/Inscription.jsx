@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { FormCheckbox } from "shards-react";
 
 import {
@@ -36,21 +35,7 @@ export default function Inscription() {
   }, [setClients]);
 
 
-  const [body,setBody] = useState({
-    name : "",
-    surname: "",
-    email: "",
-    phone : null,
-    password : "",
-    job : "",
-    structure_name: "",
-    structure_type :"",
-    structure_field : "",
-    job_field :"",
-    territory : "",
-    wishes:"",
-    website: "",
-  })
+
 
   return (
     <FlexBox>
