@@ -17,6 +17,8 @@ export default useForm = () => {
     website: "",
   });
 
+  const [confirmPassword, setConfirmPassword] = useState("")
+  ;
   const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {

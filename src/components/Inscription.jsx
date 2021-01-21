@@ -53,6 +53,8 @@ export default function Inscription() {
                 name="name"
                 id="name"
                 placeholder="Prénom"
+                value={value.name}
+                onChange={handleChange}
                 required
               />
             </DivLabel>
@@ -63,6 +65,8 @@ export default function Inscription() {
                 name="surname"
                 id="surname"
                 placeholder="Nom"
+                value={value.surname}
+                onChange={handleChange}
                 required
               />
             </DivLabel>
@@ -73,6 +77,8 @@ export default function Inscription() {
                 name="email"
                 id="email"
                 placeholder="Email"
+                value={value.email}
+                onChange={handleChange}
                 required
               />
             </DivLabel>
@@ -83,6 +89,8 @@ export default function Inscription() {
                 name="phone"
                 id="phone"
                 placeholder="Numéro de téléphone"
+                value={value.phone}
+                onChange={handleChange}
                 required
               />
             </DivLabel>
@@ -93,6 +101,8 @@ export default function Inscription() {
                 name="password"
                 id="password"
                 placeholder="Mot de passe"
+                value={value.password}
+                onChange={handleChange}
                 required
               />
             </DivLabel>
@@ -100,9 +110,11 @@ export default function Inscription() {
               <Label>Mot de passe *</Label>
               <Input
                 type="text"
-                name="password"
-                id="password"
+                name="password2"
+                id="password2"
                 placeholder="Confirmer le mot de passe"
+                value={confirmPassword}
+                onChange={handleChange}
                 required
               />
             </DivLabel>
@@ -113,6 +125,8 @@ export default function Inscription() {
                 name="job"
                 id="job"
                 placeholder="Métier"
+                value={value.job}
+                onChange={handleChange}
                 required
               />
             </DivLabel>
@@ -123,6 +137,8 @@ export default function Inscription() {
                 name="structure_name"
                 id="structure_name"
                 placeholder="Nom de la structure"
+                value={value.structure_name}
+                onChange={handleChange}
                 required
               />
             </DivLabel>
@@ -133,6 +149,8 @@ export default function Inscription() {
                 name="structure_type :"
                 id="structure_type :"
                 placeholder="Type de la structure"
+                value={value.structure_type}
+                onChange={handleChange}
                 required
               />
             </DivLabel>
@@ -143,6 +161,8 @@ export default function Inscription() {
                 name="structure_field"
                 id="structure_field"
                 placeholder="Domaine de la structure"
+                value={value.structure_field}
+                onChange={handleChange}
                 required
               />
             </DivLabel>
@@ -153,33 +173,29 @@ export default function Inscription() {
                 name="job_field"
                 id="job_field"
                 placeholder="Domaine d'activité"
+                value={value.job_field}
+                onChange={handleChange}
               />
             </DivLabel>
-            <DivLabelCheckBox>
-              <LabelCheckBox>Votre territoire d'actions </LabelCheckBox>
-              <CheckBox>
-                <FormCheckbox inline>Haut-de-France</FormCheckbox>
-                <FormCheckbox inline>Ile-de-France</FormCheckbox>
-                <FormCheckbox inline>Grand Est</FormCheckbox>
-                <FormCheckbox inline>Normandie</FormCheckbox>
-                <FormCheckbox inline>National</FormCheckbox>
-              </CheckBox>
-            </DivLabelCheckBox>
-            <DivLabelText>
-              <Label>Autre, précisez</Label>
-              <TextareaAutre
+            <DivLabel>
+              <Label>Votre territoire d'action</Label>
+              <Textarea
                 type="text"
                 name="territory"
                 id="territory"
-                placeholder="Autre, précisez"
+                placeholder="Votre territoire d'action"
+                value={value.territory}
+                onChange={handleChange}
               />
-            </DivLabelText>
+            </DivLabel>
             <DivLabelText>
               <Label>Vos envies</Label>
               <TextareaEnvies
                 type="text"
                 name="wishes"
                 id="wishes"
+                value={value.wishes}
+                onChange={handleChange}
                 placeholder="Vos envies"
               />
             </DivLabelText>
@@ -189,6 +205,8 @@ export default function Inscription() {
                 type="text"
                 name="website"
                 id="website"
+                value={value.website}
+                onChange={handleChange}
                 placeholder="Votre site internet"
               />
             </DivLabelText>
