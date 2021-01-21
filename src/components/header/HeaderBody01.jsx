@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Main from "../Main";
 import Footer from "../Footer";
-import HeaderMenu01 from "./HeaderMenu01";
 
 import {
   Page,
