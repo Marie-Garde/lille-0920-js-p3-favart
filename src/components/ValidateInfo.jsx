@@ -9,4 +9,5 @@ export default function validateInfo(values){
      if (values.password2 !== values.password){
         errors.password = "Les mots de passes doivent être identiques"
      }
+    return errors;
     } 

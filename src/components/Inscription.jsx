@@ -1,5 +1,6 @@
 import useForm from "./InscriptionSignUp.jsx";
 import { useState, useEffect } from "react";
+import validateInfo from "./ValidateInfo"
 
 import {
   FlexBox,
@@ -23,7 +24,7 @@ import {
 
 export default function Inscription() {
 
-  const {handleChange, values, handleSubmit} = useForm();
+  const {handleChange, values, handleSubmit, errors} = useForm(validateInfo);
   return (
     <FlexBox>
       <FlexBox1></FlexBox1>
@@ -90,8 +91,8 @@ export default function Inscription() {
                 placeholder="Mot de passe"
                 value={values.password}
                 onChange={handleChange}
-                required
               />
+              {errors.password && <p>{errors.password}</p>}
             </DivLabel>
             <DivLabel>
               <Label>Mot de passe *</Label>
@@ -102,8 +103,9 @@ export default function Inscription() {
                 placeholder="Confirmer le mot de passe"
                 value={values.password2}
                 onChange={handleChange}
-                required
               />
+                            {errors.password && <p>{errors.password}</p>}
+
             </DivLabel>
             <DivLabel>
               <Label>Métier *</Label>
@@ -133,8 +135,8 @@ export default function Inscription() {
               <Label>Type de la structure *</Label>
               <Input
                 type="text"
-                name="structure_type :"
-                id="structure_type :"
+                name="structure_type"
+                id="structure_type"
                 placeholder="Type de la structure"
                 value={values.structure_type}
                 onChange={handleChange}

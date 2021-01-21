@@ -20,7 +20,6 @@ export default function App() {
         <Route path="/connexion" component={Connexion} />
         <Route path="/inscription" component={Inscription} />
       </Switch>
-      <Footer />
     </div>
   );
 }

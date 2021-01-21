@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
+import axios from "axios"
 
-export default function useForm(){
+export default function useForm(validateInfo){
   const [values, setValues] = useState({
     name: "",
     surname: "",
@@ -18,6 +19,8 @@ export default function useForm(){
     website: "",
   });
 
+  const [clients, setClients] = useState([]);
+
  
   const [errors, setErrors] = useState({});
 
@@ -28,9 +31,15 @@ export default function useForm(){
 
   const handleSubmit = e =>{
       e.preventDefault();
-
+      setErrors(validateInfo(values));
+      axios({
+        method: "POST",
+        url: "http://localhost:3001/client",
+      }).then((res) => {
+        setValues(res.data);;
+      });
   }
 
-  return { handleChange, values, handleSubmit };
+  return { handleChange, values, handleSubmit, errors };
 };
 
