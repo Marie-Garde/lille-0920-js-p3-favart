@@ -1,6 +1,6 @@
 import useForm from "./InscriptionSignUp.jsx";
 import { useState, useEffect } from "react";
-import validateInfo from "./ValidateInfo"
+import validateInfo from "./ValidateInfo";
 
 import {
   FlexBox,
@@ -23,8 +23,7 @@ import {
 } from "../styled-components/Inscription";
 
 export default function Inscription() {
-
-  const {handleChange, values, handleSubmit, errors} = useForm(validateInfo);
+  const { handleChange, values, handleSubmit, errors } = useForm(validateInfo);
   return (
     <FlexBox>
       <FlexBox1></FlexBox1>
@@ -38,10 +37,10 @@ export default function Inscription() {
               <Label>Prénom *</Label>
               <Input
                 type="text"
-                name="name"
+                name="username"
                 id="name"
                 placeholder="Prénom"
-                value={values.name}
+                value={values.username}
                 onChange={handleChange}
                 required
               />
@@ -104,8 +103,7 @@ export default function Inscription() {
                 value={values.password2}
                 onChange={handleChange}
               />
-                            {errors.password && <p>{errors.password}</p>}
-
+              {errors.password && <p>{errors.password}</p>}
             </DivLabel>
             <DivLabel>
               <Label>Métier *</Label>
