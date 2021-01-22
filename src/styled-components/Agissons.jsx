@@ -352,7 +352,6 @@ export const Text4 = styled.h2`
   }
 `;
 
-
 export const CardImg4 = styled.img`
   width: 30vw;
   position: absolute;

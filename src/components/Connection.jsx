@@ -24,7 +24,7 @@ export default function connection() {
         <ContainerLogo>
           <Logo src={logoFavart}></Logo>
           <Slogan>
-            The best way to shape the Futur is to <Span>co create</Span> it.
+            The best way to shape the Futur is to <Span>co create</Span> it NOW.
           </Slogan>
         </ContainerLogo>
         <ContainerForm>
@@ -51,7 +51,7 @@ export default function connection() {
             <Button>Confirmer</Button>
           </Formulaire>
           <H2>
-            Pas encore de compte ?{" "}
+            Pas encore de compte ?
             <SpanLink to="/inscription">Inscription</SpanLink>
           </H2>
         </ContainerForm>

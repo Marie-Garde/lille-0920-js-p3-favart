@@ -1,6 +1,6 @@
 import ClientPage from "./components/ClientPage";
 import { Reset } from "styled-reset";
-import Connexion from "./components/Connexion";
+import Connexion from "./components/Connection";
 import HeaderTop from "./components/HeaderTop";
 import Mainpage from "./components/header/HeaderBody01";
 import Footer from "./components/Footer";
