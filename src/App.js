@@ -8,7 +8,6 @@ import IlsEtElles from "./components/header/HeaderMenu03";
 import Action from "./components/header/HeaderMenu04";
 import Sommaire from "./components/header/HeaderMenu00";
 import Footer from "./components/Footer";
-import Agissons from "./components/Agissons";
 import Inscription from "./components/Inscription";
 import Link from "./components/DisplayBDD";
 import ActionPage from "./components/ActionPage";
