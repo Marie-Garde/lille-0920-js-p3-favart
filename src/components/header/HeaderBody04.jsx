@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Main from "../Main";
+import Main from "../Main"; //We'll have to change to "action" page
 import Footer from "../Footer";
 
 import {
@@ -13,7 +13,7 @@ import {
   AuthorSentence,
   ContainerMoreInformation,
   MoreInformationSentence,
-} from "../../styled-components/header/HeaderBodyStyled.jsx";
+} from "../../styled-components/header/HeaderBodyStyled04.jsx";
 
 export default function HeaderBody() {
   const [visible, setVisible] = useState(false);
@@ -26,15 +26,15 @@ export default function HeaderBody() {
         <BlockTitle>
           <ContainerTitle>
             <Title>
-              pourquoi nous <TitleSpan>existons </TitleSpan>
+              Passons à <TitleSpan>l'action </TitleSpan>
             </Title>
           </ContainerTitle>
         </BlockTitle>
         <BlockSentence>
           <ContainerAuthorSentence>
             <AuthorSentence>
-              "Atteindre le plus grand nombre en mettant la barre très haut",
-              Agnès Varda
+              "Cela semble toujours impossible, jusqu’à ce qu’on le fasse",
+              Nelson Mandela
             </AuthorSentence>
           </ContainerAuthorSentence>
         </BlockSentence>
