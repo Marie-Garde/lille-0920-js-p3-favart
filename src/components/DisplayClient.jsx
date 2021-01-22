@@ -13,7 +13,7 @@ import {
   FlexText,
   CardText,
   CardBdd,
-} from "../styled-components/DisplayBDD";
+} from "../styled-components/DisplayClient";
 
 export default () => {
   const [clients, setClients] = useState([]);
@@ -45,54 +45,54 @@ export default () => {
           {!loading && (
             <>
               {clients.map((client, i) => (
-                <Card>
+                <Card key={i}>
                   <FlexText>
                     <CardText>Prénom : </CardText>
-                    <CardBdd key={i}>{client.name}</CardBdd>
+                    <CardBdd>{client.name}</CardBdd>
                   </FlexText>
                   <FlexText>
                     <CardText>Nom : </CardText>
-                    <CardBdd key={i}>{client.surname}</CardBdd>
+                    <CardBdd>{client.surname}</CardBdd>
                   </FlexText>
                   <FlexText>
                     <CardText>Email : </CardText>
-                    <CardBdd key={i}>{client.email}</CardBdd>
+                    <CardBdd>{client.email}</CardBdd>
                   </FlexText>
                   <FlexText>
                     <CardText>Téléphone : </CardText>
-                    <CardBdd key={i}>{client.phone}</CardBdd>
+                    <CardBdd>{client.phone}</CardBdd>
                   </FlexText>
                   <FlexText>
                     <CardText>Métier : </CardText>
-                    <CardBdd key={i}>{client.job}</CardBdd>
+                    <CardBdd>{client.job}</CardBdd>
                   </FlexText>
                   <FlexText>
                     <CardText>Nom de la structure : </CardText>
-                    <CardBdd key={i}>{client.structure_name}</CardBdd>
+                    <CardBdd>{client.structure_name}</CardBdd>
                   </FlexText>
                   <FlexText>
                     <CardText>Type de structure : </CardText>
-                    <CardBdd key={i}>{client.structure_type}</CardBdd>
+                    <CardBdd>{client.structure_type}</CardBdd>
                   </FlexText>
                   <FlexText>
                     <CardText>Domaine de la structure : </CardText>
-                    <CardBdd key={i}>{client.structure_field}</CardBdd>
+                    <CardBdd>{client.structure_field}</CardBdd>
                   </FlexText>
                   <FlexText>
                     <CardText>Domaine d'activité : </CardText>
-                    <CardBdd key={i}>{client.job_field}</CardBdd>
+                    <CardBdd>{client.job_field}</CardBdd>
                   </FlexText>
                   <FlexText>
                     <CardText>Territoire : </CardText>
-                    <CardBdd key={i}>{client.territory}</CardBdd>
+                    <CardBdd>{client.territory}</CardBdd>
                   </FlexText>
                   <FlexText>
                     <CardText>Ses envies : </CardText>
-                    <CardBdd key={i}>{client.wishes}</CardBdd>
+                    <CardBdd>{client.wishes}</CardBdd>
                   </FlexText>
                   <FlexText>
                     <CardText>Site internet : </CardText>
-                    <CardBdd key={i}>{client.website}</CardBdd>
+                    <CardBdd>{client.website}</CardBdd>
                   </FlexText>
                 </Card>
               ))}
