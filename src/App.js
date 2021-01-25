@@ -2,7 +2,7 @@ import ClientPage from "./components/ClientPage";
 import { Reset } from "styled-reset";
 import Connexion from "./components/Connexion";
 import HeaderTop from "./components/HeaderTop";
-import Mainpage from "./components/header/HeaderMenu01";
+import MainPage from "./components/header/HeaderMenu01";
 import Agissons from "./components/header/HeaderMenu02";
 import IlsEtElles from "./components/header/HeaderMenu03";
 import Action from "./components/header/HeaderMenu04";
@@ -12,7 +12,6 @@ import Inscription from "./components/Inscription";
 import ActionPage from "./components/ActionPage";
 import { Switch, Route } from "react-router-dom";
 import RessourcePage from "./components/RessourcePage";
-import MainPage from "./components/Main";
 
 export default function App() {
   return (
@@ -22,7 +21,6 @@ export default function App() {
       <Switch>
         <Route exact path="/" component={MainPage} />
         <Route exact path="/sommaire" component={Sommaire} />
-        <Route exact path="/" component={Mainpage} />
         <Route path="/agissons" component={Agissons} />
         <Route path="/connexion" component={Connexion} />
         <Route path="/ilsetelles" component={IlsEtElles} />

@@ -75,8 +75,8 @@ export default function ActionPage() {
         <Card>
           <ImgContainer src={geffroy} alt="Mr Geffroy" />
           <Container>
-            <H4>Yoann Geffroy</H4>
-            <P>Directeur-Fondateur</P>
+            <H4>Geffroy Yoann</H4>
+            <P>Fondateur-Directeur</P>
             <P>
               Yoann est fondateur et directeur de Favart depuis 2009. <br />{" "}
               Expert de l’innovation sociale et du développement de projets à
