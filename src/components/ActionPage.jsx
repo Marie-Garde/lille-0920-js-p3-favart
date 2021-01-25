@@ -16,7 +16,6 @@ import {
   DivMain,
   H2MiddleCard,
   DivCenter,
-  PContact,
   ImgLogo,
   DivLogo,
   ButtonCardMiddle,
