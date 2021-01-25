@@ -8,11 +8,11 @@ import IlsEtElles from "./components/header/HeaderMenu03";
 import Action from "./components/header/HeaderMenu04";
 import Sommaire from "./components/header/HeaderMenu00";
 import Footer from "./components/Footer";
-import Agissons from "./components/Agissons";
 import Inscription from "./components/Inscription";
 import ActionPage from "./components/ActionPage";
-
 import { Switch, Route } from "react-router-dom";
+import RessourcePage from "./components/RessourcePage";
+import MainPage from "./components/Main";
 
 export default function App() {
   return (
@@ -20,6 +20,7 @@ export default function App() {
       <Reset />
       <HeaderTop />
       <Switch>
+        <Route exact path="/" component={MainPage} />
         <Route exact path="/sommaire" component={Sommaire} />
         <Route exact path="/" component={Mainpage} />
         <Route path="/agissons" component={Agissons} />
