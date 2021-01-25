@@ -132,18 +132,6 @@ export default function ActionPage() {
 
       <H1>Nous contacter</H1>
       <div>
-        <PContact>
-          Lorem ipssum Leo fusce lectus, consectetur augue etiam conubia sapien
-          nisi turpis. Natoque maecenas nibh enim facilisi odio sapien risus
-          fringilla natoque. Congue porta volutpat non hac parturient rutrum
-          nisi in curae;. Nec tempus iaculis vel vehicula congue sociosqu
-          consequat adipiscing aliquam. Ut fusce varius natoque blandit curae;
-          hac sociis aptent aliquet. Arcu; euismod potenti integer montes primis
-          iaculis porttitor semper mollis. Posuere lobortis fermentum lorem ut
-          quam primis curae; lectus suscipit. Accumsan pellentesque cursus velit
-          mi venenatis ante risus felis ante.
-        </PContact>
-
         <DivCenter>
           <a href="https://meetings.hubspot.com/yoann-geffroy" target="_blank">
             <Button>Rendez-vous flash</Button>
