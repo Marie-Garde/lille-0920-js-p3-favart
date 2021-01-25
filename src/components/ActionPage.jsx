@@ -66,7 +66,12 @@ export default function ActionPage() {
             anime.
           </P>
           <DivCenter>
-            <ButtonFlash>Rendez-vous flash</ButtonFlash>
+            <a
+              href="https://meetings.hubspot.com/yoann-geffroy"
+              target="_blank"
+            >
+              <ButtonFlash>Rendez-vous flash</ButtonFlash>
+            </a>
           </DivCenter>
         </DivCards>
       </DivInfos>
@@ -78,7 +83,7 @@ export default function ActionPage() {
             <H4>Geffroy Yoann</H4>
             <P>Fondateur-Directeur</P>
             <P>
-              Yoann est fondateur et directeur de Favart depuis 2009. <br />{" "}
+              Yoann est fondateur et directeur de Favart depuis 2009. <br />
               Expert de l’innovation sociale et du développement de projets à
               fort impact sociétal, Yoann intervient dans la mobilisation du
               droit à l’expérimentation territorial, la construction de nouveaux
@@ -140,7 +145,9 @@ export default function ActionPage() {
         </PContact>
 
         <DivCenter>
-          <Button>Rendez-vous flash</Button>
+          <a href="https://meetings.hubspot.com/yoann-geffroy" target="_blank">
+            <Button>Rendez-vous flash</Button>
+          </a>
         </DivCenter>
       </div>
     </DivMain>
