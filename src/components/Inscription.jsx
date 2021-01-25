@@ -1,5 +1,4 @@
 import useForm from "./InscriptionSignUp.jsx";
-import { useState, useEffect } from "react";
 import validateInfo from "./ValidateInfo";
 
 import {
@@ -13,13 +12,9 @@ import {
   Input,
   StyledButton,
   Textarea,
-  CheckBox,
-  DivLabelCheckBox,
-  TextareaAutre,
   TextareaEnvies,
   DivLabelText,
   InputSite,
-  LabelCheckBox,
 } from "../styled-components/Inscription";
 
 export default function Inscription() {

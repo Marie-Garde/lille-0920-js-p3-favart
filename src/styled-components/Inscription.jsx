@@ -63,18 +63,6 @@ export const DivLabel = styled.div`
   }
 `;
 
-export const DivLabelCheckBox = styled.div`
-  font-size: 1rem;
-  display: flex;
-  justify-content: start;
-  flex-direction: column;
-  margin-bottom: 6vh;
-  margin-top: 10vh;
-  width: 100%;
-  height: 2.7vh;
-  @media ${Device.mobile} {
-  }
-`;
 
 export const DivLabelText = styled.div`
   font-size: 1rem;
@@ -111,18 +99,6 @@ export const Label = styled.label`
   }
 `;
 
-export const LabelCheckBox = styled.label`
-  font-size: 1rem;
-  color: black;
-  margin-bottom: 0.5vw;
-  width: 30%;
-  font-family: "Noto Sans CJK JP";
-  @media ${Device.mobile} {
-    font-size: 0.8rem;
-    width: 80%;
-  }
-`;
-
 export const Input = styled.input`
   width: 50%;
   text-align: center;
@@ -152,28 +128,6 @@ export const Textarea = styled.textarea`
   }
 `;
 
-export const CheckBox = styled.div`
-  display: flex;
-  font-family: "Noto Sans CJK JP";
-  justify-content: space-around;
-  margin-right: 25vh;
-  padding-top: 2vh;
-  @media ${Device.mobile} {
-    flex-direction: column;
-    font-size: 0.8rem;
-  }
-`;
-
-export const TextareaAutre = styled.textarea`
-  width: 77%;
-  height: 25vh;
-  text-align: center;
-  font-family: "Noto Sans CJK JP";
-  @media ${Device.mobile} {
-    width: 86vw;
-    margin-top: 13vh;
-  }
-`;
 
 export const TextareaEnvies = styled.textarea`
   width: 77%;
