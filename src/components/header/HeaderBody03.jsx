@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Grid from "../Grid";
+import FlexProjet from "../FlexProjet";
 import Carousel from "../Carousel";
 import Footer from "../Footer";
 
@@ -45,7 +45,7 @@ export default function HeaderBody() {
         </ContainerMoreInformation>
         {visible && (
           <>
-            <Grid />
+            <FlexProjet />
             <Carousel />
             <Footer />
           </>
