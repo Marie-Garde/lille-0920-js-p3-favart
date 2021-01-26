@@ -14,6 +14,7 @@ import {
   CardText,
   CardBdd,
 } from "../styled-components/ProfilPage.jsx";
+import ContactUs from "./ContactUs.jsx";
 
 export default () => {
   const [clients, setClients] = useState([]);
@@ -94,6 +95,9 @@ export default () => {
               </Card>
             </>
           )}
+        </div>
+        <div>
+          <ContactUs />
         </div>
       </FlexBox2>
     </FlexBox>
