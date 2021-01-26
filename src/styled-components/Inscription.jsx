@@ -24,7 +24,7 @@ export const FlexBox1 = styled.div`
 
 export const FlexBox2 = styled.div`
   flex: 2;
-  height: 100vh;
+  height: 200vh;
   padding-right: 3vw;
   padding-left: 3vw;
   padding-top: 8vh;
@@ -140,7 +140,7 @@ export const TextareaEnvies = styled.textarea`
   }
 `;
 
-export const StyledButton = styled.input`
+export const StyledButton = styled.button`
   padding: 2 2vw;
   font-size: 1.5rem;
   font-family: "Josefin Sans";
@@ -154,6 +154,7 @@ export const StyledButton = styled.input`
   height: 4vh;
   border-radius: 5px;
   margin-top: 10vh;
+  margin-bottom : 20vh;
   &:hover {
     background: #008bd0;
     color: #d7d0db;

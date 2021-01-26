@@ -85,7 +85,7 @@ export default function Inscription() {
               {errors.password && <p>{errors.password}</p>}
             </DivLabel>
             <DivLabel>
-              <Label>Mot de passe *</Label>
+              <Label>Confirmer le mot de passe *</Label>
               <Input
                 type="password"
                 name="password2"
@@ -177,6 +177,13 @@ export default function Inscription() {
                 value={values.website}
                 onChange={handleChange}
                 placeholder="Votre site internet"
+              />
+            </DivLabelText>
+            <DivLabelText>
+              <label>Accepter les CGU</label>
+              <input
+                type="checkbox"
+                required
               />
             </DivLabelText>
             <StyledButton type="submit" value="Envoyer" />

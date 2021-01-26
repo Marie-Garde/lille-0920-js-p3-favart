@@ -1,7 +1,11 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { useHistory } from "react-router-dom";
+
 
 export default function useForm(validateInfo) {
+  let history = useHistory();
+
   const [values, setValues] = useState({
     username: "",
     surname: "",
@@ -34,6 +38,8 @@ export default function useForm(validateInfo) {
       .post("http://localhost:3001/auth/signup", values)
       .then((res) => {
         setValues(res.data);
+        history.push("/clientpage");
+
       })
       .catch((e) => {
         console.warn(e);
