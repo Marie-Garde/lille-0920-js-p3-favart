@@ -9,6 +9,7 @@ import Action from "./components/header/HeaderMenu04";
 import Sommaire from "./components/header/HeaderMenu00";
 import Footer from "./components/Footer";
 import Inscription from "./components/Inscription";
+import DisplayClient from "./components/DisplayClient";
 import ActionPage from "./components/ActionPage";
 import { Switch, Route } from "react-router-dom";
 import RessourcePage from "./components/RessourcePage";
@@ -29,6 +30,7 @@ export default function App() {
         <Route path="/action" component={Action} />
         <Route path="/inscription" component={Inscription} />
         <Route path="/action" component={ActionPage} />
+        <Route path="/DisplayClient" component={DisplayClient} />
       </Switch>
     </div>
   );
