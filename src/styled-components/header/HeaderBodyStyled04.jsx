@@ -53,12 +53,11 @@ export const ContainerAuthorSentence = styled.div`
     line-height: 1.2em;
   }
 `;
-
 export const AuthorSentence = styled.p`
   font-size: 4vh;
   font-style: italic;
-  color: black;
   font-family: "Josefin Sans";
+  color: black;
   @media ${Device.mobile} {
     font-size: 1.5rem;
   }

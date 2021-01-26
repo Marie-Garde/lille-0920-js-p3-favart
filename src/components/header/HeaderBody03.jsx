@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Main from "../Main";
+import Main from "../Main"; //We'll have to change to "ils et elles" page
 import Footer from "../Footer";
 
 import {
@@ -13,7 +13,7 @@ import {
   AuthorSentence,
   ContainerMoreInformation,
   MoreInformationSentence,
-} from "../../styled-components/header/HeaderBodyStyled.jsx";
+} from "../../styled-components/header/HeaderBodyStyled03.jsx";
 
 export default function HeaderBody() {
   const [visible, setVisible] = useState(false);
@@ -26,15 +26,16 @@ export default function HeaderBody() {
         <BlockTitle>
           <ContainerTitle>
             <Title>
-              pourquoi nous <TitleSpan>existons </TitleSpan>
+              <TitleSpan>Ils </TitleSpan> et <TitleSpan>elles</TitleSpan> le
+              font avec nous
             </Title>
           </ContainerTitle>
         </BlockTitle>
         <BlockSentence>
           <ContainerAuthorSentence>
             <AuthorSentence>
-              "Atteindre le plus grand nombre en mettant la barre très haut",
-              Agnès Varda
+              "Il y a plus dans l'échange que dans la chose échangée", Claude
+              Lévi-Strauss
             </AuthorSentence>
           </ContainerAuthorSentence>
         </BlockSentence>

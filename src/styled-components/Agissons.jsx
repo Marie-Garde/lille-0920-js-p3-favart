@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { Device } from "../assets/Device/Device";
 
 export const P = styled.p`
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   text-align: center;
-  margin-top: 3vh;
+  margin-top: 15vh;
   margin-bottom: 6vh;
   font-family: "Josefin Sans";
   font-weight: bold;
@@ -12,11 +12,12 @@ export const P = styled.p`
     font-size: 1.5rem;
     margin-right: 4vw;
     margin-left: 4vw;
+    margin-bottom: 0;
   }
 `;
 
 export const Card = styled.div`
-  background-color: #f0e9e9;
+  background-color: #cfcece;
   width: 50vw;
   height: 40vh;
   display: flex;
@@ -25,12 +26,14 @@ export const Card = styled.div`
   margin-top: 5vh;
   margin-left: 11vw;
   position: relative;
-  -webkit-box-shadow: 0px 10px 25px -4px rgba(0, 0, 0, 0.65);
-  -moz-box-shadow: 0px 10px 25px -4px rgba(0, 0, 0, 0.65);
-  box-shadow: 0px 10px 25px -4px rgba(0, 0, 0, 0.65);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
   @media ${Device.mobile} {
     width: 90vw;
-    height: 90vh;
+    height: 100vh;
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
@@ -51,6 +54,7 @@ export const Title = styled.h1`
   font-family: "Josefin Sans";
   padding-bottom: 2vh;
   padding-left: 1vw;
+  text-align: justify;
   @media ${Device.mobile} {
     text-align: center;
     font-size: 1.7rem;
@@ -76,22 +80,10 @@ export const Text = styled.h2`
   font-family: "Noto Sans CJK JP";
   padding-bottom: 1vh;
   line-height: 1.2rem;
+  text-align: justify;
   @media ${Device.mobile} {
     font-size: 0.85rem;
     text-align: center;
-  }
-`;
-
-export const Liste = styled.ul`
-  font-size: 1rem;
-  list-style: square;
-  padding-left: 2vw;
-  font-family: "Noto Sans CJK JP";
-  line-height: 1.2rem;
-  @media ${Device.mobile} {
-    font-size: 0.85rem;
-    text-align: center;
-    list-style: none;
   }
 `;
 
@@ -100,9 +92,11 @@ export const CardImg = styled.img`
   position: absolute;
   left: 90vh;
   border: 2px solid;
-  -webkit-box-shadow: 0px 10px 25px -4px rgba(0, 0, 0, 0.65);
-  -moz-box-shadow: 0px 10px 25px -4px rgba(0, 0, 0, 0.65);
-  box-shadow: 0px 10px 25px -4px rgba(0, 0, 0, 0.65);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
   @media ${Device.mobile} {
     width: 60vw;
     left: 14vw;
@@ -111,7 +105,7 @@ export const CardImg = styled.img`
 `;
 
 export const Card2 = styled.div`
-  background-color: #f0e9e9;
+  background-color: #cfcece;
   width: 50vw;
   height: 40vh;
   display: flex;
@@ -125,7 +119,7 @@ export const Card2 = styled.div`
   box-shadow: 0px 10px 25px -4px rgba(0, 0, 0, 0.65);
   @media ${Device.mobile} {
     width: 90vw;
-    height: 70vh;
+    height: 85vh;
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
@@ -136,6 +130,7 @@ export const Card2 = styled.div`
 export const CardText2 = styled.div`
   width: 50vw;
   margin-left: 3vw;
+  margin-right: 2vw;
   @media ${Device.mobile} {
     width: 80vw;
     margin-left: 0vw;
@@ -174,24 +169,11 @@ export const Text2 = styled.h2`
   font-family: "Noto Sans CJK JP";
   padding-bottom: 1vh;
   line-height: 1.2rem;
+  text-align: justify;
   @media ${Device.mobile} {
     font-size: 0.85rem;
     text-align: center;
     padding-left: 0;
-  }
-`;
-
-export const Liste2 = styled.ul`
-  font-size: 1rem;
-  list-style: square;
-  padding-left: 2vw;
-  font-family: "Noto Sans CJK JP";
-  line-height: 1.2rem;
-  @media ${Device.mobile} {
-    font-size: 0.85rem;
-    text-align: center;
-    list-style: none;
-    padding-left: 0vw;
   }
 `;
 
@@ -211,7 +193,7 @@ export const CardImg2 = styled.img`
 `;
 
 export const Card3 = styled.div`
-  background-color: #f0e9e9;
+  background-color: #cfcece;
   width: 50vw;
   height: 40vh;
   display: flex;
@@ -225,7 +207,7 @@ export const Card3 = styled.div`
   box-shadow: 0px 10px 25px -4px rgba(0, 0, 0, 0.65);
   @media ${Device.mobile} {
     width: 90vw;
-    height: 65vh;
+    height: 87vh;
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
@@ -273,22 +255,10 @@ export const Text3 = styled.h2`
   font-family: "Noto Sans CJK JP";
   padding-bottom: 1vh;
   line-height: 1.2rem;
+  text-align: justify;
   @media ${Device.mobile} {
     font-size: 0.85rem;
     text-align: center;
-  }
-`;
-
-export const Liste3 = styled.ul`
-  font-size: 1rem;
-  list-style: square;
-  padding-left: 2vw;
-  font-family: "Noto Sans CJK JP";
-  line-height: 1.2rem;
-  @media ${Device.mobile} {
-    font-size: 0.85rem;
-    text-align: center;
-    list-style: none;
   }
 `;
 
@@ -308,7 +278,7 @@ export const CardImg3 = styled.img`
 `;
 
 export const Card4 = styled.div`
-  background-color: #f0e9e9;
+  background-color: #cfcece;
   width: 50vw;
   height: 40vh;
   display: flex;
@@ -323,7 +293,7 @@ export const Card4 = styled.div`
   box-shadow: 0px 10px 25px -4px rgba(0, 0, 0, 0.65);
   @media ${Device.mobile} {
     width: 90vw;
-    height: 60vh;
+    height: 85vh;
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
@@ -335,6 +305,7 @@ export const Card4 = styled.div`
 export const CardText4 = styled.div`
   width: 50vw;
   margin-left: 3vw;
+  margin-right: 2vw;
   @media ${Device.mobile} {
     width: 80vw;
     margin-left: 0vw;
@@ -373,24 +344,11 @@ export const Text4 = styled.h2`
   font-family: "Noto Sans CJK JP";
   padding-bottom: 1vh;
   line-height: 1.2rem;
+  text-align: justify;
   @media ${Device.mobile} {
     font-size: 0.85rem;
     text-align: center;
     padding-left: 0;
-  }
-`;
-
-export const Liste4 = styled.ul`
-  font-size: 1rem;
-  list-style: square;
-  padding-left: 2vw;
-  font-family: "Noto Sans CJK JP";
-  line-height: 1.2em;
-  @media ${Device.mobile} {
-    font-size: 0.85rem;
-    text-align: center;
-    list-style: none;
-    padding-left: 0vw;
   }
 `;
 
@@ -407,4 +365,84 @@ export const CardImg4 = styled.img`
     left: 14vw;
     bottom: -19vh;
   }
+`;
+
+export const Ingenieries = styled.div`
+  display: flex;
+  justify-content: space-around;
+  margin-right: 8.5vw;
+  margin-left: 8.5vw;
+  margin-bottom: 8vh;
+  @media ${Device.mobile} {
+  }
+`;
+
+export const Button1 = styled.a`
+  position: relative;
+  background-color: black;
+  border: solid 1px black;
+  width: 15vw;
+  height: 9vh;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+  @media ${Device.mobile} {
+    display: none;
+  }
+`;
+
+export const P1 = styled.p`
+  font-size: 2.5rem;
+  font-family: "Josefin Sans";
+  position: absolute;
+  left: 15%;
+  top: 30%;
+  color: white;
+`;
+
+export const P2 = styled.p`
+  font-size: 2.5rem;
+  font-family: "Josefin Sans";
+  position: absolute;
+  left: 8.5%;
+  top: 30%;
+  color: white;
+`;
+
+export const P3 = styled.p`
+  font-size: 2.5rem;
+  font-family: "Josefin Sans";
+  position: absolute;
+  left: 14.5%;
+  top: 30%;
+  color: white;
+`;
+
+export const Explorer = styled.img`
+  width: 15vw;
+  height: 9vh;
+  opacity: 50%;
+`;
+
+export const Engager = styled.img`
+  width: 15vw;
+  height: 9vh;
+  opacity: 50%;
+`;
+
+export const Construire = styled.img`
+  width: 15vw;
+  height: 9vh;
+  opacity: 50%;
+`;
+
+export const Deployer = styled.img`
+  width: 15vw;
+  height: 9vh;
+  opacity: 50%;
 `;
