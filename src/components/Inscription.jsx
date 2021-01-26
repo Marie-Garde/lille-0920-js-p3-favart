@@ -13,13 +13,9 @@ import {
   Input,
   StyledButton,
   Textarea,
-  CheckBox,
-  DivLabelCheckBox,
-  TextareaAutre,
   TextareaEnvies,
   DivLabelText,
   InputSite,
-  LabelCheckBox,
 } from "../styled-components/Inscription";
 
 export default function Inscription() {
@@ -39,7 +35,7 @@ export default function Inscription() {
                 type="text"
                 name="username"
                 placeholder="Prénom"
-                value={values.name}
+                value={values.username}
                 onChange={handleChange}
                 required
               />
