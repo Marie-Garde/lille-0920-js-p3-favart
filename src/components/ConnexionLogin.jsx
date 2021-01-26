@@ -1,7 +1,10 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { useHistory } from "react-router-dom";
 
 export default function useForm({ setToken }) {
+  let history = useHistory();
+
   const [values, setValues] = useState({
     email: "",
     password: "",
@@ -18,6 +21,7 @@ export default function useForm({ setToken }) {
       .post("http://localhost:3001/auth/login", values)
       .then((res) => {
         setToken(res.data);
+        history.push("/clientpage");
       })
       .catch((e) => {
         console.warn(e);

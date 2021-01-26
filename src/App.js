@@ -19,7 +19,12 @@ export default function App() {
     <div>
       <Reset />
       <HeaderTop />
-      <Connexion setToken={setToken} />
+      <Switch>
+        <Route path="/clientpage" component={ClientPage} />
+        <Route exact path="/">
+          <Connexion setToken={setToken} />
+        </Route>
+      </Switch>
     </div>
   );
 }
