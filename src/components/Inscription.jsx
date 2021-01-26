@@ -1,6 +1,6 @@
 import useForm from "./InscriptionSignUp.jsx";
 import { useState, useEffect } from "react";
-import validateInfo from "./ValidateInfo"
+import validateInfo from "./ValidateInfo";
 
 import {
   FlexBox,
@@ -23,8 +23,7 @@ import {
 } from "../styled-components/Inscription";
 
 export default function Inscription() {
-
-  const {handleChange, values, handleSubmit, errors} = useForm(validateInfo);
+  const { handleChange, values, handleSubmit, errors } = useForm(validateInfo);
   return (
     <FlexBox>
       <FlexBox1></FlexBox1>
@@ -38,8 +37,7 @@ export default function Inscription() {
               <Label>Prénom *</Label>
               <Input
                 type="text"
-                name="name"
-                id="name"
+                name="username"
                 placeholder="Prénom"
                 value={values.name}
                 onChange={handleChange}
@@ -51,7 +49,6 @@ export default function Inscription() {
               <Input
                 type="text"
                 name="surname"
-                id="surname"
                 placeholder="Nom"
                 value={values.surname}
                 onChange={handleChange}
@@ -63,7 +60,6 @@ export default function Inscription() {
               <Input
                 type="email"
                 name="email"
-                id="email"
                 placeholder="Email"
                 value={values.email}
                 onChange={handleChange}
@@ -75,7 +71,6 @@ export default function Inscription() {
               <Input
                 type="text"
                 name="phone"
-                id="phone"
                 placeholder="Numéro de téléphone"
                 value={values.phone}
                 onChange={handleChange}
@@ -87,7 +82,6 @@ export default function Inscription() {
               <Input
                 type="password"
                 name="password"
-                id="password"
                 placeholder="Mot de passe"
                 value={values.password}
                 onChange={handleChange}
@@ -99,20 +93,17 @@ export default function Inscription() {
               <Input
                 type="password"
                 name="password2"
-                id="password2"
                 placeholder="Confirmer le mot de passe"
                 value={values.password2}
                 onChange={handleChange}
               />
-                            {errors.password && <p>{errors.password}</p>}
-
+              {errors.password && <p>{errors.password}</p>}
             </DivLabel>
             <DivLabel>
               <Label>Métier *</Label>
               <Input
                 type="text"
                 name="job"
-                id="job"
                 placeholder="Métier"
                 value={values.job}
                 onChange={handleChange}
@@ -124,7 +115,6 @@ export default function Inscription() {
               <Input
                 type="text"
                 name="structure_name"
-                id="structure_name"
                 placeholder="Nom de la structure"
                 value={values.structure_name}
                 onChange={handleChange}
@@ -136,7 +126,6 @@ export default function Inscription() {
               <Input
                 type="text"
                 name="structure_type"
-                id="structure_type"
                 placeholder="Type de la structure"
                 value={values.structure_type}
                 onChange={handleChange}
@@ -148,7 +137,6 @@ export default function Inscription() {
               <Input
                 type="text"
                 name="structure_field"
-                id="structure_field"
                 placeholder="Domaine de la structure"
                 value={values.structure_field}
                 onChange={handleChange}
@@ -160,7 +148,6 @@ export default function Inscription() {
               <Textarea
                 type="text"
                 name="job_field"
-                id="job_field"
                 placeholder="Domaine d'activité"
                 value={values.job_field}
                 onChange={handleChange}
@@ -171,7 +158,6 @@ export default function Inscription() {
               <Textarea
                 type="text"
                 name="territory"
-                id="territory"
                 placeholder="Votre territoire d'action"
                 value={values.territory}
                 onChange={handleChange}
@@ -182,7 +168,6 @@ export default function Inscription() {
               <TextareaEnvies
                 type="text"
                 name="wishes"
-                id="wishes"
                 value={values.wishes}
                 onChange={handleChange}
                 placeholder="Vos envies"
@@ -193,7 +178,6 @@ export default function Inscription() {
               <InputSite
                 type="text"
                 name="website"
-                id="website"
                 value={values.website}
                 onChange={handleChange}
                 placeholder="Votre site internet"

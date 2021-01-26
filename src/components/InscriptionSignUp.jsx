@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
-import axios from "axios"
+import axios from "axios";
 
-export default function useForm(validateInfo){
+export default function useForm(validateInfo) {
   const [values, setValues] = useState({
-    name: "",
+    username: "",
     surname: "",
     email: "",
     phone: "",
     password: "",
-    password2:"",
+    password2: "",
     job: "",
     structure_name: "",
     structure_type: "",
@@ -19,9 +19,6 @@ export default function useForm(validateInfo){
     website: "",
   });
 
-  const [clients, setClients] = useState([]);
-
- 
   const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
@@ -29,17 +26,19 @@ export default function useForm(validateInfo){
     setValues({ ...values, [name]: value });
   };
 
-  const handleSubmit = e =>{
-      e.preventDefault();
-      setErrors(validateInfo(values));
-      axios({
-        method: "POST",
-        url: "http://localhost:3001/client",
-      }).then((res) => {
-        setValues(res.data);;
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setErrors(validateInfo(values));
+    delete values.password2;
+    axios
+      .post("http://localhost:3001/auth/signup", values)
+      .then((res) => {
+        setValues(res.data);
+      })
+      .catch((e) => {
+        console.warn(e);
       });
-  }
+  };
 
   return { handleChange, values, handleSubmit, errors };
-};
-
+}
