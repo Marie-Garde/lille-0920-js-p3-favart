@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
 
-
 export default function useForm(validateInfo) {
   let history = useHistory();
 
@@ -39,7 +38,6 @@ export default function useForm(validateInfo) {
       .then((res) => {
         setValues(res.data);
         history.push("/clientpage");
-
       })
       .catch((e) => {
         console.warn(e);

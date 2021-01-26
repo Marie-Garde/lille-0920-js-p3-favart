@@ -63,7 +63,6 @@ export const DivLabel = styled.div`
   }
 `;
 
-
 export const DivLabelText = styled.div`
   font-size: 1rem;
   display: flex;
@@ -128,7 +127,6 @@ export const Textarea = styled.textarea`
   }
 `;
 
-
 export const TextareaEnvies = styled.textarea`
   width: 77%;
   height: 25vh;
@@ -154,7 +152,7 @@ export const StyledButton = styled.button`
   height: 4vh;
   border-radius: 5px;
   margin-top: 10vh;
-  margin-bottom : 20vh;
+  margin-bottom: 20vh;
   &:hover {
     background: #008bd0;
     color: #d7d0db;

@@ -181,10 +181,7 @@ export default function Inscription() {
             </DivLabelText>
             <DivLabelText>
               <label>Accepter les CGU</label>
-              <input
-                type="checkbox"
-                required
-              />
+              <input type="checkbox" required />
             </DivLabelText>
             <StyledButton type="submit" value="Envoyer" />
           </fieldset>

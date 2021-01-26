@@ -12,6 +12,7 @@ import Inscription from "./components/Inscription";
 import { Switch, Route } from "react-router-dom";
 import useForm from "./components/ConnexionLogin";
 import ProfilPage from "./components/ProfilPage";
+import Sidebar from "./components/Sidebar";
 
 export default function App() {
   const [token, setToken] = useState("");
@@ -20,7 +21,7 @@ export default function App() {
     <div>
       <Reset />
       <HeaderTop />
-      <ProfilPage/>
+      <Sidebar />
       <Switch>
         <Route path="/clientpage" component={ClientPage} />
         <Route exact path="/">
