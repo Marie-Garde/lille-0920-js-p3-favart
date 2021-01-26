@@ -12,7 +12,8 @@ height:27vh;
 
 export const Carousel = styled.div`
     @media (max-width: 640px) {
-        display:none;
+        margin:0;
+        border:10px solid yellow;
     }
 `
 
