@@ -160,7 +160,13 @@ export const Flex = styled.div`
     z-index: 1;
   }
   ${TitleProject} {
-    opacity: 1;
+    visibility: visible;
+  }
+  ${LogoProjet} {
+    visibility: visible;
+  }
+
+  ${ContainerLogo} {
   }
   ${BlockLogoTitle} {
     display: flex;
@@ -203,99 +209,3 @@ export const BlockLogoTitle2 = styled.div`
     align-items: center;
   }
 `;
-
-export const LogoProjet2 = styled.img`
-  background-color: white;
-  height: 19vh;
-  width: 16vw;
-  @media ${Device.mobile} {
-    width: 50vw;
-    height: 16vh;
-  }
-`;
-
-export const Grid2 = styled.div`
-  grid-column-start: 4;
-  grid-row-start: 1;
-  height: 22vh;
-  width: 19vw;
-  background-color: #1f89d1;
-  overflow: hidden;
-  &:hover {
-    background-color: #0d253f;
-    color: white;
-    grid-column: 3/6;
-    grid-row: 1/3;
-    height: auto;
-    width: auto;
-    z-index: 1;
-
-    ${TitleProject} {
-      opacity: 1;
-    }
-    ${BlockLogoTitle} {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      opacity: 1;
-    }
-    ${BlockUl} {
-      opacity: 1;
-    }
-    ${ContainerBlock} {
-      opacity: 1;
-    }
-  }
-  @media ${Device.mobile} {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: #0d253f;
-    color: white;
-    height: 100%;
-    width: auto;
-  } ;
-`;
-
-export const Grid3 = styled.div`
-  grid-column: 2/3;
-  grid-row: 2/3;
-  height: 22vh;
-  background-color: #1f89d1;
-  transition: 0.2s ease;
-  overflow: hidden;
-  &:hover {
-    background: #e5e5e5;
-    grid-column: 1/4;
-    grid-row: 2/6;
-    height: auto;
-    z-index: 1;
-    transition: 0.2s ease;
-
-    ${TitleProject} {
-      opacity: 1;
-      transition: opacity 0.3s ease;
-    }
-    ${BlockLogoTitle} {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
-    ${BlockUl} {
-      opacity: 1;
-    }
-    ${ContainerBlock} {
-      opacity: 1;
-    }
-  }
-  @media ${Device.mobile} {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-`;
-
-export const TitleUp = styled.h2`
-  font-size: 7rem;
-  margin: 10vh 5vw 0vh 5vw;
-`
