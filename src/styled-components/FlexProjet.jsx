@@ -3,6 +3,7 @@ import { Device } from "../assets/Device/Device";
 
 export const Page = styled.div`
   background-color: #e5e5e5;
+  border: 2px solid red;
 `;
 
 export const FirstTitle = styled.p`
@@ -14,14 +15,23 @@ export const FirstTitle = styled.p`
     margin-bottom: 14vh;
   }
 `;
+export const FlexContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  border: 2px solid purple;
+`;
 
 export const Container = styled.div`
-  display: grid;
+  border: 2px solid green;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-between;
+  flex-wrap: wrap;
+  width: 50vw;
+  height: 80vh;
   margin: 1vh 0vw 5vh 0vw;
   background-color: #e5e5e5;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 3vw;
+
   @media ${Device.mobile} {
     display: flex;
     flex-direction: column;
@@ -33,8 +43,8 @@ export const Container = styled.div`
 `;
 
 export const BlockLogoTitle = styled.div`
-  margin: 1.5vh 1.5vw 4vh 1.5vw;
-
+  display: flex;
+  justify-content: space-evenly;
   @media ${Device.mobile} {
     display: flex;
     flex-direction: column;
@@ -48,15 +58,27 @@ export const TitleProject = styled.h2`
   font-weight: bold;
   overflow: hidden;
   font-size: 3.5rem;
-  padding: 1vh 0vw;
+  visibility: hidden;
   @media ${Device.mobile} {
     display: flex;
     font-size: 2rem;
     margin-top: 2vh;
+    visibility: visible;
   }
+`;
+export const ContainerLogo = styled.div`
+  border: 2px solid yellow;
+  height: 20vh;
+  width: 20vw;
+  background-image: url(${({ bk }) => bk});
+  background-size: contain;
+  background-repeat: no-repeat;
 `;
 
 export const LogoProjet = styled.img`
+  display: block;
+
+  overflow: hidden;
   background-color: white;
   @media ${Device.mobile} {
     width: 40vw;
@@ -121,19 +143,18 @@ export const Span = styled.span`
 export const ContainerBlock = styled.div`
 `;
 
-export const Grid1 = styled.div`
-  grid-column: 2/3;
-  grid-row: 1/2;
-  height: 22vh;
-  background-color: #1f89d1;
+export const Flex = styled.div`
+  border: 2px solid red;
+  background-color: white;
+  display: flex;
+  height: 20vh;
+  width: 18vw;
   overflow: hidden;
-  width: 20vw;
   &:hover {
     background-color: #0d253f;
 
     color: white;
-    grid-column: 1/4;
-    grid-row: 1/3;
+
     height: auto;
     width: auto;
     z-index: 1;
