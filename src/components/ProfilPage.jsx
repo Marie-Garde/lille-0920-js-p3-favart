@@ -15,6 +15,7 @@ import {
   CardBdd,
 } from "../styled-components/ProfilPage.jsx";
 import ContactUs from "./ContactUs.jsx";
+import UpdateClient from "./UpdateClientForm.jsx";
 
 export default () => {
   const [clients, setClients] = useState([]);
@@ -22,7 +23,7 @@ export default () => {
 
   useEffect(() => {
     setLoading(true);
-    axios.get("http://localhost:3001/client/1").then((res) => {
+    axios.get("http://localhost:3001/client/9").then((res) => {
       setClients(res.data[0]);
       setLoading(false);
     });
@@ -97,6 +98,7 @@ export default () => {
           )}
         </div>
         <div>
+          <UpdateClient clients={clients} />
           <ContactUs />
         </div>
       </FlexBox2>
