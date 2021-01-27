@@ -23,12 +23,11 @@ export default function App() {
       <Switch>
         <Route exact path="/" component={MainPage} />
         <Route path="/clientpage" component={ClientPage} />
-        <Route exact path="/">
+        <Route exact path="/connection">
           <Connection setToken={setToken} />
         </Route>
         <Route exact path="/sommaire" component={Sommaire} />
         <Route path="/agissons" component={Agissons} />
-        <Route path="/connexion" component={Connection} />
         <Route path="/ilsetelles" component={IlsEtElles} />
         <Route path="/action" component={Action} />
         <Route path="/inscription" component={Inscription} />
