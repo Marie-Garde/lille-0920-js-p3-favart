@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Switch, Route } from "react-router-dom";
 import { Reset } from "styled-reset";
 
-import Connexion from "./components/Connexion";
 import HeaderTop from "./components/HeaderTop";
 import ClientPage from "./components/ClientPage";
 import MainPage from "./components/header/HeaderMenu01";
@@ -13,8 +12,8 @@ import Sommaire from "./components/header/HeaderMenu00";
 import Inscription from "./components/Inscription";
 import DisplayClient from "./components/DisplayClient";
 import ProfilePage from "./components/ProfilPage";
+import Connection from "./components/Connection";
 
-import { Switch, Route } from "react-router-dom";
 export default function App() {
   const [token, setToken] = useState("");
   return (
@@ -22,16 +21,15 @@ export default function App() {
       <Reset />
       <HeaderTop />
       <Switch>
-        <ProfilePage />
         <Route exact path="/" component={MainPage} />
         <Route path="/clientpage" component={ClientPage} />
         <Route exact path="/">
-          <Connexion setToken={setToken} />
+          <Connection setToken={setToken} />
         </Route>
 
         <Route exact path="/sommaire" component={Sommaire} />
         <Route path="/agissons" component={Agissons} />
-        <Route path="/connexion" component={Connexion} />
+        <Route path="/connexion" component={Connection} />
         <Route path="/ilsetelles" component={IlsEtElles} />
         <Route path="/action" component={Action} />
         <Route path="/inscription" component={Inscription} />
