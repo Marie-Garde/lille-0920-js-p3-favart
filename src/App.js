@@ -22,8 +22,8 @@ export default function App() {
       <Reset />
       <HeaderTop />
       <Switch>
-        <ContactMail />
         <Route exact path="/" component={MainPage} />
+        <Route exact path="/contact" component={ContactMail} />
         <Route path="/clientpage" component={ClientPage} />
         <Route exact path="/">
           <Connexion setToken={setToken} />

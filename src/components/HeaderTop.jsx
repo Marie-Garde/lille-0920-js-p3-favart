@@ -7,6 +7,8 @@ import connect from "../assets/logo-icon-header/connect.svg";
 import { Link } from "react-router-dom";
 
 import {
+  LinkLogo,
+  LinkMail,
   DivHeaderTop,
   Logo,
   ContainerIcon,
@@ -23,13 +25,16 @@ export default function HeaderTop() {
   return (
     <>
       <DivHeaderTop>
-        <Logo src={logo} alt="logo favart" />
+        <LinkLogo to="/sommaire">
+          <Logo src={logo} alt="logo favart" />
+        </LinkLogo>
         <ContainerIcon>
           <IconTwitter src={twitter} alt="logo twitter" />
 
           <IconLinkedin src={linkedin} alt="logo linkedin" />
-
-          <IconMail src={mail} alt="logo mail" />
+          <LinkMail to="/contact">
+            <IconMail src={mail} alt="logo mail" />
+          </LinkMail>
         </ContainerIcon>
 
         <ContainerConnexionSentence>

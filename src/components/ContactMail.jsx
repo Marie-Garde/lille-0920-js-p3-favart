@@ -1,4 +1,6 @@
 import contact from "../assets/Contact/Contact.jpg";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import {
   Back,
   Background,
@@ -10,8 +12,10 @@ import {
 } from "../styled-components/ContactMail.jsx";
 
 import emailjs from "emailjs-com";
+toast.configure();
 
 export default function ContactUs() {
+  const notify = () => toast("Votre message a bien été envoyé !");
   function sendEmail(e) {
     e.preventDefault();
 
@@ -32,7 +36,7 @@ export default function ContactUs() {
         <Input type="email" name="user_email" required />
         <Label>Message</Label>
         <Textarea name="message" required />
-        <Button type="submit" value="Send">
+        <Button type="submit" value="Send" onClick={notify}>
           Envoyer
         </Button>
       </Formulaire>

@@ -6,7 +6,7 @@ export const Back = styled.div`
 `;
 
 export const Background = styled.img`
-  height: 91.81vh;
+  height: 91.4vh;
   width: 99.2vw;
   opacity: 0.5;
 `;
@@ -42,6 +42,8 @@ export const Input = styled.input`
   width: 50%;
   text-align: center;
   font-family: "Josefin Sans";
+  opacity: 0.8;
+  margin-bottom: 2vh;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   @media ${Device.mobile} {
     width: 82vw;
@@ -53,6 +55,7 @@ export const Textarea = styled.textarea`
   height: 25vh;
   text-align: center;
   font-family: "Josefin Sans";
+  opacity: 0.8;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   @media ${Device.mobile} {
     width: 86vw;
