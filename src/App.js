@@ -19,7 +19,7 @@ export default function App() {
   return (
     <div>
       <Reset />
-      <HeaderTop token = {token} />
+      <HeaderTop token={token} />
       <Switch>
         <Route exact path="/" component={MainPage} />
         <Route path="/clientpage" component={ClientPage} />

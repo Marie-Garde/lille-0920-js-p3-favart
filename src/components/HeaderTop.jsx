@@ -6,7 +6,6 @@ import mail from "../assets/logo-icon-header/mail.svg";
 import connect from "../assets/logo-icon-header/connect.svg";
 import user from "../assets/logo-icon-header/user.svg";
 
-
 import {
   DivHeaderTop,
   Logo,
