@@ -1,6 +1,5 @@
 import ClientPage from "./components/ClientPage";
-import { Reset } from "styled-reset";
-import Connexion from "./components/Connexion";
+import Connexion from "./components/Connection";
 import HeaderTop from "./components/HeaderTop";
 import MainPage from "./components/header/HeaderMenu01";
 import Agissons from "./components/header/HeaderMenu02";
@@ -11,9 +10,10 @@ import Footer from "./components/Footer";
 import Inscription from "./components/Inscription";
 import DisplayClient from "./components/DisplayClient";
 import ActionPage from "./components/ActionPage";
-import { Switch, Route } from "react-router-dom";
+import { Reset } from "styled-reset";
 import RessourcePage from "./components/RessourcePage";
 
+import { Switch, Route } from "react-router-dom";
 export default function App() {
   return (
     <div>
