@@ -33,7 +33,7 @@ export default function HeaderTop() {
         </ContainerIcon>
 
         <ContainerConnexionSentence>
-          <ConnexionSentence to="/connexion">
+          <ConnexionSentence to="/inscription">
             Connexion / Inscription
           </ConnexionSentence>
         </ContainerConnexionSentence>

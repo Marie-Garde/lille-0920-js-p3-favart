@@ -14,6 +14,7 @@ import Inscription from "./components/Inscription";
 import DisplayClient from "./components/DisplayClient";
 import ProfilePage from "./components/ProfilPage";
 
+import { Switch, Route } from "react-router-dom";
 export default function App() {
   const [token, setToken] = useState("");
   return (
