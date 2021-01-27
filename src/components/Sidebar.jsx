@@ -9,7 +9,6 @@ export default function Sidebar() {
   useEffect(() => {
     setLoading(true);
     axios.get("http://localhost:3001/client/1").then((res) => {
-      console.log(res.data);
       setClients(res.data[0]);
       setLoading(false);
     });

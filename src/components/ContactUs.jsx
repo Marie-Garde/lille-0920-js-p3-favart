@@ -5,21 +5,12 @@ export default function ContactUs() {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_q3jbdzm",
-        "template_stdceyl",
-        e.target,
-        "user_NKYLcqZwiFms9AL3RjBZO"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    emailjs.sendForm(
+      "service_q3jbdzm",
+      "template_stdceyl",
+      e.target,
+      "user_NKYLcqZwiFms9AL3RjBZO"
+    );
   }
 
   return (

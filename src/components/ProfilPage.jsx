@@ -23,7 +23,6 @@ export default () => {
   useEffect(() => {
     setLoading(true);
     axios.get("http://localhost:3001/client/1").then((res) => {
-      console.log(res.data);
       setClients(res.data[0]);
       setLoading(false);
     });
@@ -40,8 +39,9 @@ export default () => {
       </FlexBox1>
       <FlexBox2>
         <div>
-          {loading && <p>it's loading</p>}
-          {!loading && (
+          {loading ? (
+            <p>it's loading</p>
+          ) : (
             <>
               <Card>
                 <FlexText>
