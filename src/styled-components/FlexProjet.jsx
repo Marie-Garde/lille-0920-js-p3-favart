@@ -15,22 +15,20 @@ export const FirstTitle = styled.p`
     margin-bottom: 14vh;
   }
 `;
-export const FlexContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  border: 2px solid purple;
-`;
 
 export const Container = styled.div`
   border: 2px solid green;
   display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
   flex-wrap: wrap;
-  width: 50vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   height: 80vh;
   margin: 1vh 0vw 5vh 0vw;
   background-color: #e5e5e5;
+  gap: 5vh;
+  overflow: hidden;
 
   @media ${Device.mobile} {
     display: flex;
@@ -44,7 +42,9 @@ export const Container = styled.div`
 
 export const BlockLogoTitle = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-between;
+
   @media ${Device.mobile} {
     display: flex;
     flex-direction: column;
@@ -67,19 +67,19 @@ export const TitleProject = styled.h2`
   }
 `;
 export const ContainerLogo = styled.div`
-  border: 2px solid yellow;
   height: 20vh;
   width: 20vw;
   background-image: url(${({ bk }) => bk});
   background-size: contain;
   background-repeat: no-repeat;
+  align-items: center;
 `;
 
 export const LogoProjet = styled.img`
-  display: block;
-
+  display: flex;
+  width: 18vw;
   overflow: hidden;
-  background-color: white;
+
   @media ${Device.mobile} {
     width: 40vw;
   }
@@ -121,11 +121,7 @@ export const Center = styled.ul`
   }
 `;
 
-export const Tools = styled.li`
-  list-style-type: disc;
-  margin-left: 1vw;
-  margin-top: 1vh;
-`;
+export const Tools = styled.li``;
 
 export const LiList = styled.li`
   margin-bottom: 1vh;
@@ -141,22 +137,25 @@ export const Span = styled.span`
 `;
 
 export const ContainerBlock = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 
 export const Flex = styled.div`
   border: 2px solid red;
   background-color: white;
   display: flex;
+  flex-direction: column;
   height: 20vh;
   width: 18vw;
   overflow: hidden;
+
   &:hover {
+    display: flex;
     background-color: #0d253f;
-
     color: white;
-
     height: auto;
-    width: auto;
+    width: 80vw;
     z-index: 1;
   }
   ${TitleProject} {
@@ -170,7 +169,7 @@ export const Flex = styled.div`
   }
   ${BlockLogoTitle} {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-;
     align-items: center;
     opacity: 1;
   }

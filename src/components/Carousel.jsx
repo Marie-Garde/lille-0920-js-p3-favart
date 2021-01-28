@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { Slide } from "react-slideshow-image";
-import 'react-slideshow-image/dist/styles.css';
-import {SlideStyle, Img, Carousel,} from '../styled-components/CarouselStyle';
-import carousel1 from '../assets/images/carousel1.png';
-import carousel2 from '../assets/images/carousel2.png'
-import carousel3 from '../assets/images/carousel3.png';
-
+import "react-slideshow-image/dist/styles.css";
+import { SlideStyle, Img, Carousel } from "../styled-components/CarouselStyle";
+import carousel1 from "../assets/images/carousel1.png";
+import carousel2 from "../assets/images/carousel2.png";
+import carousel3 from "../assets/images/carousel3.png";
 
 const AutoplayExample = () => {
   const [autoplay, setAutoplay] = useState(true);
@@ -21,7 +20,7 @@ const AutoplayExample = () => {
             <Img src={carousel2} />
           </SlideStyle>
           <SlideStyle>
-            <Img src={carousel3}/>
+            <Img src={carousel3} />
           </SlideStyle>
         </Slide>
       </Carousel>

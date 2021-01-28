@@ -44,61 +44,59 @@ export default function FlexProjet() {
           S’autoriser le droit à l’expérimentation territoriale avec les acteurs
           engagés
         </FirstTitle>
-        <FlexContainer>
-          <Container>
-            {projets.map((projet) => {
-              return (
-                <div key={projet.id}>
-                  <Flex>
-                    <BlockLogoTitle>
-                      <ContainerLogo bk={projet.logo}>
-                        <LogoProjet /*src={projet.logo} alt="image projet"*/ />
-                      </ContainerLogo>
-                      <TitleProject>{projet.titre}</TitleProject>
-                    </BlockLogoTitle>
-                    <ContainerBlock>
-                      <BlockUl>
-                        <ContainerUl1>
-                          <Test>
-                            <LiList>
-                              <Span>Porteur du projet :</Span>
-                              <p>{projet.porteurs}</p>
-                            </LiList>
-                            <LiList>
-                              <Span>Enjeux :</Span>
-                              <p>{projet.enjeux}</p>
-                            </LiList>
-                            <LiList>
-                              <Span>Mission Favart :</Span>
-                              <p>{projet.missions}</p>
-                            </LiList>
-                            <LiList>
-                              <Span>Partenaires :</Span>
-                              <p>{projet.partenaires}</p>
-                            </LiList>
-                            <LiList>
-                              <Span>Territoires :</Span>
-                              <p>{projet.patenaires}</p>
-                            </LiList>
+        <Container>
+          {projets.map((projet) => {
+            return (
+              <div key={projet.id}>
+                <Flex>
+                  <BlockLogoTitle>
+                    <ContainerLogo bk={projet.logo}>
+                      <LogoProjet /*src={projet.logo} alt="image projet"*/ />
+                    </ContainerLogo>
+                    <TitleProject>{projet.titre}</TitleProject>
+                  </BlockLogoTitle>
+                  <ContainerBlock>
+                    <BlockUl>
+                      <ContainerUl1>
+                        <Test>
+                          <LiList>
+                            <Span>Porteur du projet :</Span>
+                            <p>{projet.porteurs}</p>
+                          </LiList>
+                          <LiList>
+                            <Span>Enjeux :</Span>
+                            <p>{projet.enjeux}</p>
+                          </LiList>
+                          <LiList>
+                            <Span>Mission Favart :</Span>
+                            <p>{projet.missions}</p>
+                          </LiList>
+                          <LiList>
+                            <Span>Partenaires :</Span>
+                            <p>{projet.partenaires}</p>
+                          </LiList>
+                          <LiList>
+                            <Span>Territoires :</Span>
+                            <p>{projet.patenaires}</p>
+                          </LiList>
 
-                            <LiList>
-                              <OutilsContainer>
-                                <Span>Outils Favart :</Span>
-                                <Center>
-                                  <Tools>{projet.outils}</Tools>
-                                </Center>
-                              </OutilsContainer>
-                            </LiList>
-                          </Test>
-                        </ContainerUl1>
-                      </BlockUl>
-                    </ContainerBlock>
-                  </Flex>
-                </div>
-              );
-            })}
-          </Container>
-        </FlexContainer>
+                          <LiList>
+                            <OutilsContainer>
+                              <Span>Outils Favart :</Span>
+                              <Center>
+                                <Tools>{projet.outils}</Tools>
+                              </Center>
+                            </OutilsContainer>
+                          </LiList>
+                        </Test>
+                      </ContainerUl1>
+                    </BlockUl>
+                  </ContainerBlock>
+                </Flex>
+              </div>
+            );
+          })}
+        </Container>
       </Page>
     </>
   );
