@@ -27,7 +27,6 @@ import {
 
 export default function MainPage() {
   return (
-
     <Body>
       <FSentence>
         Explorer de nouveaux moyens d’action pour relever les grands défis de
