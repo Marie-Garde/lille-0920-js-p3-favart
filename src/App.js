@@ -12,6 +12,8 @@ import DisplayClient from "./components/DisplayClient";
 import ActionPage from "./components/ActionPage";
 import { Reset } from "styled-reset";
 import RessourcePage from "./components/RessourcePage";
+import RessourcePageExt from "./components/RessourceExtPage";
+import RessourcesForm from "./components/UpdateRessourcesForm";
 
 import { Switch, Route } from "react-router-dom";
 export default function App() {
@@ -19,17 +21,7 @@ export default function App() {
     <div>
       <Reset />
       <HeaderTop />
-      <Switch>
-        <Route exact path="/" component={MainPage} />
-        <Route exact path="/sommaire" component={Sommaire} />
-        <Route path="/agissons" component={Agissons} />
-        <Route path="/connexion" component={Connexion} />
-        <Route path="/ilsetelles" component={IlsEtElles} />
-        <Route path="/action" component={Action} />
-        <Route path="/inscription" component={Inscription} />
-        <Route path="/action" component={ActionPage} />
-        <Route path="/DisplayClient" component={DisplayClient} />
-      </Switch>
+      <RessourcesForm />
     </div>
   );
 }
