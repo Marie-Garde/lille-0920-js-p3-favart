@@ -18,7 +18,6 @@ export default function useForm() {
     wishes: "",
     website: "",
   });
-  console.log(clients);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
