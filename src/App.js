@@ -14,6 +14,8 @@ import { Reset } from "styled-reset";
 import RessourcePage from "./components/RessourcePage";
 import RessourcePageExt from "./components/RessourceExtPage";
 import RessourcesForm from "./components/UpdateRessourcesForm";
+import RessourcesFormExt from "./components/UpdateRessourcesExtForm";
+import DisplayRessources from "./components/DisplayRessources";
 
 import { Switch, Route } from "react-router-dom";
 export default function App() {
@@ -21,7 +23,7 @@ export default function App() {
     <div>
       <Reset />
       <HeaderTop />
-      <RessourcesForm />
+      <DisplayRessources />
     </div>
   );
 }
