@@ -8,11 +8,15 @@ export const FlexLogo = styled.div`
 `
 
 export const Img = styled.img`
-    max-height:20vh;
-    maw-width:10vw;
+    height:auto;
+    width:100%;
 `
 
 export const Testing = styled.div`
-    height:45vh;
-    width:100vw
+    height:60vh;
+    width:25vw;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    text-align:center;
 `
