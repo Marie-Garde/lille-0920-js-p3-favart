@@ -12,6 +12,7 @@ import DisplayClient from "./components/DisplayClient";
 import ActionPage from "./components/ActionPage";
 import { Reset } from "styled-reset";
 import RessourcePage from "./components/RessourcePage";
+import MentionsLegales from "./components/LegalNotice";
 
 import { Switch, Route } from "react-router-dom";
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
       <HeaderTop />
       <Switch>
         <Route exact path="/" component={MainPage} />
+        <Route exact path="/mentionslegales" component={MentionsLegales} />
         <Route exact path="/sommaire" component={Sommaire} />
         <Route path="/agissons" component={Agissons} />
         <Route path="/connexion" component={Connexion} />
