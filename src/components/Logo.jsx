@@ -39,6 +39,7 @@ export default function Logo() {
     return (
         
         <>
+        <h1>Nos partenaires :</h1>
         <Carousel
         swipeable={false}
         draggable={false}

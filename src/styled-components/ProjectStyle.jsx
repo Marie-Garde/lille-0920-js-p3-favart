@@ -56,5 +56,31 @@ margin:2vw;
 
 export const FlexText = styled.div`
 overflow: hidden;
-display:none;
+visibility: hidden;
 `;
+
+export const Span = styled.span`
+    font-weight:bold;
+    text-decoration:underline;
+`
+
+export const Ul = styled.ul`
+    list-style-type: none;
+`
+
+export const ContainersM = styled.div`
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:100vh;
+`
+
+export const Button = styled.button`
+    min-width:100px;
+    padding: 16px 32px;
+    border:none;
+    background: #141414;
+    font-size:16px;
+    cursor: pointer;
+    color:white;
+`

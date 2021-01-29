@@ -1,10 +1,18 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import {Container,FlexContainer,FlexLogoTitle,Img,Title,FlexText} from "../styled-components/ProjectStyle";
+import {Container,FlexContainer,FlexLogoTitle,Img,Title,FlexText,Span, Ul,ContainersM,Button} from "../styled-components/ProjectStyle";
+import Modal from "./Modal";
+
 
 export default function FlexProjet() {
     const [projets, setProjets] = useState([]);
+    const [showModal, setShowModal] = useState(false);
+    
   
+    const openModal = () => {
+        setShowModal(prev => !prev)
+    }
+
     useEffect(() => {
       axios
         .get("http://localhost:5050/projets/")
@@ -20,46 +28,47 @@ export default function FlexProjet() {
     return (
             <div>
                 <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, omnis quos earum</h1>
-                <Container>
-                    {projets.map((projet)=>{
-                        return (
-                                <FlexContainer key={projet.id}>
-                                    <FlexLogoTitle>
-                                        <Img src={projet.logo}/>
-                                        <Title>{projet.titre}</Title>
-                                    </FlexLogoTitle>
-                                    <FlexText>
-                                        <ul>
-                                            <li>
-                                                <span>Porteur du projet :</span>
-                                                <p>{projet.porteurs}</p>
-                                            </li>
-                                            <li>
-                                                <span>Enjeux :</span>
-                                                <p>{projet.enjeux}</p>
-                                            </li>
-                                            <li>
-                                                <span>Missions Favart :</span>
-                                                <p>{projet.missions}</p>
-                                            </li>
-                                            <li>
-                                                <span>Partenaires :</span>
-                                                <p>{projet.partenaires}</p>
-                                            </li>
-                                            <li>
-                                                <span>Territoires :</span>
-                                                <p>{projet.patenaires}</p>
-                                            </li>
-                                            <li>
-                                                <span>outils :</span>
-                                                <p>{projet.outils}</p>
-                                            </li>
-                                        </ul>
-                                    </FlexText>
-                                </FlexContainer>
-                        )
-                    })}
-                </Container>
+               {projets.map((projet)=>{
+                    return (
+                        <FlexContainer key={projet.id}>
+                        <FlexLogoTitle>
+                            <Img onClick={openModal} src={projet.logo}/>
+                            <Modal showModal={showModal} setShowModal={setShowModal} />
+                            <Title>{projet.titre}</Title>
+                        </FlexLogoTitle>
+                        
+                        <FlexText>
+                            <Ul>
+                                <li>
+                                    <Span>Porteur du projet :</Span>
+                                    <p>{projet.porteurs}</p>
+                                </li>
+                                <li>
+                                    <Span>Enjeux :</Span>
+                                    <p>{projet.enjeux}</p>
+                                </li>
+                                <li>
+                                    <Span>Missions Favart :</Span>
+                                    <p>{projet.missions}</p>
+                                </li>
+                                <li>
+                                    <Span>Partenaires :</Span>
+                                    <p>{projet.partenaires}</p>
+                                </li>
+                                <li>
+                                    <Span>Territoires :</Span>
+                                    <p>{projet.patenaires}</p>
+                                </li>
+                                <li>
+                                    <Span>outils :</Span>
+                                    <p>{projet.outils}</p>
+                                </li>
+                            </Ul>
+                        </FlexText>
+                    </FlexContainer>
+                    )
+                
+                })}
             </div>
     )
 }
