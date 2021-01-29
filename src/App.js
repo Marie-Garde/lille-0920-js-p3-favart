@@ -17,6 +17,7 @@ import DisplayRessources from "./components/DisplayRessources";
 import { Switch, Route } from "react-router-dom";
 import { Reset } from "styled-reset";
 
+import { Switch, Route } from "react-router-dom";
 export default function App() {
   return (
     <div>
@@ -24,6 +25,7 @@ export default function App() {
       <HeaderTop />
       <Switch>
         <Route exact path="/sommaire" component={Sommaire} />
+
         <Route path="/ressources" component={RessourcePage} />
         <Route path="/displayressources" component={DisplayRessources} />
         <Route path="/ressourcesext" component={RessourcePageExt} />
