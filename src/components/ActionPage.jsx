@@ -16,7 +16,6 @@ import {
   DivMain,
   H2MiddleCard,
   DivCenter,
-  PContact,
   ImgLogo,
   DivLogo,
   ButtonCardMiddle,
@@ -66,7 +65,12 @@ export default function ActionPage() {
             anime.
           </P>
           <DivCenter>
-            <ButtonFlash>Rendez-vous flash</ButtonFlash>
+            <a
+              href="https://meetings.hubspot.com/yoann-geffroy"
+              target="_blank"
+            >
+              <ButtonFlash>Rendez-vous flash</ButtonFlash>
+            </a>
           </DivCenter>
         </DivCards>
       </DivInfos>
@@ -75,10 +79,10 @@ export default function ActionPage() {
         <Card>
           <ImgContainer src={geffroy} alt="Mr Geffroy" />
           <Container>
-            <H4>Yoann Geffroy</H4>
-            <P>Directeur-Fondateur</P>
+            <H4>Geffroy Yoann</H4>
+            <P>Fondateur-Directeur</P>
             <P>
-              Yoann est fondateur et directeur de Favart depuis 2009. <br />{" "}
+              Yoann est fondateur et directeur de Favart depuis 2009. <br />
               Expert de l’innovation sociale et du développement de projets à
               fort impact sociétal, Yoann intervient dans la mobilisation du
               droit à l’expérimentation territorial, la construction de nouveaux
@@ -127,20 +131,10 @@ export default function ActionPage() {
 
       <H1>Nous contacter</H1>
       <div>
-        <PContact>
-          Lorem ipssum Leo fusce lectus, consectetur augue etiam conubia sapien
-          nisi turpis. Natoque maecenas nibh enim facilisi odio sapien risus
-          fringilla natoque. Congue porta volutpat non hac parturient rutrum
-          nisi in curae;. Nec tempus iaculis vel vehicula congue sociosqu
-          consequat adipiscing aliquam. Ut fusce varius natoque blandit curae;
-          hac sociis aptent aliquet. Arcu; euismod potenti integer montes primis
-          iaculis porttitor semper mollis. Posuere lobortis fermentum lorem ut
-          quam primis curae; lectus suscipit. Accumsan pellentesque cursus velit
-          mi venenatis ante risus felis ante.
-        </PContact>
-
         <DivCenter>
-          <Button>Rendez-vous flash</Button>
+          <a href="https://meetings.hubspot.com/yoann-geffroy" target="_blank">
+            <Button>Rendez-vous flash</Button>
+          </a>
         </DivCenter>
       </div>
     </DivMain>
