@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Device } from "../assets/Device/Device";
+import { Link } from "react-router-dom";
 
 export const FlexBox = styled.div`
   display: flex;
@@ -110,6 +111,15 @@ export const Company = styled.h2`
 `;
 
 export const Button = styled.button`
+  font-size: 0.8rem;
+  padding-bottom: 1vh;
+  padding-left: 1vw;
+  @media ${Device.mobile} {
+    font-size: 1.1rem;
+  }
+`;
+
+export const ButtonAdd = styled(Link)`
   font-size: 0.8rem;
   padding-bottom: 1vh;
   padding-left: 1vw;

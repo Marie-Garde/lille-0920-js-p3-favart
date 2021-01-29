@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import axios from "axios";
 
 export default function useForm() {
@@ -21,7 +21,6 @@ export default function useForm() {
         setValues(res.data);
       })
       .catch((e) => {
-        console.log(e);
         console.warn(e);
       });
   };

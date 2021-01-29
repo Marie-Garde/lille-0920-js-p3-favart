@@ -10,6 +10,7 @@ import {
   H1,
   P,
   Button,
+  ButtonAdd,
   Text,
   Name,
   Job,
@@ -62,6 +63,7 @@ export default function RessourcePage() {
             </Button>
           </DivCard>
         ))}
+        <ButtonAdd to="/addressources">Ajouter un projet</ButtonAdd>
         <RessourcesExt />
       </FlexBox2>
     </FlexBox>
