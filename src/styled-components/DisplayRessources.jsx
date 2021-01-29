@@ -108,3 +108,12 @@ export const Company = styled.h2`
     font-size: 1.2rem;
   }
 `;
+
+export const Button = styled.button`
+  font-size: 0.8rem;
+  padding-bottom: 1vh;
+  padding-left: 1vw;
+  @media ${Device.mobile} {
+    font-size: 1.1rem;
+  }
+`;
