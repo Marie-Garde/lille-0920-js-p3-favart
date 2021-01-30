@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { FlexLogo, Img, Testing } from "../styled-components/LogoStyle";
+import {Img, Testing, Title, Margin } from "../styled-components/LogoStyle";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -37,7 +37,8 @@ export default function Logo() {
 
   return (
     <>
-      <h1>Nos partenaires :</h1>
+      <Title>Nos partenaires :</Title>
+      <Margin>
       <Carousel
         swipeable={false}
         draggable={false}
@@ -63,6 +64,7 @@ export default function Logo() {
           );
         })}
       </Carousel>
+      </Margin>
     </>
   );
 }

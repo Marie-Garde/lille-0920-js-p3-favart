@@ -4,9 +4,9 @@ import React, { useState, useEffect } from "react";
 
 const PictureContent = styled.div`
     position: relative;
-    top:-178px;
-    left:375px;
-    height:10px;
+    top: -180px;
+    left: 380px;
+    height:0px;
   &.hide {
     display: none;
   }
@@ -26,9 +26,8 @@ const Flex = styled.div`
   overflow:hidden;
   flex-direction: column;
   gap: 3vh;
-  margin-left:10%;
-  margin-top:10vh;
-  height:200vh;
+  margin: 10vh 6vw 0 6vw;
+  height:190vh;
 
   h1 {
     font-size: 2rem;
@@ -49,15 +48,23 @@ const LogoTitle = styled.div`
   align-items: center;
   justify-content: space-between;
   margin: 3vh 3vw 5vh 3vw;
+
+  h1 {
+    color:#fff;
+    font-size:2.5rem;
+  }
 `;
 
 const Container = styled.div`
-  border: 2px solid black;
+  border: 1px solid black;
+  border-radius:15px;
+  background-color:#122239;
   width:60vw;
 `;
 
 const Content = styled.div`
   margin: 0 3vw 3vh 3vw;
+  color:#fff;
 `;
 
 const Image = styled.img`
