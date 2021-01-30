@@ -26,9 +26,8 @@ export const ModalWrapper = styled.div`
 
 export const ModalImg = styled.img`
     width:100%;
-    height:100ù;
+    height:50%;
     border-radius:10px 0 0 10px;
-    background: #000;
 `
 
 export const ModalContent = styled.div`

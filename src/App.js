@@ -9,14 +9,14 @@ import Action from "./components/header/HeaderMenu04";
 import Sommaire from "./components/header/HeaderMenu00";
 import Projects from "./components/Projects";
 import Logo from "./components/Logo"
+import DataTest from "./components/TestModal"
 
 import { Switch, Route } from "react-router-dom";
 
 export default function App() {
   return (
     <div>
-      <Projects />
-      <Logo />
+      <DataTest />
     </div>
   );
 }

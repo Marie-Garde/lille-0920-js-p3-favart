@@ -3,11 +3,10 @@ import axios from "axios";
 import {Container,FlexContainer,FlexLogoTitle,Img,Title,FlexText,Span, Ul,ContainersM,Button} from "../styled-components/ProjectStyle";
 import Modal from "./Modal";
 
-
 export default function FlexProjet() {
     const [projets, setProjets] = useState([]);
     const [showModal, setShowModal] = useState(false);
-    
+    const [curProject, changeProject] = useState({});
   
     const openModal = () => {
         setShowModal(prev => !prev)
@@ -15,60 +14,32 @@ export default function FlexProjet() {
 
     useEffect(() => {
       axios
-        .get("http://localhost:5050/projets/")
+        .get("http://localhost:5050/projets")
         .then(function (response) {
           setProjets(response.data);
           console.log(response.data);
         })
         .catch(function (error) {
-          console.log(error);
+          console.log("Beh!");
+        console.log()
+          console.log("Beh!");
+
         });
-    }, []);
+    },[]);
 
     return (
             <div>
                 <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, omnis quos earum</h1>
+                <FlexContainer>
                {projets.map((projet)=>{
                     return (
-                        <FlexContainer key={projet.id}>
-                        <FlexLogoTitle>
-                            <Img onClick={openModal} src={projet.logo}/>
-                            <Modal showModal={showModal} setShowModal={setShowModal} />
-                            <Title>{projet.titre}</Title>
+                        <FlexLogoTitle key={projet.id}>
+                            <Img onClick={()=>{changeProject(projet)}} src={projet.logo}/>
                         </FlexLogoTitle>
-                        
-                        <FlexText>
-                            <Ul>
-                                <li>
-                                    <Span>Porteur du projet :</Span>
-                                    <p>{projet.porteurs}</p>
-                                </li>
-                                <li>
-                                    <Span>Enjeux :</Span>
-                                    <p>{projet.enjeux}</p>
-                                </li>
-                                <li>
-                                    <Span>Missions Favart :</Span>
-                                    <p>{projet.missions}</p>
-                                </li>
-                                <li>
-                                    <Span>Partenaires :</Span>
-                                    <p>{projet.partenaires}</p>
-                                </li>
-                                <li>
-                                    <Span>Territoires :</Span>
-                                    <p>{projet.patenaires}</p>
-                                </li>
-                                <li>
-                                    <Span>outils :</Span>
-                                    <p>{projet.outils}</p>
-                                </li>
-                            </Ul>
-                        </FlexText>
-                    </FlexContainer>
                     )
-                
                 })}
+                    </FlexContainer>
+             <Modal projet={curProject} showModal={showModal} setShowModal={setShowModal} />
             </div>
     )
 }
