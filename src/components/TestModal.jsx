@@ -3,64 +3,121 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 
 const PictureContent = styled.div`
+    position:absolute;
+    top:150px;
+    left:550px;
   &.hide {
     display: none;
   }
 `;
 
 const Picture = styled.img`
-  height: 30vh;
+  height: 25vh;
   width: auto;
 `;
 
-const Content = styled.div``;
+const Flex = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  height: 100vh;
+  flex-wrap:wrap;
+  gap: 10vh;
+  margin-left:15%;
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+`;
+
+const H3 = styled.h3`
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top:2vh;
+  text-decoration:underline;
+`;
+
+const LogoTitle = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3vh 3vw 5vh 3vw;
+`;
+
+const Container = styled.div`
+  border: 2px solid black;
+  width:60vw;
+`;
+
+const Content = styled.div`
+  margin: 0 3vw 3vh 3vw;
+`;
+
+const Button = styled.button`
+z-index:100;
+`
 
 export default function DataTest() {
-    const [projets, setProjets] = useState([]);
-    const [isDisplay, setDisplay] = useState({ isDisplay: false, id: "" });
+  const [projets, setProjets] = useState([]);
+  const [isDisplay, setDisplay] = useState({ isDisplay: false, id: "" });
 
-    useEffect(() => {
-        axios
-          .get("http://localhost:5050/projets")
-          .then(function (response) {
-            setProjets(response.data);
-            console.log(response.data);
-          })
-          .catch(function (error) {
-          });
-      },[]);
+  useEffect(() => {
+    axios
+      .get("http://localhost:5050/projets")
+      .then(function (response) {
+        setProjets(response.data);
+        console.log(response.data);
+      })
+      .catch(function (error) {});
+  }, []);
 
   return (
-    <div>
-      {projets.map((projet) => (
-        <Content key={projet.id}>
-          <button
-            onClick={() =>
-              setDisplay({ isDisplay: !isDisplay.isDisplay, id: projet.id })
-            }
-          >
-            {projet.id}
-          </button>
-          <PictureContent
-            onClick={() => console.log(projet.id)}
-            className={
-              isDisplay.isDisplay === true && isDisplay.id === projet.id
-                ? ""
-                : "hide"
-            }
-          >
-            <Picture src={projet.logo} />
-            <h1>{projet.titre}</h1>
-            <p>{projet.porteurs}</p>
-            <p>{projet.partenaires}</p>
-            <p>{projet.territoires}</p>
-            <p>{projet.enjeux}</p>
-            <p>{projet.missions}</p>
-            <p>{projet.outils}</p>
-          </PictureContent>
-          .
-        </Content>
-      ))}
-    </div>
+    <>
+      <Flex>
+          <div></div>
+        {projets.map((projet) => (
+          <div key={projet.id}>
+            <Button
+              onClick={() =>
+                setDisplay({ isDisplay: !isDisplay.isDisplay, id: projet.id })
+              }
+            >
+              {projet.id}
+            </Button>
+            <PictureContent
+              onClick={() => console.log(projet.id)}
+              className={
+                isDisplay.isDisplay === true && isDisplay.id === projet.id
+                  ? ""
+                  : "hide"
+              }
+            >
+              <Container>
+                <LogoTitle>
+                  <Picture src={projet.logo} />
+                  <h1>{projet.titre}</h1>
+                </LogoTitle>
+                <Content>
+                  <H3>Porteur du projet :</H3>
+                  <p>{projet.porteurs}</p>
+                  <H3>Les partenaires :</H3>
+                  <p>{projet.partenaires}</p>
+                  <H3>Territoires :</H3>
+                  <p>{projet.territoires}</p>
+                  <H3>Enjeux :</H3>
+                  <p>{projet.enjeux}</p>
+                  <H3>Mission Favart :</H3>
+                  <p>{projet.missions}</p>
+                  <H3>Outils Favart :</H3>
+                  <p>{projet.outils}</p>
+                </Content>
+              </Container>
+            </PictureContent>
+          </div>
+        ))}
+      </Flex>
+    </>
   );
 }
