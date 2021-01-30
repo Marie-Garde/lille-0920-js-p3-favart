@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import {Img, Testing, Title, Margin } from "../styled-components/LogoStyle";
+import { Img, Testing, Title, Margin } from "../styled-components/LogoStyle";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -39,31 +39,31 @@ export default function Logo() {
     <>
       <Title>Nos partenaires :</Title>
       <Margin>
-      <Carousel
-        swipeable={false}
-        draggable={false}
-        showDots={true}
-        responsive={responsive}
-        ssr={true} // means to render carousel on server-side.
-        infinite={true}
-        autoPlay={true}
-        autoPlaySpeed={1000}
-        keyBoardControl={true}
-        customTransition="all .5"
-        transitionDuration={4000}
-        containerClass="carousel-container"
-        removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
-        dotListClass="custom-dot-list-style"
-        slidesToSlide="4"
-      >
-        {logos.map((logo) => {
-          return (
-            <Testing>
-              <Img src={logo.Logo} />
-            </Testing>
-          );
-        })}
-      </Carousel>
+        <Carousel
+          swipeable={false}
+          draggable={false}
+          showDots={true}
+          responsive={responsive}
+          ssr={true} // means to render carousel on server-side.
+          infinite={true}
+          autoPlay={true}
+          autoPlaySpeed={1000}
+          keyBoardControl={true}
+          customTransition="all .5"
+          transitionDuration={4000}
+          containerClass="carousel-container"
+          removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
+          dotListClass="custom-dot-list-style"
+          slidesToSlide="4"
+        >
+          {logos.map((logo) => {
+            return (
+              <Testing>
+                <Img src={logo.lien_url} />
+              </Testing>
+            );
+          })}
+        </Carousel>
       </Margin>
     </>
   );
