@@ -3,9 +3,9 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 
 const PictureContent = styled.div`
-    position:absolute;
-    top:150px;
-    left:550px;
+    position:sticky;
+    position: -webkit-sticky;
+    top:20px;
   &.hide {
     display: none;
   }
@@ -15,15 +15,18 @@ const Picture = styled.img`
   height: 25vh;
   width: auto;
 `;
+const Button = styled.button`
+  height: 20vh;
+  width: 20vw;
+`;
 
 const Flex = styled.div`
   display: flex;
+  overflow:hidden;
   flex-direction: column;
   justify-content:center;
-  height: 100vh;
-  flex-wrap:wrap;
-  gap: 10vh;
-  margin-left:15%;
+  gap: 3vh;
+  margin-left:10%;
 
   h1 {
     font-size: 2rem;
@@ -55,9 +58,11 @@ const Content = styled.div`
   margin: 0 3vw 3vh 3vw;
 `;
 
-const Button = styled.button`
-z-index:100;
-`
+const Image = styled.img`
+  max-height: 15vh;
+  max-width: 20vw;
+`;
+
 
 export default function DataTest() {
   const [projets, setProjets] = useState([]);
@@ -84,7 +89,7 @@ export default function DataTest() {
                 setDisplay({ isDisplay: !isDisplay.isDisplay, id: projet.id })
               }
             >
-              {projet.id}
+             <Image src={projet.logo} />
             </Button>
             <PictureContent
               onClick={() => console.log(projet.id)}
