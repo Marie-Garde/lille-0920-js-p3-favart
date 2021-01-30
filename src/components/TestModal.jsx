@@ -3,9 +3,10 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 
 const PictureContent = styled.div`
-    position:sticky;
-    position: -webkit-sticky;
-    top:20px;
+    position: relative;
+    top:-178px;
+    left:375px;
+    height:10px;
   &.hide {
     display: none;
   }
@@ -24,9 +25,10 @@ const Flex = styled.div`
   display: flex;
   overflow:hidden;
   flex-direction: column;
-  justify-content:center;
   gap: 3vh;
   margin-left:10%;
+  margin-top:10vh;
+  height:200vh;
 
   h1 {
     font-size: 2rem;
@@ -64,6 +66,7 @@ const Image = styled.img`
 `;
 
 
+
 export default function DataTest() {
   const [projets, setProjets] = useState([]);
   const [isDisplay, setDisplay] = useState({ isDisplay: false, id: "" });
@@ -81,7 +84,6 @@ export default function DataTest() {
   return (
     <>
       <Flex>
-          <div></div>
         {projets.map((projet) => (
           <div key={projet.id}>
             <Button
