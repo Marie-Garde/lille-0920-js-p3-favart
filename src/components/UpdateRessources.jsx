@@ -15,14 +15,9 @@ export default function useForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios
-      .post(`http://localhost:3001/ressources`, values)
-      .then((res) => {
-        setValues(res.data);
-      })
-      .catch((e) => {
-        console.warn(e);
-      });
+    axios.post(`http://localhost:3001/ressources`, values).then((res) => {
+      setValues(res.data);
+    });
   };
 
   return { handleChange, values, handleSubmit };

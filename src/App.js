@@ -1,6 +1,10 @@
+import { useState } from "react";
+import { Switch, Route } from "react-router-dom";
+import { Reset } from "styled-reset";
+
+import HeaderTop from "./components/HeaderTop";
 import ClientPage from "./components/ClientPage";
 import Connexion from "./components/Connection";
-import HeaderTop from "./components/HeaderTop";
 import MainPage from "./components/header/HeaderMenu01";
 import Agissons from "./components/header/HeaderMenu02";
 import IlsEtElles from "./components/header/HeaderMenu03";
@@ -17,15 +21,20 @@ import DisplayRessources from "./components/DisplayRessources";
 import { Switch, Route } from "react-router-dom";
 import { Reset } from "styled-reset";
 
-import { Switch, Route } from "react-router-dom";
 export default function App() {
+  const [token, setToken] = useState("");
   return (
     <div>
       <Reset />
       <HeaderTop />
       <Switch>
+        <ProfilePage />
+        <Route exact path="/" component={MainPage} />
+        <Route path="/clientpage" component={ClientPage} />
+        <Route exact path="/">
+          <Connexion setToken={setToken} />
+        </Route>
         <Route exact path="/sommaire" component={Sommaire} />
-
         <Route path="/ressources" component={RessourcePage} />
         <Route path="/displayressources" component={DisplayRessources} />
         <Route path="/ressourcesext" component={RessourcePageExt} />
