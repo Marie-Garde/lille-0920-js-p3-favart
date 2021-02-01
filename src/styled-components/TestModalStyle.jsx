@@ -1,7 +1,7 @@
 import { Device } from "../assets/Device/Device";
 import styled from "styled-components";
 
-    export const PictureContent = styled.div`
+export const PictureContent = styled.div`
   position: relative;
   top: -20vh;
   left: 25vw;
