@@ -27,7 +27,7 @@ const Flex = styled.div`
   flex-direction: column;
   gap: 3vh;
   margin: 10vh 6vw 0 6vw;
-  height:190vh;
+  height:200vh;
 
   h1 {
     font-size: 2rem;
@@ -72,6 +72,9 @@ const Image = styled.img`
   max-width: 20vw;
 `;
 
+const Title = styled.h1`
+  margin-bottom: 6vh;
+`
 
 
 export default function DataTest() {
@@ -91,6 +94,7 @@ export default function DataTest() {
   return (
     <>
       <Flex>
+        <Title>Nos projets en cours</Title>
         {projets.map((projet) => (
           <div key={projet.id}>
             <Button

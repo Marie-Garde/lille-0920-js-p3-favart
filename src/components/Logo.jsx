@@ -17,7 +17,7 @@ const responsive = {
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
-    items: 1,
+    items: 3,
     slidesToSlide: 1, // optional, default to 1.
   },
 };
@@ -54,7 +54,6 @@ export default function Logo() {
         containerClass="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
         dotListClass="custom-dot-list-style"
-        slidesToSlide="4"
       >
         {logos.map((logo) => {
           return (
