@@ -31,7 +31,7 @@ export default function DataTest() {
     <>
       <Flex>
         <Title>Nos projets en cours</Title>
-        {projets.map((projet) => (
+         {projets.map((projet) => (
           <div key={projet.id}>
             <Button
               onClick={() =>
