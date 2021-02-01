@@ -24,7 +24,7 @@ export const FlexBox1 = styled.div`
 
 export const FlexBox2 = styled.div`
   flex: 2;
-  height: 100vh;
+  height: 200vh;
   padding-right: 3vw;
   padding-left: 3vw;
   padding-top: 8vh;
@@ -57,19 +57,6 @@ export const DivLabel = styled.div`
   justify-content: start;
   flex-direction: column;
   margin-bottom: 6vh;
-  width: 100%;
-  height: 2.7vh;
-  @media ${Device.mobile} {
-  }
-`;
-
-export const DivLabelCheckBox = styled.div`
-  font-size: 1rem;
-  display: flex;
-  justify-content: start;
-  flex-direction: column;
-  margin-bottom: 6vh;
-  margin-top: 10vh;
   width: 100%;
   height: 2.7vh;
   @media ${Device.mobile} {
@@ -111,18 +98,6 @@ export const Label = styled.label`
   }
 `;
 
-export const LabelCheckBox = styled.label`
-  font-size: 1rem;
-  color: black;
-  margin-bottom: 0.5vw;
-  width: 30%;
-  font-family: "Noto Sans CJK JP";
-  @media ${Device.mobile} {
-    font-size: 0.8rem;
-    width: 80%;
-  }
-`;
-
 export const Input = styled.input`
   width: 50%;
   text-align: center;
@@ -152,29 +127,6 @@ export const Textarea = styled.textarea`
   }
 `;
 
-export const CheckBox = styled.div`
-  display: flex;
-  font-family: "Noto Sans CJK JP";
-  justify-content: space-around;
-  margin-right: 25vh;
-  padding-top: 2vh;
-  @media ${Device.mobile} {
-    flex-direction: column;
-    font-size: 0.8rem;
-  }
-`;
-
-export const TextareaAutre = styled.textarea`
-  width: 77%;
-  height: 25vh;
-  text-align: center;
-  font-family: "Noto Sans CJK JP";
-  @media ${Device.mobile} {
-    width: 86vw;
-    margin-top: 13vh;
-  }
-`;
-
 export const TextareaEnvies = styled.textarea`
   width: 77%;
   height: 25vh;
@@ -186,7 +138,7 @@ export const TextareaEnvies = styled.textarea`
   }
 `;
 
-export const StyledButton = styled.input`
+export const StyledButton = styled.button`
   padding: 2 2vw;
   font-size: 1.5rem;
   font-family: "Josefin Sans";
@@ -200,6 +152,7 @@ export const StyledButton = styled.input`
   height: 4vh;
   border-radius: 5px;
   margin-top: 10vh;
+  margin-bottom: 20vh;
   &:hover {
     background: #008bd0;
     color: #d7d0db;

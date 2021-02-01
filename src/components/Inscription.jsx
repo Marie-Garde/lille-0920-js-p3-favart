@@ -1,4 +1,6 @@
-import { FormCheckbox } from "shards-react";
+import useForm from "./InscriptionSignUp.jsx";
+import { useState, useEffect } from "react";
+import validateInfo from "./ValidateInfo";
 
 import {
   FlexBox,
@@ -11,16 +13,13 @@ import {
   Input,
   StyledButton,
   Textarea,
-  CheckBox,
-  DivLabelCheckBox,
-  TextareaAutre,
   TextareaEnvies,
   DivLabelText,
   InputSite,
-  LabelCheckBox,
 } from "../styled-components/Inscription";
 
 export default function Inscription() {
+  const { handleChange, values, handleSubmit, errors } = useForm(validateInfo);
   return (
     <FlexBox>
       <FlexBox1></FlexBox1>
@@ -28,15 +27,16 @@ export default function Inscription() {
         <P>
           Avant d’accéder à l’espace client, veuillez renseigner ces champs :
         </P>
-        <Formulaire>
+        <Formulaire onSubmit={handleSubmit}>
           <fieldset>
             <DivLabel>
               <Label>Prénom *</Label>
               <Input
                 type="text"
-                name="name"
-                id="name"
+                name="username"
                 placeholder="Prénom"
+                value={values.username}
+                onChange={handleChange}
                 required
               />
             </DivLabel>
@@ -44,19 +44,65 @@ export default function Inscription() {
               <Label>Nom *</Label>
               <Input
                 type="text"
-                name="firstname"
-                id="firstname"
+                name="surname"
                 placeholder="Nom"
+                value={values.surname}
+                onChange={handleChange}
                 required
               />
             </DivLabel>
             <DivLabel>
-              <Label>Métier *</Label>
+              <Label>Email *</Label>
               <Input
                 type="email"
                 name="email"
-                id="email"
                 placeholder="Email"
+                value={values.email}
+                onChange={handleChange}
+                required
+              />
+            </DivLabel>
+            <DivLabel>
+              <Label>Téléphone *</Label>
+              <Input
+                type="text"
+                name="phone"
+                placeholder="Numéro de téléphone"
+                value={values.phone}
+                onChange={handleChange}
+                required
+              />
+            </DivLabel>
+            <DivLabel>
+              <Label>Mot de passe *</Label>
+              <Input
+                type="password"
+                name="password"
+                placeholder="Mot de passe"
+                value={values.password}
+                onChange={handleChange}
+              />
+              {errors.password && <p>{errors.password}</p>}
+            </DivLabel>
+            <DivLabel>
+              <Label>Confirmer le mot de passe *</Label>
+              <Input
+                type="password"
+                name="password2"
+                placeholder="Confirmer le mot de passe"
+                value={values.password2}
+                onChange={handleChange}
+              />
+              {errors.password && <p>{errors.password}</p>}
+            </DivLabel>
+            <DivLabel>
+              <Label>Métier *</Label>
+              <Input
+                type="text"
+                name="job"
+                placeholder="Métier"
+                value={values.job}
+                onChange={handleChange}
                 required
               />
             </DivLabel>
@@ -64,9 +110,10 @@ export default function Inscription() {
               <Label>Nom de la structure *</Label>
               <Input
                 type="text"
-                name="Structure name"
-                id="Structurename"
+                name="structure_name"
                 placeholder="Nom de la structure"
+                value={values.structure_name}
+                onChange={handleChange}
                 required
               />
             </DivLabel>
@@ -74,9 +121,10 @@ export default function Inscription() {
               <Label>Type de la structure *</Label>
               <Input
                 type="text"
-                name="Structure name"
-                id="Structurename"
+                name="structure_type"
                 placeholder="Type de la structure"
+                value={values.structure_type}
+                onChange={handleChange}
                 required
               />
             </DivLabel>
@@ -84,9 +132,10 @@ export default function Inscription() {
               <Label>Domaine de la structure *</Label>
               <Input
                 type="text"
-                name="Structure name"
-                id="Structurename"
+                name="structure_field"
                 placeholder="Domaine de la structure"
+                value={values.structure_field}
+                onChange={handleChange}
                 required
               />
             </DivLabel>
@@ -94,36 +143,29 @@ export default function Inscription() {
               <Label>Votre domaine d'activité</Label>
               <Textarea
                 type="text"
-                name="message"
-                id="message"
+                name="job_field"
                 placeholder="Domaine d'activité"
+                value={values.job_field}
+                onChange={handleChange}
               />
             </DivLabel>
-            <DivLabelCheckBox>
-              <LabelCheckBox>Votre territoire d'actions </LabelCheckBox>
-              <CheckBox>
-                <FormCheckbox inline>Haut-de-France</FormCheckbox>
-                <FormCheckbox inline>Ile-de-France</FormCheckbox>
-                <FormCheckbox inline>Grand Est</FormCheckbox>
-                <FormCheckbox inline>Normandie</FormCheckbox>
-                <FormCheckbox inline>National</FormCheckbox>
-              </CheckBox>
-            </DivLabelCheckBox>
-            <DivLabelText>
-              <Label>Autre, précisez</Label>
-              <TextareaAutre
+            <DivLabel>
+              <Label>Votre territoire d'action</Label>
+              <Textarea
                 type="text"
-                name="precisez"
-                id="message"
-                placeholder="Autre, précisez"
+                name="territory"
+                placeholder="Votre territoire d'action"
+                value={values.territory}
+                onChange={handleChange}
               />
-            </DivLabelText>
+            </DivLabel>
             <DivLabelText>
               <Label>Vos envies</Label>
               <TextareaEnvies
                 type="text"
-                name="envies"
-                id="message"
+                name="wishes"
+                value={values.wishes}
+                onChange={handleChange}
                 placeholder="Vos envies"
               />
             </DivLabelText>
@@ -131,10 +173,15 @@ export default function Inscription() {
               <Label>Votre site internet</Label>
               <InputSite
                 type="text"
-                name="Site internet"
-                id="SiteInternet"
+                name="website"
+                value={values.website}
+                onChange={handleChange}
                 placeholder="Votre site internet"
               />
+            </DivLabelText>
+            <DivLabelText>
+              <label>Accepter les CGU</label>
+              <input type="checkbox" required />
             </DivLabelText>
             <StyledButton type="submit" value="Envoyer" />
           </fieldset>
