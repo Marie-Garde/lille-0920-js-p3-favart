@@ -33,15 +33,10 @@ export default function useForm(validateInfo) {
     e.preventDefault();
     setErrors(validateInfo(values));
     delete values.password2;
-    axios
-      .post("http://localhost:3001/auth/signup", values)
-      .then((res) => {
-        setValues(res.data);
-        history.push("/clientpage");
-      })
-      .catch((e) => {
-        console.warn(e);
-      });
+    axios.post("http://localhost:3001/auth/signup", values).then((res) => {
+      setValues(res.data);
+      history.push("/clientpage");
+    });
   };
 
   return { handleChange, values, handleSubmit, errors };

@@ -12,7 +12,6 @@ import Sommaire from "./components/header/HeaderMenu00";
 import Inscription from "./components/Inscription";
 import DisplayClient from "./components/DisplayClient";
 import ProfilePage from "./components/ProfilPage";
-import Connection from "./components/Connection";
 
 export default function App() {
   const [token, setToken] = useState("");
