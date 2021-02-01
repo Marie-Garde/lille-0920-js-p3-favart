@@ -20,22 +20,7 @@ export default function App() {
     <div>
       <Reset />
       <HeaderTop />
-      <Switch>
-        <ProfilePage />
-        <Route exact path="/" component={MainPage} />
-        <Route path="/clientpage" component={ClientPage} />
-        <Route exact path="/">
-          <Connexion setToken={setToken} />
-        </Route>
-
-        <Route exact path="/sommaire" component={Sommaire} />
-        <Route path="/agissons" component={Agissons} />
-        <Route path="/connexion" component={Connexion} />
-        <Route path="/ilsetelles" component={IlsEtElles} />
-        <Route path="/action" component={Action} />
-        <Route path="/inscription" component={Inscription} />
-        <Route path="/DisplayClient" component={DisplayClient} />
-      </Switch>
+      <Inscription />
     </div>
   );
 }
