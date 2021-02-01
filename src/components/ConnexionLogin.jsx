@@ -17,15 +17,10 @@ export default function useForm({ setToken }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios
-      .post("http://localhost:3001/auth/login", values)
-      .then((res) => {
-        setToken(res.data);
-        history.push("/clientpage");
-      })
-      .catch((e) => {
-        console.warn(e);
-      });
+    axios.post("http://localhost:3001/auth/login", values).then((res) => {
+      setToken(res.data);
+      history.push("/clientpage");
+    });
   };
 
   return { handleChange, values, handleSubmit };
