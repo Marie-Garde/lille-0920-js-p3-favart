@@ -14,7 +14,6 @@ const PictureContent = styled.div`
   @media ${Device.mobile} {
     top: 0;
     left: 0;
-    width: 80vw;
   }
 `;
 
@@ -47,6 +46,10 @@ const Flex = styled.div`
   h1 {
     font-size: 2rem;
     text-align: center;
+  }
+
+  @media ${Device.mobile} {
+    height:246vh;
   }
 `;
 
@@ -83,7 +86,7 @@ const Container = styled.div`
   background-color: #122239;
   width: 60vw;
   @media ${Device.mobile} {
-    width: 90vw;
+    width: auto;
   }
 `;
 

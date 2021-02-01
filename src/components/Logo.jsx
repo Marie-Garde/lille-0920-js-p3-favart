@@ -59,7 +59,7 @@ export default function Logo() {
           {logos.map((logo) => {
             return (
               <Testing>
-                <Img src={logo.lien_url} />
+                <Img src={logo.Logo} />
               </Testing>
             );
           })}
