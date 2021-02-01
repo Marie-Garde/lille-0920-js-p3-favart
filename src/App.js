@@ -21,14 +21,12 @@ export default function App() {
       <Reset />
       <HeaderTop />
       <Switch>
-        <ProfilePage />
-        <Route exact path="/" component={MainPage} />
+        <Route exact path="/" component={Sommaire} />
+        <Route exact path="/main" component={MainPage} />
         <Route path="/clientpage" component={ClientPage} />
-        <Route exact path="/">
+        <Route exact path="/connexion">
           <Connexion setToken={setToken} />
         </Route>
-
-        <Route exact path="/sommaire" component={Sommaire} />
         <Route path="/agissons" component={Agissons} />
         <Route path="/connexion" component={Connexion} />
         <Route path="/ilsetelles" component={IlsEtElles} />
