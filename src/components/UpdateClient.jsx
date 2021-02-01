@@ -27,14 +27,9 @@ export default function useForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     delete values.password2;
-    axios
-      .patch(`http://localhost:3001/client/9`, values)
-      .then((res) => {
-        setValues(res.data);
-      })
-      .catch((e) => {
-        console.warn(e);
-      });
+    axios.patch(`http://localhost:3001/client/9`, values).then((res) => {
+      setValues(res.data);
+    });
   };
 
   return { handleChange, values, handleSubmit };
