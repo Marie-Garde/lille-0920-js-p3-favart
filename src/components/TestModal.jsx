@@ -7,13 +7,17 @@ const PictureContent = styled.div`
   position: relative;
   top: -180px;
   left: 380px;
-  height: 0px;
+  height: auto;
+  max-height:475px;
   &.hide {
     display: none;
+    height:auto;
   }
   @media ${Device.mobile} {
     top: 0;
     left: 0;
+    height:auto;
+    max-height:630px;
   }
 `;
 
@@ -29,6 +33,7 @@ const Button = styled.button`
   height: 20vh;
   width: 20vw;
   cursor: pointer;
+  
   @media ${Device.mobile} {
     width: 50vw;
     margin-left: 20vw;
@@ -41,7 +46,6 @@ const Flex = styled.div`
   flex-direction: column;
   gap: 3vh;
   margin: 10vh 6vw 0 6vw;
-  height:200vh;
 
   h1 {
     font-size: 2rem;
@@ -49,7 +53,7 @@ const Flex = styled.div`
   }
 
   @media ${Device.mobile} {
-    height:246vh;
+    height:auto;
   }
 `;
 
