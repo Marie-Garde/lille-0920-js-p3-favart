@@ -1,14 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
-import { useHistory } from "react-router-dom";
 
-export default function useForm(validateInfo) {
-  let history = useHistory();
-
+export default function useForm() {
+  const [clients, setClients] = useState([]);
   const [values, setValues] = useState({
     username: "",
     surname: "",
-    email: "",
     phone: "",
     password: "",
     password2: "",
@@ -22,8 +19,6 @@ export default function useForm(validateInfo) {
     website: "",
   });
 
-  const [errors, setErrors] = useState({});
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setValues({ ...values, [name]: value });
@@ -31,13 +26,11 @@ export default function useForm(validateInfo) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setErrors(validateInfo(values));
     delete values.password2;
-    axios.post("http://localhost:3001/auth/signup", values).then((res) => {
+    axios.patch(`http://localhost:3001/client/9`, values).then((res) => {
       setValues(res.data);
-      history.push("/clientpage");
     });
   };
 
-  return { handleChange, values, handleSubmit, errors };
+  return { handleChange, values, handleSubmit };
 }
