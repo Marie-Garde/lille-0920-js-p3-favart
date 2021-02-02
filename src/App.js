@@ -21,7 +21,6 @@ export default function App() {
       <Reset />
       <HeaderTop />
       <Switch>
-        <ProfilePage />
         <Route exact path="/" component={MainPage} />
         <Route path="/clientpage" component={ClientPage} />
         <Route exact path="/">
