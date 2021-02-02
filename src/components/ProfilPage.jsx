@@ -15,6 +15,8 @@ import {
   CardText,
   CardBdd,
 } from "../styled-components/ProfilPage.jsx";
+import ContactUs from "./ContactUs.jsx";
+import UpdateClient from "./UpdateClientForm.jsx";
 
 export default () => {
   const [clients, setClients] = useState([]);
@@ -98,6 +100,7 @@ export default () => {
         </div>
         <div>
           <UpdateClient clients={clients} />
+          <ContactUs />
         </div>
       </FlexBox2>
     </FlexBox>
