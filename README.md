@@ -13,7 +13,7 @@ SETUP :
 
 To run this project, install it locally using npm:
 
-$ git clone https://github.com/Marie-Garde/lille-0920-js-p3-favart.git
-$ cd lille-0920-js-p3-favart/
-$ npm i
-$ npm start
+    $ git clone https://github.com/Marie-Garde/lille-0920-js-p3-favart.git
+    $ cd lille-0920-js-p3-favart/
+    $ npm i
+    $ npm start
